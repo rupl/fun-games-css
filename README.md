@@ -1,6 +1,8 @@
-# Unfolding the Box Model
+# Fun and Games with CSS3
 
-Interactive slides that explore CSS 3D Transforms.
+Interactive slides that explore creative uses
+of CSS modules, collectively known as CSS3.
+
 Press left or right arrow key to advance.
 Watch in full-screen for best results.
 
@@ -14,7 +16,7 @@ install the required gems before trying to make changes to the source.
 
 ## Presented at
 
-- [HTML5.tx 2013](http://html5tx.com)
+- [SXSWi 2013](http://schedule.sxsw.com/2013/events/event_IAP5834)
 
 ## License
 
