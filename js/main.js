@@ -6,12 +6,26 @@
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
   // - feel free to explain to me how this could be accomplished with only one array
-  // - or why i have to use eval?
+  // - or to avoid eval?
   var story = {
     'forward': [
 
       // Slide 1
       "scrollTo('#s1'); ",
+
+      // Slide 2
+      "scrollTo('#s2'); ",
+
+      // Slide 3
+      "scrollTo('#s3'); ",
+
+      // Slide 4
+      "scrollTo('#s4'); ",
+      "$('#s4 .slinky').toggleClass('hide'); ",
+      "$('#s4 .slinky').toggleClass('half'); ",
+      "$('#s4 p.slinky-desc').toggleClass('hide'); "+
+      "$('#s4 p.intro').toggleClass('dim'); ",
+      "$('#s4 .slinky').toggleClass('move half full'); ",
 
       // the beginning
       "scrollTo('#die-undliche-gesichte'); "
@@ -21,7 +35,23 @@
 
       // Slide 1
       "",
-      "scrollTo('#s1'); "
+
+      // Slide 2
+      "scrollTo('#s1'); ",
+
+      // Slide 3
+      "scrollTo('#s2'); ",
+
+      // Slide 4
+      "scrollTo('#s3'); ",
+      "$('#s4 .slinky').toggleClass('hide'); ",
+      "$('#s4 .slinky').toggleClass('half'); ",
+      "$('#s4 p.slinky-desc').toggleClass('hide'); "+
+      "$('#s4 p.intro').toggleClass('dim'); ",
+      "$('#s4 .slinky').toggleClass('move half full'); ",
+
+      // the beginning
+      "scrollTo('#s4'); "
 
     ]
   };
