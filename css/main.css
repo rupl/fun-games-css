@@ -572,8 +572,9 @@ main article:last-child {
 }
 
 .compat {
-  opacity: .5;
-  width: 15%;
+  width: 14em;
+  max-height: 2em;
+  overflow: hidden;
   padding: .4em;
   font-size: .4em;
   -webkit-font-smoothing: antialiased;
@@ -596,6 +597,10 @@ main article:last-child {
   -o-transform: translateX(-1em) translateY(1em);
   transform: translateX(-1em) translateY(1em);
 }
+.compat .reqs {
+  display: block;
+  margin-bottom: .4em;
+}
 .csstransforms3d .compat .csstransforms3d, .csstransforms .compat .csstransforms, .csstransitions .compat .csstransitions, .cssanimations .compat .cssanimations, .cssfilters .compat .cssfilters, .cssmask .compat .cssmask {
   background: #9d9;
   border: 1px solid #80aa80;
@@ -608,8 +613,8 @@ main article:last-child {
   padding: 2px;
   margin: 2px;
 }
-.compat:hover, .compat:focus {
-  opacity: 1;
+.compat:hover, .compat:focus, .compat.touching {
+  max-height: 10em;
 }
 
 footer {

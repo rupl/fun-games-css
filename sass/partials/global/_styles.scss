@@ -72,8 +72,9 @@ main {
 
 // Compatibility charts for each page
 .compat {
-  opacity: .5; // Hide until user wants this info
-  width: 15%;
+  width: 14em;
+  max-height: 2em;
+  overflow: hidden;
   padding: .4em;
   font-size: .4em;
   -webkit-font-smoothing: antialiased;
@@ -86,7 +87,10 @@ main {
   @include transform(translateX(-1em) translateY(1em));
 
   // "This demo requires"
-  .reqs {}
+  .reqs {
+    display: block;
+    margin-bottom: .4em;
+  }
 
   // Color each property according to browser support of current user.
   // All classes used in this section mirror Modernizr classes.
@@ -116,8 +120,9 @@ main {
 
   // Show when user is interested
   &:hover,
-  &:focus {
-    opacity: 1;
+  &:focus,
+  &.touching {
+    max-height: 10em; // no auto, set to high number
   }
 }
 
