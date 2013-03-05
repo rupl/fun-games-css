@@ -24,3 +24,4 @@ Some ideas:
 - Mention http://html.adobe.com/webstandards/csscustomfilters/cssfilterlab/
 - Construct an illusion like the face segments:
   http://www.thisiscolossal.com/2013/01/the-skewed-anamorphic-sculptures-and-engineered-illusions-of-jonty-hurwitz/
+- Demonstrate gimbal lock: http://en.wikipedia.org/wiki/Gimbal_lock
