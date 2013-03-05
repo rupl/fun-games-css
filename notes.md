@@ -25,3 +25,28 @@ Some ideas:
 - Construct an illusion like the face segments:
   http://www.thisiscolossal.com/2013/01/the-skewed-anamorphic-sculptures-and-engineered-illusions-of-jonty-hurwitz/
 - Demonstrate gimbal lock: http://en.wikipedia.org/wiki/Gimbal_lock
+
+- Intro. Show some really flashy internet gif. But CSS makes it all better, rite?
+- Fade it out, then do each one of these steps individually in fluid progression:
+  - Start with one DE containing a black serif word on white bg of slide
+  - Change the font size
+  - Change the weight
+  - Change the style
+  - Change the font
+  - Add a border
+  - Add padding
+  - Add bgcolor
+  - Add border-radius
+  - Add box-shadow
+  - Decrease opacity of text slightly
+  - Add text-shadow
+  - Add bg gradient
+  - Fade in two paragraphs of text
+  - Add margin
+  - Float left
+  - Float right
+  - Move position a few times
+  - Transform in 3D
+  - Blur the element
+  - Animate in some fashion
+  - Now we're back to that same style as the gif
