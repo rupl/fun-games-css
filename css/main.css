@@ -488,7 +488,7 @@ table {
 }
 
 /* Global styles ----------------------------------------------------------- */
-.it, span, .cube .side, #s-title .instructions {
+.it, span, .cube .side, #s-title .instructions, #s-intro .word {
   display: inline-block;
 }
 
@@ -887,6 +887,125 @@ span.active {
   50% {
     opacity: .5;
   }
+}
+
+#s-intro {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-perspective: 20em;
+  -moz-perspective: 20em;
+  -ms-perspective: 20em;
+  -o-perspective: 20em;
+  perspective: 20em;
+}
+#s-intro .word {
+  position: relative;
+  opacity: 0;
+  font-family: times;
+  color: #000;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+#s-intro .word.show {
+  opacity: 1;
+}
+#s-intro p:not(.intro) {
+  opacity: 0;
+  color: #888;
+}
+#s-intro .word.big {
+  font-size: 150%;
+}
+#s-intro .word.bigger {
+  font-size: 300%;
+}
+#s-intro .word.bold {
+  font-weight: 700;
+}
+#s-intro .word.italic {
+  font-style: italic;
+}
+#s-intro .word.font {
+  font-family: sans-serif;
+}
+#s-intro .word.padding {
+  padding: .1em .2em;
+}
+#s-intro .word.margin {
+  margin: .2em;
+}
+#s-intro .word.border {
+  border: .1em solid #000;
+}
+#s-intro .word.bgcolor {
+  background-color: #789;
+}
+#s-intro .word.float-l {
+  float: left;
+}
+#s-intro .word.float-r {
+  float: right;
+}
+#s-intro .word.pos-y {
+  top: -2em;
+}
+#s-intro .word.pos-x {
+  left: -2em;
+}
+#s-intro .word.borderradius {
+  border-radius: .5em;
+}
+#s-intro .word.boxshadow {
+  -webkit-box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.7);
+}
+#s-intro .word.opacity {
+  opacity: .8;
+}
+#s-intro .word.textshadow {
+  text-shadow: -0.02em 0.02em 0 rgba(255, 255, 255, 0.5);
+}
+#s-intro .word.gradient {
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #bbccdd), color-stop(100%, #334455));
+  background: -webkit-linear-gradient(#bbccdd, #334455);
+  background: -moz-linear-gradient(#bbccdd, #334455);
+  background: -o-linear-gradient(#bbccdd, #334455);
+  background: -ms-linear-gradient(#bbccdd, #334455);
+  background: linear-gradient(#bbccdd, #334455);
+}
+#s-intro .word.transition {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+#s-intro .word.webfont {
+  font-family: inherit;
+}
+#s-intro .word.rotate {
+  -webkit-transform: rotateY(-180deg);
+  -moz-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  -o-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
+}
+#s-intro .word.blur {
+  -webkit-filter: blur(0.06em);
+  -moz-filter: blur(0.06em);
+  filter: blur(0.06em);
 }
 
 #s-slinky {

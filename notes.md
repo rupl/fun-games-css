@@ -35,14 +35,14 @@ Some ideas:
   - Change the font
   - Add a border
   - Add padding
+  - Add margin
   - Add bgcolor
   - Add border-radius
   - Add box-shadow
   - Decrease opacity of text slightly
   - Add text-shadow
   - Add bg gradient
-  - Fade in two paragraphs of text
-  - Add margin
+  - Add transition + fade in two paragraphs of text
   - Float left
   - Float right
   - Move position a few times

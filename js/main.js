@@ -13,6 +13,37 @@
       // Title
       "scrollTo('#s-title'); ",
 
+      // Intro
+      "scrollTo('#s-intro'); ",
+      "$('#s-intro .word').toggleClass('show'); ",
+      "$('#s-intro .word').toggleClass('big'); ",
+      "$('#s-intro .word').toggleClass('bigger'); ",
+      "$('#s-intro .word').toggleClass('bold'); ",
+      "$('#s-intro .word').toggleClass('italic'); ",
+      "$('#s-intro .word').toggleClass('font'); ",
+      "$('#s-intro p.intro').text('CSS used to be defined in huge chunks (CSS 1, CSS 2, CSS 2.1)'); ",
+      "$('#s-intro .word').toggleClass('border'); ",
+      "$('#s-intro .word').toggleClass('padding'); ",
+      "$('#s-intro .word').toggleClass('margin'); ",
+      "$('#s-intro .word').toggleClass('bgcolor'); ",
+      "$('#s-intro p:not(.intro)').toggleClass('show'); ",
+      "$('#s-intro .word').toggleClass('float-l'); ",
+      "$('#s-intro .word').toggleClass('float-r'); ",
+      "$('#s-intro .word').toggleClass('pos-y'); ",
+      "$('#s-intro .word').toggleClass('pos-y'); ",
+      "$('#s-intro .word').toggleClass('pos-x'); ",
+      "$('#s-intro .word').toggleClass('pos-x'); ",
+      "$('#s-intro p.intro').text('This is about where IE6 gave up.'); ",
+      "$('#s-intro p.intro').text('After CSS 2.1, CSS was broken up into modules, known collectively as...'); "+
+      "$('#s-intro .word').text('CSS3'); ",
+      "$('#s-intro .word').toggleClass('borderradius'); ",
+      "$('#s-intro .word').toggleClass('boxshadow'); ",
+      "$('#s-intro .word').toggleClass('textshadow'); ",
+      "$('#s-intro .word').toggleClass('gradient transition'); ", // sneak transition in there too
+      "$('#s-intro .word').toggleClass('webfont'); ",
+      "$('#s-intro .word').toggleClass('rotate'); ",
+      "$('#s-intro .word').toggleClass('blur'); ",
+
       // Slinky
       "scrollTo('#s-slinky'); ",
       "$('#s-slinky .slinky').toggleClass('hide'); ",
@@ -30,8 +61,39 @@
       // Title
       "",
 
-      // Slinky
+      // Intro
       "scrollTo('#s-title'); ",
+      "$('#s-intro .word').toggleClass('show'); ",
+      "$('#s-intro .word').toggleClass('big'); ",
+      "$('#s-intro .word').toggleClass('bigger'); ",
+      "$('#s-intro .word').toggleClass('bold'); ",
+      "$('#s-intro .word').toggleClass('italic'); ",
+      "$('#s-intro .word').toggleClass('font'); ",
+      "$('#s-intro p.intro').text('Web design had pretty humble beginnings.'); ",
+      "$('#s-intro .word').toggleClass('border'); ",
+      "$('#s-intro .word').toggleClass('padding'); ",
+      "$('#s-intro .word').toggleClass('margin'); ",
+      "$('#s-intro .word').toggleClass('bgcolor'); ",
+      "$('#s-intro p:not(.intro)').toggleClass('show'); ",
+      "$('#s-intro .word').toggleClass('float-l'); ",
+      "$('#s-intro .word').toggleClass('float-r'); ",
+      "$('#s-intro .word').toggleClass('pos-y'); ",
+      "$('#s-intro .word').toggleClass('pos-y'); ",
+      "$('#s-intro .word').toggleClass('pos-x'); ",
+      "$('#s-intro .word').toggleClass('pos-x'); ",
+      "$('#s-intro p.intro').text('CSS used to be defined in huge chunks (CSS 1, CSS 2, CSS 2.1)'); ",
+      "$('#s-intro p.intro').text('This is about where IE6 gave up.'); "+
+      "$('#s-intro .word').text('CSS'); ",
+      "$('#s-intro .word').toggleClass('borderradius'); ",
+      "$('#s-intro .word').toggleClass('boxshadow'); ",
+      "$('#s-intro .word').toggleClass('textshadow'); ",
+      "$('#s-intro .word').toggleClass('gradient transition'); ", // sneak transition in there too
+      "$('#s-intro .word').toggleClass('webfont'); ",
+      "$('#s-intro .word').toggleClass('rotate'); ",
+      "$('#s-intro .word').toggleClass('blur'); ",
+
+      // Slinky
+      "scrollTo('#s-intro'); ",
       "$('#s-slinky .slinky').toggleClass('hide'); ",
       "$('#s-slinky .slinky').toggleClass('half'); ",
       "$('#s-slinky p.slinky-desc').toggleClass('hide'); "+

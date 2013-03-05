@@ -1,0 +1,105 @@
+//
+// A brief history of CSS
+//
+// Our word starts out just like the web: small, serif, and black on white.
+// It will grow into the multi-talented circus we know today as CSS.
+//
+
+#s-intro {
+  // Defaults needed for transforms
+  @include transform-style(preserve-3d);
+  @include perspective(20em);
+
+  // Defaults for our progressively enhanced word
+  .word {
+    @extend .it;
+    position: relative;
+    opacity: 0; // hide by default
+    font-family: times;
+    color: #000;
+    @include transition(none);
+
+    &.show {
+      opacity: 1;
+    }
+  }
+
+  // Filler text
+  p:not(.intro) {
+    opacity: 0; // Hide by default
+    color: #888;
+  }
+
+  // Enhancements to the .word
+  .word {
+    &.big {
+      font-size: 150%;
+    }
+    &.bigger {
+      font-size: 300%;
+    }
+    &.bold {
+      font-weight: 700;
+    }
+    &.italic {
+      font-style: italic;
+    }
+    &.font {
+      font-family: sans-serif;
+    }
+    &.padding {
+      padding: .1em .2em;
+    }
+    &.margin {
+      margin: .2em;
+    }
+    &.border {
+      border: .1em solid #000;
+    }
+    &.bgcolor {
+      background-color: #789;
+    }
+    &.float-l {
+      float: left;
+    }
+    &.float-r {
+      float: right;
+    }
+    &.pos-y {
+      top: -2em;
+    }
+    &.pos-x {
+      left: -2em;
+    }
+    &.borderradius {
+      border-radius: .5em;
+    }
+    &.boxshadow {
+      @include box-shadow(0 .1em .3em rgba(#000, .7));
+    }
+    &.opacity {
+      opacity: .8;
+    }
+    &.textshadow {
+      text-shadow: -.02em .02em 0 rgba(#fff, .5);
+    }
+    &.gradient {
+      @include background(linear-gradient(#bcd, #345));
+    }
+    &.transition {
+      @include transition(all .2s ease-in-out);
+    }
+    &.webfont {
+      font-family: inherit;
+    }
+    &.rotate {
+      @include transform(rotateY(-180deg));
+      @include backface-visibility(visible);
+    }
+    &.blur {
+      -webkit-filter: blur(.06em);
+         -moz-filter: blur(.06em);
+              filter: blur(.06em);
+    }
+  }
+}
