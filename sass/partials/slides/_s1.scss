@@ -3,63 +3,24 @@
  */
 #s1 {
 
-  // "Unfolding the Box Model"
+  // title
   h1 {
     font-size: 6em / $slide-font-size;
     line-height: .9em;
     position: absolute;
     top: 1em;
     left: 2em;
-
-    // "Unfolding"
-    .fold {
-      .un {
-        @include transform-origin(100%, 100%);
-        @include transform(rotateZ(-180deg) translateX(-0.04em));
-      }
-      .ing {
-        @include transform-origin(0%, 100%);
-        @include transform(rotateZ(90deg) translateX(0.07em) translateY(0.43em));
-      }
-    }
-    // "the Box Model"
-    .the {
-      .b {
-        @include transform-origin(-6%, 94%);
-        @include transform(rotateZ(180deg));
-
-        .ox {
-          @include transform-origin(-43%, 48%);
-          @include transform(rotateZ(-90deg) translateY(0.14em));
-        }
-      }
-      .m {
-        @include transform-origin(0%, 94%);
-        @include transform(rotateZ(90deg) translateY(3.30em));
-
-        .odel {
-          @include transform-origin(0%, 0%);
-          @include transform(rotateY(90deg));
-        }
-      }
-    }
   }
 
-  // Exploring CSS 3D Transforms
+  // subtitle
   h2 {
     font-size: 3em / $slide-font-size;
     position: absolute;
     bottom: 32%;
     right: 19%;
-
-    .csstransforms3d & span {
-      @include transition(.6s);
-      @include transform(rotateY(16deg) translateX(-5.2em) translateY(-1.8em) translateZ(14em));
-      @include transform-style(preserve-3d);
-    }
   }
 
-  // This warning is for browsers that don't support 3D transforms
+  // This warning is for browsers that don't support everything
   .warning {
     opacity: 0; // hidden by default
     width: 100%;
@@ -69,7 +30,12 @@
     background: image-url('bad-time.jpg') no-repeat 10% 70%;
   }
 
-  // Show warning for browsers that fail Modernizr test
+  // Show warning for browsers that fail any primary Modernizr test
+  .no-cssmask & .warning.active,
+  .no-cssfilters & .warning.active,
+  .no-cssanimations & .warning.active,
+  .no-csstransitions & .warning.active,
+  .no-csstransforms & .warning.active,
   .no-csstransforms3d & .warning.active {
     opacity: 1;
   }
