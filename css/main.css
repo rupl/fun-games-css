@@ -973,10 +973,10 @@ span.active {
   }
 }
 
-#s4 {
+#s-slinky {
   /* -- make sure to declare a default for every property that you want animated -- */
 }
-#s4 .slinky {
+#s-slinky .slinky {
   position: absolute;
   top: 20em;
   left: 14em;
@@ -1001,14 +1001,14 @@ span.active {
   -o-transition: all 1.25s ease-in-out;
   transition: all 1.25s ease-in-out;
 }
-#s4 .slinky.move {
+#s-slinky .slinky.move {
   -webkit-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
   -moz-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
   -ms-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
   -o-transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
   transform: rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em);
 }
-#s4 .slinky .segment {
+#s-slinky .slinky .segment {
   float: none;
   position: absolute;
   top: -0.275em;
@@ -1042,7 +1042,7 @@ span.active {
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-#s4 .slinky .segment .segment {
+#s-slinky .slinky .segment .segment {
   -webkit-transform: translateZ(-0.15em);
   -moz-transform: translateZ(-0.15em);
   -ms-transform: translateZ(-0.15em);
@@ -1052,26 +1052,26 @@ span.active {
   -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black;
   box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.03em black;
 }
-#s4 .slinky.half .segment .segment {
+#s-slinky .slinky.half .segment .segment {
   -webkit-transform: translateZ(-0.15em) rotateY(5.1deg);
   -moz-transform: translateZ(-0.15em) rotateY(5.1deg);
   -ms-transform: translateZ(-0.15em) rotateY(5.1deg);
   -o-transform: translateZ(-0.15em) rotateY(5.1deg);
   transform: translateZ(-0.15em) rotateY(5.1deg);
 }
-#s4 .slinky.half .segment .segment.last {
+#s-slinky .slinky.half .segment .segment.last {
   -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
 }
-#s4 .slinky.full .segment .segment {
+#s-slinky .slinky.full .segment .segment {
   -webkit-transform: translateZ(-0.15em) rotateY(10.3deg);
   -moz-transform: translateZ(-0.15em) rotateY(10.3deg);
   -ms-transform: translateZ(-0.15em) rotateY(10.3deg);
   -o-transform: translateZ(-0.15em) rotateY(10.3deg);
   transform: translateZ(-0.15em) rotateY(10.3deg);
 }
-#s4 .slinky.full .segment .segment.last {
+#s-slinky .slinky.full .segment .segment.last {
   -webkit-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
   -moz-box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
   box-shadow: 0 0 0.07em 0.07em black, inset 0 0 0.07em 0.07em black, 0 0 3em rgba(0, 0, 0, 0.3);
