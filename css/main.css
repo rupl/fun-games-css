@@ -488,7 +488,7 @@ table {
 }
 
 /* Global styles ----------------------------------------------------------- */
-.it, span, .cube .side, #s1 .instructions {
+.it, span, .cube .side, #s-title .instructions {
   display: inline-block;
 }
 
@@ -794,20 +794,20 @@ span.active {
 /*
  * Title slide
  */
-#s1 h1 {
+#s-title h1 {
   font-size: 2.5em;
   line-height: .9em;
   position: absolute;
   top: 1em;
   left: 2em;
 }
-#s1 h2 {
+#s-title h2 {
   font-size: 1.25em;
   position: absolute;
   bottom: 32%;
   right: 19%;
 }
-#s1 .warning {
+#s-title .warning {
   opacity: 0;
   width: 100%;
   height: 100%;
@@ -815,10 +815,10 @@ span.active {
   text-align: center;
   background: url('/img/bad-time.jpg?1362348532') no-repeat 10% 70%;
 }
-.no-cssmask #s1 .warning.active, .no-cssfilters #s1 .warning.active, .no-cssanimations #s1 .warning.active, .no-csstransitions #s1 .warning.active, .no-csstransforms #s1 .warning.active, .no-csstransforms3d #s1 .warning.active {
+.no-cssmask #s-title .warning.active, .no-cssfilters #s-title .warning.active, .no-cssanimations #s-title .warning.active, .no-csstransitions #s-title .warning.active, .no-csstransforms #s-title .warning.active, .no-csstransforms3d #s-title .warning.active {
   opacity: 1;
 }
-#s1 .instructions {
+#s-title .instructions {
   opacity: 1;
   -webkit-transform: translateY(-4em);
   -moz-transform: translateY(-4em);
@@ -831,13 +831,13 @@ span.active {
   -o-animation: "throbber" 2s linear 4;
   animation: "throbber" 2s linear 4;
 }
-.no-touch #s1 .instructions {
+.no-touch #s-title .instructions {
   display: block;
 }
-.touch #s1 .instructions {
+.touch #s-title .instructions {
   display: none;
 }
-#s1 .instructions.active {
+#s-title .instructions.active {
   opacity: 0;
   -webkit-animation: none;
   -moz-animation: none;
@@ -850,7 +850,7 @@ span.active {
   -o-transition: opacity 1s linear;
   transition: opacity 1s linear;
 }
-.js #s1 .instructions .silent {
+.js #s-title .instructions .silent {
   display: none;
 }
 

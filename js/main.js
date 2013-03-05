@@ -10,22 +10,16 @@
   var story = {
     'forward': [
 
-      // Slide 1
-      "scrollTo('#s1'); ",
+      // Title
+      "scrollTo('#s-title'); ",
 
-      // Slide 2
-      "scrollTo('#s2'); ",
-
-      // Slide 3
-      "scrollTo('#s3'); ",
-
-      // Slide 4
-      "scrollTo('#s4'); ",
-      "$('#s4 .slinky').toggleClass('hide'); ",
-      "$('#s4 .slinky').toggleClass('half'); ",
-      "$('#s4 p.slinky-desc').toggleClass('hide'); "+
-      "$('#s4 p.intro').toggleClass('dim'); ",
-      "$('#s4 .slinky').toggleClass('move half full'); ",
+      // Slinky
+      "scrollTo('#s-slinky'); ",
+      "$('#s-slinky .slinky').toggleClass('hide'); ",
+      "$('#s-slinky .slinky').toggleClass('half'); ",
+      "$('#s-slinky p.slinky-desc').toggleClass('hide'); "+
+      "$('#s-slinky p.intro').toggleClass('dim'); ",
+      "$('#s-slinky .slinky').toggleClass('move half full'); ",
 
       // the beginning
       "scrollTo('#die-undliche-gesichte'); "
@@ -33,25 +27,19 @@
     ],
     'reverse': [
 
-      // Slide 1
+      // Title
       "",
 
-      // Slide 2
-      "scrollTo('#s1'); ",
-
-      // Slide 3
-      "scrollTo('#s2'); ",
-
-      // Slide 4
-      "scrollTo('#s3'); ",
-      "$('#s4 .slinky').toggleClass('hide'); ",
-      "$('#s4 .slinky').toggleClass('half'); ",
-      "$('#s4 p.slinky-desc').toggleClass('hide'); "+
-      "$('#s4 p.intro').toggleClass('dim'); ",
-      "$('#s4 .slinky').toggleClass('move half full'); ",
+      // Slinky
+      "scrollTo('#s-title'); ",
+      "$('#s-slinky .slinky').toggleClass('hide'); ",
+      "$('#s-slinky .slinky').toggleClass('half'); ",
+      "$('#s-slinky p.slinky-desc').toggleClass('hide'); "+
+      "$('#s-slinky p.intro').toggleClass('dim'); ",
+      "$('#s-slinky .slinky').toggleClass('move half full'); ",
 
       // the beginning
-      "scrollTo('#s4'); "
+      "scrollTo('#s-slinky'); "
 
     ]
   };
