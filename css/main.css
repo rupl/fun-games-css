@@ -596,15 +596,15 @@ main article:last-child {
   -o-transform: translateX(-1em) translateY(1em);
   transform: translateX(-1em) translateY(1em);
 }
-.csstransforms3d .compat .csstransforms3d, .csstransforms .compat .csstransforms, .csstransitions .compat .csstransitions, .cssanimations .compat .cssanimations, .cssfilters .compat .cssfilters {
-  background: #9f9;
-  border: 1px solid #66cc66;
+.csstransforms3d .compat .csstransforms3d, .csstransforms .compat .csstransforms, .csstransitions .compat .csstransitions, .cssanimations .compat .cssanimations, .cssfilters .compat .cssfilters, .cssmask .compat .cssmask {
+  background: #9d9;
+  border: 1px solid #80aa80;
   padding: 2px;
   margin: 2px;
 }
-.no-csstransforms3d .compat .csstransforms3d, .no-csstransforms .compat .csstransforms, .no-csstransitions .compat .csstransitions, .no-cssanimations .compat .cssanimations, .no-cssfilters .compat .cssfilters {
-  background: #9c9;
-  border: 1px solid gray;
+.no-csstransforms3d .compat .csstransforms3d, .no-csstransforms .compat .csstransforms, .no-csstransitions .compat .csstransitions, .no-cssanimations .compat .cssanimations, .no-cssfilters .compat .cssfilters, .no-cssmask .compat .cssmask {
+  background: #d99;
+  border: 1px solid #aa8080;
   padding: 2px;
   margin: 2px;
 }

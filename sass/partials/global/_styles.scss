@@ -94,9 +94,10 @@ main {
   .csstransforms & .csstransforms,
   .csstransitions & .csstransitions,
   .cssanimations & .cssanimations,
-  .cssfilters & .cssfilters {
-    background: #9f9;
-    border: 1px solid darken(desaturate(#9f9, 50%), 20%);
+  .cssfilters & .cssfilters,
+  .cssmask & .cssmask {
+    background: #9d9;
+    border: 1px solid darken(desaturate(#9d9, 30%), 15%);
     padding: 2px;
     margin: 2px;
   }
@@ -105,9 +106,10 @@ main {
   .no-csstransforms & .csstransforms,
   .no-csstransitions & .csstransitions,
   .no-cssanimations & .cssanimations,
-  .no-cssfilters & .cssfilters {
-    background: #9c9;
-    border: 1px solid darken(desaturate(#9c9, 50%), 20%);
+  .no-cssfilters & .cssfilters,
+  .no-cssmask & .cssmask {
+    background: #d99;
+    border: 1px solid darken(desaturate(#d99, 30%), 15%);
     padding: 2px;
     margin: 2px;
   }
