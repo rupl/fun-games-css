@@ -54,7 +54,7 @@
       margin: .2em;
     }
     &.border {
-      border: .1em solid #000;
+      border: .1em solid #333;
     }
     &.bgcolor {
       background-color: #789;
@@ -93,13 +93,25 @@
       font-family: inherit;
     }
     &.rotate {
-      @include transform(rotateY(-180deg));
       @include backface-visibility(visible);
+      @include animation('css3-rotate' 4s linear infinite);
+    }
+    &.invert {
+      -webkit-filter: invert(1);
+         -moz-filter: invert(1);
+              filter: invert(1);
     }
     &.blur {
-      -webkit-filter: blur(.06em);
-         -moz-filter: blur(.06em);
-              filter: blur(.06em);
+      // we must add any previous filters too
+      -webkit-filter: invert(1) blur(.06em);
+         -moz-filter: invert(1) blur(.06em);
+              filter: invert(1) blur(.06em);
     }
+  }
+}
+
+@include keyframes('css3-rotate') {
+  100% {
+    @include transform(rotateY(360deg));
   }
 }

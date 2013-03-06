@@ -17,3 +17,38 @@
 .hide {
   opacity: 0 !important;
 }
+
+// Generate a tooltip arrow pointing up
+.arrow-box {
+  $arrow-fg: #eee;
+  $arrow-bg: #ccc;
+  $arrow-offset: 5.1em;
+  position: relative;
+  background: $arrow-bg;
+  border: .2em solid $arrow-fg;
+
+  &:after,
+  &:before {
+    bottom: 100%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+  }
+  &:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: $arrow-bg;
+    border-width: .6em;
+    left: 55%;
+    margin-left: 0 - $arrow-offset;
+  }
+  &:before {
+    border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: $arrow-fg;
+    border-width: .86em;
+    left: 55%;
+    margin-left: 0 - $arrow-offset - 0.255em;
+  }
+}

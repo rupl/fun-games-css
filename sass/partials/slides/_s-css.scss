@@ -1,0 +1,98 @@
+//
+// What is CSS3?
+//
+
+#s-css {
+  // transform defaults for slashes
+  @include transform-style(preserve-3d);
+  @include perspective(10em);
+
+  // we want .finished/.unfinished to be in the same spot as .list
+  p.list,
+  p.covering,
+  section {
+    position: absolute;
+    opacity: 0; // hide by default
+  }
+
+  // .list contains a link, so make sure it's on top
+  p.list {
+    z-index: 400;
+  }
+
+  p.fun {
+    opacity: 0;
+  }
+
+  ul.drafts {
+    &.smaller {
+      font-size: .5em;
+    }
+    &.even-smaller {
+      font-size: .3em;
+    }
+    &.columns {
+      font-size: .45em;
+      width: 180%;
+      @include column-count(3);
+      @include column-width(33%);
+
+      li {
+        margin: 0 0 .3em;
+        list-style-type: none;
+        @include transition(all .2s ease-in-out);
+        @include transform(translateX(0) translateZ(0));
+      }
+    }
+    &.highlight {
+      li:not(.used) {
+        opacity: .15;
+      }
+      li.used {
+        font-weight: 700;
+        @include transform(translateX(-10em) translateY(-8em) translateZ(10em));
+      }
+    }
+  }
+
+  // Little pop-up to point out CSS 2.1
+  section.everything {
+    @extend .arrow-box;
+    padding: 1em;
+    position: absolute;
+    bottom: 3em;
+    right: 4em;
+
+    p {
+      margin: 0;
+    }
+    p.css3-all {
+      &.bigger {
+        font-size: 1.3em;
+      }
+    }
+  }
+
+  // style the slashes that drop down
+  .slash {
+    @extend .it;
+    background: #f00;
+    height: .1em;
+    width: 1em;
+    position: relative;
+    @include transform-origin(0%, 100%);
+    @include transform(rotateZ(-70deg) translateX(-.1em) translateZ(11em));
+
+    &.drop {
+      @include transform(rotateZ(-70deg) translateX(-.1em) translateZ(0));
+    }
+  }
+
+  // individual positions since punctuation got in the way
+  h3 .slash {
+    left: -.65em;
+  }
+  .everything .slash {
+    left: -.37em;
+  }
+}
