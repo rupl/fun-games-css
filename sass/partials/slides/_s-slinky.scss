@@ -14,10 +14,6 @@
     @include transform-style(preserve-3d);
     @include transition(all 1.25s ease-in-out);
 
-    &.move {
-      @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em));
-    }
-
     .segment {
       float: none;
       position: absolute;
@@ -62,22 +58,68 @@
       @include box-shadow(
         0 0 .07em .07em #000,
         inset 0 0 .07em .07em #000,
-        0 0 3em rgba(#000, 0.3)
+        0 0 3em rgba(#000, 0.5)
       );
     }
   }
 
   // Full-circle slinky
-  .slinky.full .segment .segment {
-    @include transform(translateZ(-.15em) rotateY(10.3deg));
-
-    &.last {
-      // This puts a box-shadow on the last element when it is touching the "floor"
-      @include box-shadow(
-        0 0 .07em .07em #000,
-        inset 0 0 .07em .07em #000,
-        0 0 3em rgba(#000, 0.3)
-      );
+  .slinky.full {
+    // kill shadow on base segment
+    > .segment {
+      @include box-shadow(none);
     }
+
+    .segment .segment {
+      @include transform(translateZ(-.15em) rotateY(10.3deg));
+    }
+  }
+
+  // Move the slinky over
+  .slinky.move {
+    @include transform(rotateX(-90deg) rotateY(0deg) rotateZ(154deg) translateX(25em) translateY(-15em) translateZ(-5em));
+  }
+
+
+  // Stretched-out slinky
+  .slinky.stretched {
+    // slow this effect down
+    @include transition(all 2s ease-in-out);
+
+    // position slinky using base segment
+    > .segment {
+      @include transform(rotateY(120deg) rotateX(10deg) translateX(-3em));
+      @include box-shadow(none);
+    }
+    .segment .segment {
+      @include transform(translateZ(-1.16em) rotateY(-2deg));
+    }
+  }
+
+  // Oscillating slinky
+  // The two animations work in tandem with the other
+  .slinky.oscillate {
+    // Slinky base
+    > .segment {
+      @include animation('slinky-base-osc' 1s ease-in-out infinite alternate);
+      @include transform(rotateY(120deg) rotateX(10deg) translateX(-3em));
+      @include box-shadow(none);
+    }
+    .segment .segment {
+      @include animation('slinky-segment-osc' 1s ease-in-out infinite alternate);
+      @include transform(translateZ(-1.16em) rotateY(-2deg));
+    }
+  }
+}
+
+@include keyframes('slinky-base-osc') {
+  to {
+    @include transform(rotateY(132deg) rotateX(10deg) translateX(-3.2em));
+  }
+}
+
+@include keyframes('slinky-segment-osc') {
+  to {
+    @include transform(translateZ(-1.36em) rotateY(-3deg));
   }
 }

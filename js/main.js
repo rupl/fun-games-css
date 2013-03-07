@@ -78,6 +78,11 @@
       "$('#s-slinky p.slinky-desc').toggleClass('hide'); "+
       "$('#s-slinky p.intro').toggleClass('dim'); ",
       "$('#s-slinky .slinky').toggleClass('move half full'); ",
+      "$('#s-slinky .slinky').toggleClass('full stretched'); ",
+      "$('#s-slinky .slinky').toggleClass('oscillate'); ",
+
+      // Learn
+      "scrollTo('#s-learn'); ",
 
       // the beginning
       "scrollTo('#die-undliche-gesichte'); "
@@ -153,9 +158,14 @@
       "$('#s-slinky p.slinky-desc').toggleClass('hide'); "+
       "$('#s-slinky p.intro').toggleClass('dim'); ",
       "$('#s-slinky .slinky').toggleClass('move half full'); ",
+      "$('#s-slinky .slinky').toggleClass('full stretched'); ",
+      "$('#s-slinky .slinky').toggleClass('oscillate'); ",
+
+      // Learn
+      "scrollTo('#s-slinky'); ",
 
       // the beginning
-      "scrollTo('#s-slinky'); "
+      "scrollTo('#s-learn'); "
 
     ]
   };
