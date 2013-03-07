@@ -1,0 +1,30 @@
+//
+// Perspective
+//
+
+$tilt: 84deg;
+
+#s-perspective {
+  @include perspective(80em);
+
+  .board {
+    width: 20em;
+    height: 40em;
+    text-align: center;
+    opacity: .25;
+    position: absolute;
+    left: 20%;
+    @include transform-origin(50%, 0%);
+    @include transform(rotateX(0deg));
+    @include transition(all 4s ease-in-out);
+
+    .perspective {
+      @include transform-origin(50%, 50%);
+      @include transform(scale(3, 50) translateY(.1em));
+    }
+  }
+  .board.tilt {
+    opacity: 1;
+    @include transform(translateZ(-10em) rotateX($tilt));
+  }
+}

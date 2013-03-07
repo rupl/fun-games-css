@@ -1417,6 +1417,57 @@ span.active {
   }
 }
 
+#s-perspective {
+  -webkit-perspective: 80em;
+  -moz-perspective: 80em;
+  -ms-perspective: 80em;
+  -o-perspective: 80em;
+  perspective: 80em;
+}
+#s-perspective .board {
+  width: 20em;
+  height: 40em;
+  text-align: center;
+  opacity: .25;
+  position: absolute;
+  left: 20%;
+  -webkit-transform-origin: 50% 0%;
+  -moz-transform-origin: 50% 0%;
+  -ms-transform-origin: 50% 0%;
+  -o-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+  -webkit-transform: rotateX(0deg);
+  -moz-transform: rotateX(0deg);
+  -ms-transform: rotateX(0deg);
+  -o-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  -webkit-transition: all 4s ease-in-out;
+  -moz-transition: all 4s ease-in-out;
+  -ms-transition: all 4s ease-in-out;
+  -o-transition: all 4s ease-in-out;
+  transition: all 4s ease-in-out;
+}
+#s-perspective .board .perspective {
+  -webkit-transform-origin: 50% 50%;
+  -moz-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  -o-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transform: scale(3, 50) translateY(0.1em);
+  -moz-transform: scale(3, 50) translateY(0.1em);
+  -ms-transform: scale(3, 50) translateY(0.1em);
+  -o-transform: scale(3, 50) translateY(0.1em);
+  transform: scale(3, 50) translateY(0.1em);
+}
+#s-perspective .board.tilt {
+  opacity: 1;
+  -webkit-transform: translateZ(-10em) rotateX(84deg);
+  -moz-transform: translateZ(-10em) rotateX(84deg);
+  -ms-transform: translateZ(-10em) rotateX(84deg);
+  -o-transform: translateZ(-10em) rotateX(84deg);
+  transform: translateZ(-10em) rotateX(84deg);
+}
+
 /*
  * Contact me
  */

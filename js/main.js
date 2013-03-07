@@ -81,6 +81,10 @@
       "$('#s-slinky .slinky').toggleClass('full stretched'); ",
       "$('#s-slinky .slinky').toggleClass('oscillate'); ",
 
+      // Perspective
+      "scrollTo('#s-perspective'); ",
+      "$('#s-perspective .board').toggleClass('tilt'); ",
+
       // Learn
       "scrollTo('#s-learn'); ",
 
@@ -161,8 +165,12 @@
       "$('#s-slinky .slinky').toggleClass('full stretched'); ",
       "$('#s-slinky .slinky').toggleClass('oscillate'); ",
 
-      // Learn
+      // Perspective
       "scrollTo('#s-slinky'); ",
+      "$('#s-perspective .board').toggleClass('tilt'); ",
+
+      // Learn
+      "scrollTo('#s-perspective'); ",
 
       // the beginning
       "scrollTo('#s-learn'); "
