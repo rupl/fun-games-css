@@ -11,6 +11,7 @@
     'forward': [
 
       // Title
+      "",
       "scrollTo('#s-title'); ",
 
       // Intro
@@ -63,6 +64,13 @@
       "$('#s-css .fun').toggleClass('show'); "+
       "$('#s-css .covering').toggleClass('show'); ",
 
+      // Fun stuff
+      "scrollTo('#s-funstuff'); ",
+      "$('#s-funstuff .compat').toggleClass('focus'); ",
+      "$('#s-funstuff .red').toggleClass('show'); ",
+      "$('#s-funstuff .contact').toggleClass('show'); "+
+      "$('#s-funstuff .devrels').toggleClass('show'); ",
+
       // Slinky
       "scrollTo('#s-slinky'); ",
       "$('#s-slinky .slinky').toggleClass('hide'); ",
@@ -78,6 +86,7 @@
     'reverse': [
 
       // Title
+      "",
       "",
 
       // Intro
@@ -130,8 +139,15 @@
       "$('#s-css .fun').toggleClass('show'); "+
       "$('#s-css .covering').toggleClass('show'); ",
 
-      // Slinky
+      // Fun stuff
       "scrollTo('#s-css'); ",
+      "$('#s-funstuff .compat').toggleClass('focus'); ",
+      "$('#s-funstuff .red').toggleClass('show'); ",
+      "$('#s-funstuff .contact').toggleClass('show'); "+
+      "$('#s-funstuff .devrels').toggleClass('show'); ",
+
+      // Slinky
+      "scrollTo('#s-funstuff'); ",
       "$('#s-slinky .slinky').toggleClass('hide'); ",
       "$('#s-slinky .slinky').toggleClass('half'); ",
       "$('#s-slinky p.slinky-desc').toggleClass('hide'); "+

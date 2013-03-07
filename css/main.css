@@ -606,7 +606,6 @@ main article:last-child {
   overflow: hidden;
   padding: .4em;
   font-size: .4em;
-  -webkit-font-smoothing: antialiased;
   border: #ddd;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffffff), color-stop(100%, #eeeeee));
   background: -webkit-linear-gradient(#ffffff, #eeeeee);
@@ -642,7 +641,7 @@ main article:last-child {
   padding: 2px;
   margin: 2px;
 }
-.compat:hover, .compat:focus, .compat.touching {
+.compat:hover, .compat:focus, .compat.focus {
   max-height: 10em;
 }
 
@@ -1183,6 +1182,16 @@ span.active {
 }
 #s-css .everything .slash {
   left: -0.37em;
+}
+
+#s-funstuff p.red,
+#s-funstuff p.contact,
+#s-funstuff ul.devrels {
+  opacity: 0;
+}
+#s-funstuff p.red .highlight {
+  background: #d99;
+  border: 1px solid #aa8080;
 }
 
 #s-slinky {

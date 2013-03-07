@@ -1,0 +1,16 @@
+//
+// Explaining compatability charts
+//
+
+#s-funstuff {
+  p.red,
+  p.contact,
+  ul.devrels {
+    opacity: 0;
+  }
+
+  p.red .highlight {
+    background: #d99;
+    border: 1px solid darken(desaturate(#d99, 30%), 15%);
+  }
+}

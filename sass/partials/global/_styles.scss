@@ -77,7 +77,6 @@ main {
   overflow: hidden;
   padding: .4em;
   font-size: .4em;
-  -webkit-font-smoothing: antialiased;
   border: #ddd;
   @include background(linear-gradient(#fff, #eee));
   @include box-shadow(0 .1em .35em rgba(#000,0.45));
@@ -121,7 +120,7 @@ main {
   // Show when user is interested
   &:hover,
   &:focus,
-  &.touching {
+  &.focus {
     max-height: 10em; // no auto, set to high number
   }
 }
