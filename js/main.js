@@ -35,7 +35,7 @@
       "$('#s-intro .word').toggleClass('pos-x'); ",
       "$('#s-intro .word').toggleClass('pos-x'); ",
       "$('#s-intro p.intro').text('This is about where IE6 gave up.'); ",
-      "$('#s-intro p.intro').text('After CSS 2.1, CSS was broken up into modules, known collectively as...'); "+
+      "$('#s-intro p.intro').text('CSS specs are now created in small modules, known collectively as...'); "+
       "$('#s-intro .word').text('CSS3'); ",
       "$('#s-intro .word').toggleClass('borderradius'); ",
       "$('#s-intro .word').toggleClass('boxshadow'); ",
@@ -120,7 +120,7 @@
       "$('#s-intro .word').toggleClass('pos-x'); ",
       "$('#s-intro p.intro').text('CSS used to be defined in huge chunks (CSS 1, CSS 2, CSS 2.1)'); ",
       "$('#s-intro p.intro').text('This is about where IE6 gave up.'); "+
-      "$('#s-intro .word').text('CSS3'); ",
+      "$('#s-intro .word').text('CSS'); ",
       "$('#s-intro .word').toggleClass('borderradius'); ",
       "$('#s-intro .word').toggleClass('boxshadow'); ",
       "$('#s-intro .word').toggleClass('textshadow'); ",
