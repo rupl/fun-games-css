@@ -71,6 +71,20 @@
       "$('#s-funstuff .contact').toggleClass('show'); "+
       "$('#s-funstuff .devrels').toggleClass('show'); ",
 
+      // Folding paper
+      "scrollTo('#s-paper'); ",
+      "$('#s-paper .folds').toggleClass('folded'); ",
+      "$('#s-paper .paper').toggleClass('folded'); ",
+      "$('#s-paper .like').toggleClass('folded'); ",
+      "$('#s-paper .elements').toggleClass('folded'); ",
+      "$('#s-paper .cube').toggleClass('hide'); ",
+      "$('#s-paper .cube').toggleClass('labels'); ",
+      "$('#s-paper .top').toggleClass('flat'); ",
+      "$('#s-paper .left').toggleClass('flat'); ",
+      "$('#s-paper .right').toggleClass('flat'); ",
+      "$('#s-paper .bottom').toggleClass('flat'); ",
+      "$('#s-paper .back').toggleClass('flat'); ",
+
       // Slinky
       "scrollTo('#s-slinky'); ",
       "$('#s-slinky .slinky').toggleClass('hide'); ",
@@ -155,8 +169,22 @@
       "$('#s-funstuff .contact').toggleClass('show'); "+
       "$('#s-funstuff .devrels').toggleClass('show'); ",
 
-      // Slinky
+      // Paper
       "scrollTo('#s-funstuff'); ",
+      "$('#s-paper .folds').toggleClass('folded'); ",
+      "$('#s-paper .paper').toggleClass('folded'); ",
+      "$('#s-paper .like').toggleClass('folded'); ",
+      "$('#s-paper .elements').toggleClass('folded'); ",
+      "$('#s-paper .cube').toggleClass('hide'); ",
+      "$('#s-paper .cube').toggleClass('labels'); ",
+      "$('#s-paper .top').toggleClass('flat'); ",
+      "$('#s-paper .left').toggleClass('flat'); ",
+      "$('#s-paper .right').toggleClass('flat'); ",
+      "$('#s-paper .bottom').toggleClass('flat'); ",
+      "$('#s-paper .back').toggleClass('flat'); ",
+
+      // Slinky
+      "scrollTo('#s-paper'); ",
       "$('#s-slinky .slinky').toggleClass('hide'); ",
       "$('#s-slinky .slinky').toggleClass('half'); ",
       "$('#s-slinky p.slinky-desc').toggleClass('hide'); "+
