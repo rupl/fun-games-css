@@ -619,6 +619,7 @@ main article:last-child {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 500;
   -webkit-transform: translateX(-1em) translateY(1em);
   -moz-transform: translateX(-1em) translateY(1em);
   -ms-transform: translateX(-1em) translateY(1em);

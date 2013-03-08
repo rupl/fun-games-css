@@ -83,6 +83,7 @@ main {
   position: absolute;
   top: 0;
   right: 0;
+  z-index: 500;
   @include transform(translateX(-1em) translateY(1em));
 
   // "This demo requires"
