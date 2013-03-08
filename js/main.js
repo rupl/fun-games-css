@@ -106,7 +106,7 @@
       "$('#s-intro .word').toggleClass('bold'); ",
       "$('#s-intro .word').toggleClass('italic'); ",
       "$('#s-intro .word').toggleClass('font'); ",
-      "$('#s-intro p.intro').text('CSS used to be defined in huge chunks (CSS 1, CSS 2, CSS 2.1)'); ",
+      "$('#s-intro p.intro').text('Graphics on the web had pretty humble beginnings.'); ",
       "$('#s-intro .word').toggleClass('border'); ",
       "$('#s-intro .word').toggleClass('padding'); ",
       "$('#s-intro .word').toggleClass('margin'); ",
@@ -118,8 +118,8 @@
       "$('#s-intro .word').toggleClass('pos-y'); ",
       "$('#s-intro .word').toggleClass('pos-x'); ",
       "$('#s-intro .word').toggleClass('pos-x'); ",
-      "$('#s-intro p.intro').text('This is about where IE6 gave up.'); ",
-      "$('#s-intro p.intro').text('After CSS 2.1, CSS was broken up into modules, known collectively as...'); "+
+      "$('#s-intro p.intro').text('CSS used to be defined in huge chunks (CSS 1, CSS 2, CSS 2.1)'); ",
+      "$('#s-intro p.intro').text('This is about where IE6 gave up.'); "+
       "$('#s-intro .word').text('CSS3'); ",
       "$('#s-intro .word').toggleClass('borderradius'); ",
       "$('#s-intro .word').toggleClass('boxshadow'); ",

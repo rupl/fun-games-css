@@ -33,12 +33,12 @@
     }
     &.columns {
       font-size: .45em;
-      width: 180%;
+      width: 150%;
       @include column-count(3);
       @include column-width(33%);
 
       li {
-        margin: 0 0 .3em;
+        margin: 0 0 .4em;
         list-style-type: none;
         @include transition(all .2s ease-in-out);
         @include transform(translateX(0) translateZ(0));
@@ -50,7 +50,7 @@
       }
       li.used {
         font-weight: 700;
-        @include transform(translateX(-10em) translateY(-8em) translateZ(10em));
+        @include transform(translateX(-6em) translateY(-7.5em) translateZ(10em));
       }
     }
   }
@@ -61,7 +61,7 @@
     padding: 1em;
     position: absolute;
     bottom: 3em;
-    right: 4em;
+    right: .6em;
 
     p {
       margin: 0;

@@ -5,11 +5,11 @@
 
   // title
   h1 {
-    font-size: 6em / $slide-font-size;
+    text-align: center;
+    font-size: 5em / $slide-font-size;
     line-height: .9em;
     position: absolute;
     top: 1em;
-    left: 2em;
   }
 
   // subtitle
