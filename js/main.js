@@ -98,9 +98,13 @@
       // Perspective
       "scrollTo('#s-perspective'); ",
       "$('#s-perspective').toggleClass('tilt'); ",
-      "$('#s-perspective').toggleClass('stars'); ",
+      "$('#s-perspective').toggleClass('space'); ",
       "$('#s-perspective .board').toggleClass('move'); "+
       "$('#s-perspective .intro').toggleClass('hide'); ",
+      "$('#s-perspective').toggleClass('solar'); "+
+      "$('#s-perspective .solar-desc').toggleClass('hide'); "+
+      "$('#s-perspective .solar-system').toggleClass('hide'); "+
+      "$('#s-perspective .compat').append(' <span class=\"cssanimations\">Animations</span>'); ",
 
       // Learn
       "scrollTo('#s-learn'); ",
@@ -199,9 +203,13 @@
       // Perspective
       "scrollTo('#s-slinky'); ",
       "$('#s-perspective').toggleClass('tilt'); ",
-      "$('#s-perspective').toggleClass('stars'); ",
+      "$('#s-perspective').toggleClass('space'); ",
       "$('#s-perspective .board').toggleClass('move'); "+
       "$('#s-perspective .intro').toggleClass('hide'); ",
+      "$('#s-perspective').toggleClass('solar'); "+
+      "$('#s-perspective .solar-desc').toggleClass('hide'); "+
+      "$('#s-perspective .solar-system').toggleClass('hide'); "+
+      "$('#s-perspective .compat .cssanimations').remove(); ",
 
       // Learn
       "scrollTo('#s-perspective'); ",

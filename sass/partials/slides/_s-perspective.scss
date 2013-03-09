@@ -5,8 +5,12 @@
 $tilt: 75deg;
 
 #s-perspective {
-  @include perspective(48em);
+  // License: http://creativecommons.org/licenses/by-sa/3.0/deed.en
+  // Source:  http://en.wikipedia.org/wiki/File:Vermont_night_sky_stargazing.JPG
+  //
+  // Add this image to the slide initially but let .space display it
   background: #fff image-url('space-bg.jpg') no-repeat left -960px;
+  @include perspective(48em);
 
   p {
     opacity: 0;
@@ -46,7 +50,7 @@ $tilt: 75deg;
     }
   }
 
-  &.stars {
+  &.space {
     @include transition(all 2s ease-in-out);
     background: #000 image-url('space-bg.jpg') no-repeat left top;
 
@@ -67,5 +71,104 @@ $tilt: 75deg;
         @include transform(translateZ(-10em) rotateX($tilt) translateY(-240em));
       }
     }
+  }
+
+  // Style solar system but hide it by default.
+  // This means it doesn't have to be freshly drawn when it is revealed.
+  .solar-system {
+    position: absolute;
+    opacity: 0; // hide by default
+    @include transition(opacity 1s ease-in-out);
+    @include animation('move-sun' 120s linear infinite);
+    @include transform(translateX(12em) translateY(6em)); // this acts as a fallback for .no-cssanimation
+
+    .sun {
+      position: absolute;
+      width: 2em;
+      height: 2em;
+      left: -1em;
+      top: -1em;
+      z-index: -5;
+      @include border-radius(1em);
+      background: #fd0;
+      @include background-image(radial-gradient(1em 1em, #ff0 0, #ff7200 1.3em));
+      @include box-shadow(0 0 .6em .3em rgba(#f90, .5), inset 0 0 .5em #fa0);
+      @include transform(rotateZ(0deg));
+      @include animation('rotate-sun' 12s linear infinite);
+      @include transform(rotateZ(0deg)); // this acts as a fallback for .no-cssanimation
+
+      .earth {
+        position: absolute;
+
+        width: .8em;
+        height: .8em;
+        left: .6em;
+        top: .6em;
+        z-index: -3;
+        @include border-radius(.5em);
+        @include background-image(radial-gradient(.6em .5em, #00f 0, #1e90ff .6em));
+        @include animation('rotate-earth' 3s linear infinite);
+        @include transform(translateX(4em) rotateZ(0deg)); // this acts as a fallback for .no-cssanimation
+
+        .moon {
+          position: absolute;
+
+          width: .3em;
+          height: .3em;
+          left: .25em;
+          top: .25em;
+          z-index: -1;
+          @include border-radius(.3em);
+          @include background-image(radial-gradient(.26em .3em, #ccc 0, #777 10px));
+          @include animation('rotate-moon' 4s linear infinite);
+          @include transform(translateX(1em) rotateZ(0deg)); // this acts as a fallback for .no-cssanimation
+        }
+      }
+    }
+  }
+
+  &.solar {
+    .solar-desc {
+      color: #fff;
+    }
+    .solar-system {
+      opacity: 1;
+    }
+  }
+}
+
+@include keyframes('move-sun') {
+  0% {
+    @include transform(translateX(32em) translateY(7em));
+  }
+  100% {
+    @include transform(translateX(-3em) translateY(5.5em));
+  }
+}
+
+@include keyframes('rotate-sun') {
+  0% {
+    @include transform(rotateZ(0deg));
+  }
+  100% {
+    @include transform(rotateZ(360deg));
+  }
+}
+
+@include keyframes('rotate-earth') {
+  0% {
+    @include transform(translateX(4em) rotateZ(0deg));
+  }
+  100% {
+    @include transform(translateX(4em) rotateZ(360deg));
+  }
+}
+
+@include keyframes('rotate-moon') {
+  0% {
+    @include transform(translateX(1em) rotateZ(0deg));
+  }
+  100% {
+    @include transform(translateX(1em) rotateZ(360deg));
   }
 }
