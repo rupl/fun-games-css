@@ -44,8 +44,10 @@
   .instructions {
     @extend .it;
     opacity: 1;
-    @include transform(translateY(-4em));
-    @include animation('throbber' 2s linear 4);
+    position: relative;
+    top: -4em;
+    @include transform-origin(25%, 50%);
+    @include animation('throbber' 2s ease-in-out 4);
 
     // These two rules word the instructions for touch/no-touch users. hax
     .no-touch & {
@@ -72,5 +74,6 @@
 @include keyframes('throbber') {
   50% {
     opacity: .5;
+    @include transform(scale(.95));
   }
 }

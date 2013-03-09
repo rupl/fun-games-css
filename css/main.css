@@ -854,16 +854,18 @@ span.active {
 }
 #s-title .instructions {
   opacity: 1;
-  -webkit-transform: translateY(-4em);
-  -moz-transform: translateY(-4em);
-  -ms-transform: translateY(-4em);
-  -o-transform: translateY(-4em);
-  transform: translateY(-4em);
-  -webkit-animation: "throbber" 2s linear 4;
-  -moz-animation: "throbber" 2s linear 4;
-  -ms-animation: "throbber" 2s linear 4;
-  -o-animation: "throbber" 2s linear 4;
-  animation: "throbber" 2s linear 4;
+  position: relative;
+  top: -4em;
+  -webkit-transform-origin: 25% 50%;
+  -moz-transform-origin: 25% 50%;
+  -ms-transform-origin: 25% 50%;
+  -o-transform-origin: 25% 50%;
+  transform-origin: 25% 50%;
+  -webkit-animation: "throbber" 2s ease-in-out 4;
+  -moz-animation: "throbber" 2s ease-in-out 4;
+  -ms-animation: "throbber" 2s ease-in-out 4;
+  -o-animation: "throbber" 2s ease-in-out 4;
+  animation: "throbber" 2s ease-in-out 4;
 }
 .no-touch #s-title .instructions {
   display: block;
@@ -891,30 +893,39 @@ span.active {
 @-moz-keyframes throbber {
   50% {
     opacity: .5;
+    -moz-transform: scale(0.95);
+    transform: scale(0.95);
   }
 }
 
 @-webkit-keyframes throbber {
   50% {
     opacity: .5;
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
   }
 }
 
 @-o-keyframes throbber {
   50% {
     opacity: .5;
+    -o-transform: scale(0.95);
+    transform: scale(0.95);
   }
 }
 
 @-ms-keyframes throbber {
   50% {
     opacity: .5;
+    -ms-transform: scale(0.95);
+    transform: scale(0.95);
   }
 }
 
 @keyframes throbber {
   50% {
     opacity: .5;
+    transform: scale(0.95);
   }
 }
 
