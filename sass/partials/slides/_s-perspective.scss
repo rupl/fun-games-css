@@ -108,9 +108,9 @@ $tilt: 75deg;
         @include border-radius(.5em);
         @include background-image(
           // clouds
-          radial-gradient(.15em .1em, rgba(#fff, .4) .08em, rgba(#00a, 0) .2em),
-          radial-gradient(.3em .8em, rgba(#fff, .4) .08em, rgba(#00a, 0) .3em),
-          radial-gradient(.2em .6em, rgba(#fff, .4) .1em, rgba(#00a, 0) .3em),
+          radial-gradient(.15em .1em, rgba(#fff, .3) .08em, rgba(#00a, 0) .2em),
+          radial-gradient(.3em .8em, rgba(#fff, .2) .08em, rgba(#00a, 0) .3em),
+          radial-gradient(.2em .6em, rgba(#fff, .3) .1em, rgba(#00a, 0) .3em),
           radial-gradient(.7em .5em, rgba(#fff, .5) .1em, rgba(#00a, 0) .35em),
           // land
           radial-gradient(.3em .2em, #161 .10em, rgba(#043, 0) .16em),
