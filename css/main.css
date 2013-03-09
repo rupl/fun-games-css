@@ -1688,14 +1688,21 @@ span.active {
 }
 
 #s-perspective {
-  -webkit-perspective: 80em;
-  -moz-perspective: 80em;
-  -ms-perspective: 80em;
-  -o-perspective: 80em;
-  perspective: 80em;
+  -webkit-perspective: 48em;
+  -moz-perspective: 48em;
+  -ms-perspective: 48em;
+  -o-perspective: 48em;
+  perspective: 48em;
+  background: white url('/img/space-bg.jpg?1362348532') no-repeat left -960px;
+}
+#s-perspective p {
+  opacity: 0;
+}
+#s-perspective p.intro {
+  opacity: 1;
 }
 #s-perspective .board {
-  width: 20em;
+  width: 18em;
   height: 40em;
   text-align: center;
   opacity: .25;
@@ -1728,14 +1735,49 @@ span.active {
   -ms-transform: scale(3, 50) translateY(0.1em);
   -o-transform: scale(3, 50) translateY(0.1em);
   transform: scale(3, 50) translateY(0.1em);
+  margin-top: 4em;
+  margin-bottom: 24em;
 }
-#s-perspective .board.tilt {
+#s-perspective.tilt p:not(.intro) {
+  text-align: justify;
+}
+#s-perspective.tilt .board {
   opacity: 1;
-  -webkit-transform: translateZ(-10em) rotateX(80deg);
-  -moz-transform: translateZ(-10em) rotateX(80deg);
-  -ms-transform: translateZ(-10em) rotateX(80deg);
-  -o-transform: translateZ(-10em) rotateX(80deg);
-  transform: translateZ(-10em) rotateX(80deg);
+  -webkit-transform: translateZ(-14em) rotateX(75deg);
+  -moz-transform: translateZ(-14em) rotateX(75deg);
+  -ms-transform: translateZ(-14em) rotateX(75deg);
+  -o-transform: translateZ(-14em) rotateX(75deg);
+  transform: translateZ(-14em) rotateX(75deg);
+}
+#s-perspective.stars {
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -ms-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  background: black url('/img/space-bg.jpg?1362348532') no-repeat left top;
+}
+#s-perspective.stars p.intro {
+  color: #69f;
+  text-shadow: 0 0 .3em #000;
+}
+#s-perspective.stars p:not(.intro) {
+  opacity: 1;
+}
+#s-perspective.stars .board {
+  color: #ff0;
+}
+#s-perspective.stars .board.move {
+  -webkit-transition: all 10s ease-in-out;
+  -moz-transition: all 10s ease-in-out;
+  -ms-transition: all 10s ease-in-out;
+  -o-transition: all 10s ease-in-out;
+  transition: all 10s ease-in-out;
+  -webkit-transform: translateZ(-10em) rotateX(75deg) translateY(-240em);
+  -moz-transform: translateZ(-10em) rotateX(75deg) translateY(-240em);
+  -ms-transform: translateZ(-10em) rotateX(75deg) translateY(-240em);
+  -o-transform: translateZ(-10em) rotateX(75deg) translateY(-240em);
+  transform: translateZ(-10em) rotateX(75deg) translateY(-240em);
 }
 
 /*

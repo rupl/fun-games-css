@@ -97,7 +97,10 @@
 
       // Perspective
       "scrollTo('#s-perspective'); ",
-      "$('#s-perspective .board').toggleClass('tilt'); ",
+      "$('#s-perspective').toggleClass('tilt'); ",
+      "$('#s-perspective').toggleClass('stars'); ",
+      "$('#s-perspective .board').toggleClass('move'); "+
+      "$('#s-perspective .intro').toggleClass('hide'); ",
 
       // Learn
       "scrollTo('#s-learn'); ",
@@ -195,7 +198,10 @@
 
       // Perspective
       "scrollTo('#s-slinky'); ",
-      "$('#s-perspective .board').toggleClass('tilt'); ",
+      "$('#s-perspective').toggleClass('tilt'); ",
+      "$('#s-perspective').toggleClass('stars'); ",
+      "$('#s-perspective .board').toggleClass('move'); "+
+      "$('#s-perspective .intro').toggleClass('hide'); ",
 
       // Learn
       "scrollTo('#s-perspective'); ",

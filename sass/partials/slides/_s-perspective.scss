@@ -2,13 +2,21 @@
 // Perspective
 //
 
-$tilt: 80deg;
+$tilt: 75deg;
 
 #s-perspective {
-  @include perspective(80em);
+  @include perspective(48em);
+  background: #fff image-url('space-bg.jpg') no-repeat left -960px;
+
+  p {
+    opacity: 0;
+  }
+  p.intro {
+    opacity: 1;
+  }
 
   .board {
-    width: 20em;
+    width: 18em;
     height: 40em;
     text-align: center;
     opacity: .25;
@@ -21,10 +29,43 @@ $tilt: 80deg;
     .perspective {
       @include transform-origin(50%, 50%);
       @include transform(scale(3, 50) translateY(.1em));
+      margin-top: 4em;
+      margin-bottom: 24em;
     }
   }
-  .board.tilt {
-    opacity: 1;
-    @include transform(translateZ(-10em) rotateX($tilt));
+
+  // Tilt and prepare for scrolling
+  &.tilt {
+    p:not(.intro) {
+      text-align: justify;
+    }
+
+    .board {
+      opacity: 1;
+      @include transform(translateZ(-14em) rotateX($tilt));
+    }
+  }
+
+  &.stars {
+    @include transition(all 2s ease-in-out);
+    background: #000 image-url('space-bg.jpg') no-repeat left top;
+
+    p.intro {
+      color: #69f;
+      text-shadow: 0 0 .3em #000;
+    }
+    p:not(.intro) {
+      opacity: 1;
+    }
+
+    .board {
+      color: #ff0;
+
+      // scroll text
+      &.move {
+        @include transition(all 10s ease-in-out);
+        @include transform(translateZ(-10em) rotateX($tilt) translateY(-240em));
+      }
+    }
   }
 }
