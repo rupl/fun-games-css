@@ -106,6 +106,13 @@
       "$('#s-perspective .solar-system').toggleClass('hide'); "+
       "$('#s-perspective .compat').append(' <span class=\"cssanimations\">Animations</span>'); ",
 
+      // Animation
+      "scrollTo('#s-animation'); "+
+      "$('#s-animation').toggleClass('wiggle'); ",
+      "$('#s-animation').toggleClass('wiggle eyeball'); ",
+      "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
+      "$('#s-animation .organism').toggleClass('hide'); "+
+
       // Learn
       "scrollTo('#s-learn'); ",
 
@@ -211,8 +218,15 @@
       "$('#s-perspective .solar-system').toggleClass('hide'); "+
       "$('#s-perspective .compat .cssanimations').remove(); ",
 
+      // Animation
+      "scrollTo('#s-perspective'); "+
+      "$('#s-animation').toggleClass('wiggle'); ",
+      "$('#s-animation').toggleClass('wiggle eyeball'); ",
+      "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
+      "$('#s-animation .organism').toggleClass('hide'); "+
+
       // Learn
-      "scrollTo('#s-perspective'); ",
+      "scrollTo('#s-animation'); ",
 
       // the beginning
       "scrollTo('#s-learn'); "
