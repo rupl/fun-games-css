@@ -106,7 +106,18 @@ $tilt: 75deg;
         top: .6em;
         z-index: -3;
         @include border-radius(.5em);
-        @include background-image(radial-gradient(.6em .5em, #00f 0, #1e90ff .6em));
+        @include background-image(
+          // clouds
+          radial-gradient(.15em .1em, rgba(#fff, .4) .08em, rgba(#00a, 0) .2em),
+          radial-gradient(.3em .8em, rgba(#fff, .4) .08em, rgba(#00a, 0) .3em),
+          radial-gradient(.2em .6em, rgba(#fff, .4) .1em, rgba(#00a, 0) .3em),
+          radial-gradient(.7em .5em, rgba(#fff, .5) .1em, rgba(#00a, 0) .35em),
+          // land
+          radial-gradient(.3em .2em, #161 .10em, rgba(#043, 0) .16em),
+          radial-gradient(.6em .3em, #161 .15em, rgba(#043, 0) .3em),
+          // ocean
+          radial-gradient(.5em .5em, #3eb0ff 0, #00f .6em)
+        );
         @include animation('rotate-earth' 3s linear infinite);
         @include transform(translateX(4em) rotateZ(0deg)); // this acts as a fallback for .no-cssanimation
 
