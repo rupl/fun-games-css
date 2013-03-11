@@ -1,0 +1,110 @@
+//
+// Perspective alignment tricks
+//
+
+#s-alignment {
+  p.intro {
+    height: 1.2em;
+    overflow: visible;
+  }
+
+  .segments {
+    opacity: 0;
+    width: 500px;
+    height: 520px;
+    margin-left: -250px;
+    position: absolute;
+    left: 50%;
+    // we need to scoot this back away from the viewer
+    @include transform(translateZ(-10em));
+    // finally, create a new transform layer for this container
+    @include transform-style(preserve-3d);
+
+    // once the container is visible, make the transition time longer
+    &.show {
+      @include transition(transform ease-in-out 8s);
+    }
+
+    .segment {
+      @extend .it;
+      // make them all the same size
+      width: 100px;
+      height: 520px;
+      // float them against each other, no gaps
+      float: left;
+      margin: 0;
+      padding: 0;
+      // Image found at: http://www.w3.org/html/logo/img/html5-topper.png
+      background-image: image-url('html5-topper-cropped.png');
+      // for the shadows
+      position: relative;
+      @include transform-style(preserve-3d);
+      @include perspective(20em);
+
+      // add fake shadow to each segment.
+      &:before {
+        content: '';
+        display: block;
+        width: 100px;
+        height: 500px;
+        background: rgba(#ccc, .5);
+        @include box-shadow(0 0 1em #ccc);
+        opacity: 1;
+        position: absolute;
+        bottom: 0;
+        @include transform-origin(50%, 100%);
+        @include transform(rotateX(100deg) skewX(35deg));
+      }
+
+      // set up each individual segment
+      &:nth-child(1) {
+        background-position: 0% 0%;
+        @include transform(translate3d(2.135em, -.525em, 10em) scale(.655));
+      }
+      &:nth-child(2) {
+        background-position: -100px 0%;
+        @include transform(translate3d(.52em, -.27em, 5em) scale(.828));
+      }
+      &:nth-child(3) {
+        background-position: -200px 0%;
+        @include transform(translate3d(0em, 0, 0em) scale(1.005));
+      }
+      &:nth-child(4) {
+        background-position: -300px 0%;
+        @include transform(translate3d(.57em, .252em, -5em) scale(1.178));
+      }
+      &:nth-child(5) {
+        background-position: -400px 0%;
+        @include transform(translate3d(2.2em, .53em, -10em) scale(1.351));
+      }
+    }
+  }
+
+  // This reveals the illusion
+  .segments.rotate {
+    // keep translateZ because it is in the default styles above
+    @include transform(translateZ(-10em) rotateX(-20deg) rotateY(-60deg));
+  }
+
+  // This proves I'm not pullin' your leg ;)
+  .segments.reveal {
+    border: 5px solid #0c0;
+    width: 510px;
+    // offset to avoid reflow (since we're using box-sizing: border-box;)
+    margin-left: -255px;
+    margin-top: -5px;
+
+    // add fake floor to aid comprehension
+    // .floor {
+    //   position: absolute;
+    //   z-index: -100;
+    //   width: 500px;
+    //   height: 1020px;
+    //   background: #ddd;
+    //   @include box-shadow(0 0 1em 1em #ddd);
+    //   @include transform-origin(50%, 100%);
+    //   @include transform(translate3d(-500px, -500px, 500px) rotateX(90deg));
+    // }
+
+  }
+}
