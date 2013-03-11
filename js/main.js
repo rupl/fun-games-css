@@ -125,8 +125,11 @@
       "$('#s-ames .container').toggleClass('rotate'); ",
       "$('#s-ames .container').toggleClass('reveal'); ",
 
-      // Learn
-      "scrollTo('#s-learn'); ",
+      // References
+      "scrollTo('#s-reference'); ",
+
+      // Demos
+      "scrollTo('#s-demos'); ",
 
       // the beginning
       "scrollTo('#die-undliche-gesichte'); "
@@ -249,11 +252,14 @@
       "$('#s-ames .container').toggleClass('rotate'); ",
       "$('#s-ames .container').toggleClass('reveal'); ",
 
-      // Learn
+      // Reference
       "scrollTo('#s-ames'); ",
 
+      // Demos
+      "scrollTo('#s-reference'); ",
+
       // the beginning
-      "scrollTo('#s-learn'); "
+      "scrollTo('#s-demos'); "
 
     ]
   };
