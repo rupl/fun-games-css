@@ -123,7 +123,7 @@
         }
         .back:before {
           content: 'Back';
-          top: 95px;
+          top: 2.2em;
           @extend .it;
           @include transform(rotateZ(180deg));
         }

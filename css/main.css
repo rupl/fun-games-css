@@ -1376,7 +1376,7 @@ span.active {
 }
 #s-paper .sandbox .cube.labels .back:before {
   content: 'Back';
-  top: 95px;
+  top: 2.2em;
   -webkit-transform: rotateZ(180deg);
   -moz-transform: rotateZ(180deg);
   -ms-transform: rotateZ(180deg);
