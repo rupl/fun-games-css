@@ -488,7 +488,7 @@ table {
 }
 
 /* Global styles ----------------------------------------------------------- */
-.it, span, .cube .side, #s-title .instructions, #s-intro .word, #s-css .slash, #s-paper .sandbox .cube.labels .back:before {
+.it, span, .cube .side, #s-title .instructions, #s-intro .word, #s-css .slash, #s-paper .sandbox .cube.labels .back:before, #s-ames .ames .h, #s-ames .ames .v {
   display: inline-block;
 }
 
@@ -2454,6 +2454,126 @@ span.active {
 
   100% {
     top: .8em;
+  }
+}
+
+#s-ames {
+  -webkit-perspective: 30em;
+  -moz-perspective: 30em;
+  -ms-perspective: 30em;
+  -o-perspective: 30em;
+  perspective: 30em;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#s-ames p.explain {
+  position: absolute;
+  opacity: 0;
+}
+#s-ames .container {
+  width: 16em;
+  height: 12em;
+  padding: .5em 0;
+  position: relative;
+  top: 2em;
+  left: 50%;
+  margin-left: -8em;
+  -webkit-perspective: 10em;
+  -moz-perspective: 10em;
+  -ms-perspective: 10em;
+  -o-perspective: 10em;
+  perspective: 10em;
+  -webkit-transform: rotateY(0deg);
+  -moz-transform: rotateY(0deg);
+  -ms-transform: rotateY(0deg);
+  -o-transform: rotateY(0deg);
+  transform: rotateY(0deg);
+}
+#s-ames .ames {
+  opacity: 0;
+  width: 10em;
+  height: 5em;
+  background: transparent;
+  border: .5em solid #fff;
+  -webkit-box-shadow: 0 0 0.02em 0.07em black, inset 0 0 0.02em 0.05em black;
+  -moz-box-shadow: 0 0 0.02em 0.07em black, inset 0 0 0.02em 0.05em black;
+  box-shadow: 0 0 0.02em 0.07em black, inset 0 0 0.02em 0.05em black;
+  -webkit-filter: drop-shadow(0.1em 0.1em 0.04em #337700);
+  -webkit-transform: rotateY(-60deg);
+  -moz-transform: rotateY(-60deg);
+  -ms-transform: rotateY(-60deg);
+  -o-transform: rotateY(-60deg);
+  transform: rotateY(-60deg);
+  position: relative;
+  top: 3em;
+  left: 50%;
+  margin-left: -5em;
+}
+#s-ames .ames .h {
+  width: 100%;
+  height: 1em;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5em;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+#s-ames .ames .v {
+  width: 1em;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -0.5em;
+}
+#s-ames .container.rotate {
+  -webkit-animation: "ames-rotate" 4s linear infinite;
+  -moz-animation: "ames-rotate" 4s linear infinite;
+  -ms-animation: "ames-rotate" 4s linear infinite;
+  -o-animation: "ames-rotate" 4s linear infinite;
+  animation: "ames-rotate" 4s linear infinite;
+}
+#s-ames .container.reveal {
+  background: rgba(0, 0, 0, 0.1);
+  border-left: .2em solid #f00;
+  border-right: .2em solid #00f;
+}
+
+@-moz-keyframes ames-rotate {
+  100% {
+    -moz-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-webkit-keyframes ames-rotate {
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-o-keyframes ames-rotate {
+  100% {
+    -o-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@-ms-keyframes ames-rotate {
+  100% {
+    -ms-transform: rotateY(360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+@keyframes ames-rotate {
+  100% {
+    transform: rotateY(360deg);
   }
 }
 

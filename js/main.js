@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 0;
+  var counter = 71;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -112,6 +112,16 @@
       "$('#s-animation').toggleClass('wiggle eyeball'); ",
       "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
       "$('#s-animation .organism').toggleClass('hide'); "+
+
+      // Optical illusions
+      "scrollTo('#s-illusions'); ",
+
+      // Ames window
+      "scrollTo('#s-ames'); ",
+      "$('#s-ames .ames').toggleClass('show'); ",
+      "$('#s-ames .container').toggleClass('rotate'); ",
+      "$('#s-ames .explain').toggleClass('show'); ",
+      "$('#s-ames .container').toggleClass('reveal'); ",
 
       // Learn
       "scrollTo('#s-learn'); ",
@@ -225,8 +235,18 @@
       "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
       "$('#s-animation .organism').toggleClass('hide'); "+
 
-      // Learn
+      // Optical illusions
       "scrollTo('#s-animation'); ",
+
+      // Ames window
+      "scrollTo('#s-illusions'); ",
+      "$('#s-ames .ames').toggleClass('show'); ",
+      "$('#s-ames .container').toggleClass('rotate'); ",
+      "$('#s-ames .explain').toggleClass('show'); ",
+      "$('#s-ames .container').toggleClass('reveal'); ",
+
+      // Learn
+      "scrollTo('#s-ames'); ",
 
       // the beginning
       "scrollTo('#s-learn'); "
