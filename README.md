@@ -1,7 +1,7 @@
 # Fun and Games with CSS3
 
 Interactive slides that explore creative uses
-of CSS modules, collectively known as CSS3.
+of CSS modules.
 
 Press left or right arrow key to advance.
 Watch in full-screen for best results.
