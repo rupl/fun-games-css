@@ -1,0 +1,129 @@
+//
+// Moiré patterns
+//
+
+#s-moire {
+  position: relative;
+
+  .container {
+    opacity: 0; // hide by default, .rect is shown via markup initially
+    width: 508px;
+    margin-left: -256px;
+    position: absolute;
+    left: 50%;
+    top: 6em;
+
+    .pattern-1,
+    .pattern-2 {
+      // enable HW accel on all patterns - much better antialiasing
+      @include transform(rotateY(0deg));
+    }
+  }
+
+  .rect {
+    .pattern-1,
+    .pattern-2 {
+      // sit on top of each other
+      position: absolute;
+      // be the same size
+      width: 508px;
+      height: 14em;
+      // repeating-linear-gradient not in Compass yet - https://github.com/chriseppstein/compass/issues/401
+      background: -webkit-repeating-linear-gradient(right, transparent 0px, black 2px, transparent 4px);
+      background:    -moz-repeating-linear-gradient(right, transparent 0px, black 2px, transparent 4px);
+      background:     -ms-repeating-linear-gradient(right, transparent 0px, black 2px, transparent 4px);
+      background:      -o-repeating-linear-gradient(right, transparent 0px, black 2px, transparent 4px);
+      background:         repeating-linear-gradient(right, transparent 0px, black 2px, transparent 4px);
+    }
+  }
+
+  // rotate one of the rectangles just a few degrees each way
+  .rect.rotate-alt {
+    .pattern-2 {
+      @include animation('rotate-alt' 6s ease-in-out infinite);
+    }
+  }
+
+  // Same animation, but with red/green patterns
+  .rect.rotate-color {
+    .pattern-1 {
+      background: -webkit-repeating-linear-gradient(right, transparent 0px, red 2px, transparent 4px);
+      background:    -moz-repeating-linear-gradient(right, transparent 0px, red 2px, transparent 4px);
+      background:     -ms-repeating-linear-gradient(right, transparent 0px, red 2px, transparent 4px);
+      background:      -o-repeating-linear-gradient(right, transparent 0px, red 2px, transparent 4px);
+      background:         repeating-linear-gradient(right, transparent 0px, red 2px, transparent 4px);
+    }
+    .pattern-2 {
+      background: -webkit-repeating-linear-gradient(right, transparent 0px, green 2px, transparent 4px);
+      background:    -moz-repeating-linear-gradient(right, transparent 0px, green 2px, transparent 4px);
+      background:     -ms-repeating-linear-gradient(right, transparent 0px, green 2px, transparent 4px);
+      background:      -o-repeating-linear-gradient(right, transparent 0px, green 2px, transparent 4px);
+      background:         repeating-linear-gradient(right, transparent 0px, green 2px, transparent 4px);
+    }
+  }
+
+  // swap z-index to show results
+  .rect.swap-zindex {
+    .pattern-2 {
+      z-index: -1;
+    }
+  }
+
+
+  // Now the circle styles
+  .circle {
+    top: 5em;
+
+    .pattern-1,
+    .pattern-2 {
+      // sit on top of each other
+      position: absolute;
+      // be the same size
+      width: 482px;
+      height: 482px;
+      // make a circle
+      @include border-radius(482px / 2);
+      // repeating-linear-gradient not in Compass yet - https://github.com/chriseppstein/compass/issues/401
+      background: -webkit-repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
+      background:    -moz-repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
+      background:     -ms-repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
+      background:      -o-repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
+      background:         repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
+    }
+  }
+
+  // Move the two circles back and forth in the opposite direction
+  .circle.pan {
+    .pattern-1 {
+      @include animation('pan' 16s ease-in-out infinite);
+    }
+    .pattern-2 {
+      // the second circle uses the same animation as the first, but this one has
+      // 'reverse' included, so they move against each other instead of in sync
+      @include animation('pan' 16s ease-in-out reverse infinite);
+    }
+  }
+
+}
+
+@include keyframes('rotate-alt') {
+  25% {
+    // keep rotateY(0deg) for HW accel
+    @include transform(rotateY(0deg) rotateZ(-7deg));
+  }
+  75% {
+    // keep rotateY(0deg) for HW accel
+    @include transform(rotateY(0deg) rotateZ(7deg));
+  }
+}
+
+@include keyframes('pan') {
+  25% {
+    // keep rotateY(0deg) for HW accel
+    @include transform(rotateY(0deg) translateX(-132px));
+  }
+  75% {
+    // keep rotateY(0deg) for HW accel
+    @include transform(rotateY(0deg) translateX(132px));
+  }
+}

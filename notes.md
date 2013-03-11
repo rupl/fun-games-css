@@ -24,7 +24,8 @@ Some ideas:
 - Construct an illusion like the face segments:
   http://www.thisiscolossal.com/2013/01/the-skewed-anamorphic-sculptures-and-engineered-illusions-of-jonty-hurwitz/
 - Demonstrate gimbal lock: http://en.wikipedia.org/wiki/Gimbal_lock
-- Perspective :)
+- Perspective
+- Moiré patterns! http://en.wikipedia.org/wiki/Moir%C3%A9_pattern
 
 - Intro. Show some really flashy internet gif. But CSS makes it all better, rite?
 - Fade it out, then do each one of these steps individually in fluid progression:

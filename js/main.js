@@ -125,6 +125,15 @@
       "$('#s-ames .container').toggleClass('rotate'); ",
       "$('#s-ames .container').toggleClass('reveal'); ",
 
+      // Moiré patterns
+      "scrollTo('#s-moire'); ",
+      "$('#s-moire .rect').toggleClass('rotate-alt'); ",
+      "$('#s-moire .rect').toggleClass('rotate-color'); ",
+      "$('#s-moire .rect').toggleClass('swap-zindex'); ",
+      "$('#s-moire .rect').toggleClass('show'); "+
+      "$('#s-moire .circle').toggleClass('show'); ",
+      "$('#s-moire .circle').toggleClass('pan'); ",
+
       // References
       "scrollTo('#s-reference'); ",
 
@@ -252,8 +261,17 @@
       "$('#s-ames .container').toggleClass('rotate'); ",
       "$('#s-ames .container').toggleClass('reveal'); ",
 
-      // Reference
+      // Moiré patterns
       "scrollTo('#s-ames'); ",
+      "$('#s-moire .rect').toggleClass('rotate-alt'); ",
+      "$('#s-moire .rect').toggleClass('rotate-color'); ",
+      "$('#s-moire .rect').toggleClass('swap-zindex'); ",
+      "$('#s-moire .rect').toggleClass('show'); "+
+      "$('#s-moire .circle').toggleClass('show'); ",
+      "$('#s-moire .circle').toggleClass('pan'); ",
+
+      // Reference
+      "scrollTo('#s-moire'); ",
 
       // Demos
       "scrollTo('#s-reference'); ",
