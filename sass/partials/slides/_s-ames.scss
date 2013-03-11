@@ -2,11 +2,36 @@
 // Ames window
 //
 
+//
+// This one is a bit weird. First of all, the slides don't exactly
+// lie, but they are slightly in accurate. The slides say it is a
+// "flat, trapezoid shape" not "a rectangle at an angle" when in
+// reality the shape is created using that exact technique.
+//
+// However, due to how 3D transforms work, it is safe to say that a
+// transformed element is indeed flat, as long as your observer is
+// viewing the element from outside that 3D layer (AKA all humans).
+//
+// The illusion is created by using 3D Transforms on an element that
+// already has 3D Transforms applied to it. Each container "flattens"
+// the transforms within it, meaning that if you rotate a container
+// holding 3D elements, their perspective and geometry do not change.
+//
+// A hollow trapezoid is still a hard thing to make in CSS
+// (yes, I know about css-tricks shapes) so I opted for a 3D transform,
+// using perspective to do the hard work.
+//
+// Once .ames is shaped like a trapezoid, we just rotate the container
+// in a "higher" 3D space, causing the illusion. The real-life version
+// uses a trapezoid-shaped piece of paper rotating along its up/down axis.
+//
+
 #s-ames {
   @include perspective(30em);
   @include transform-style(preserve-3d);
 
-  p.explain {
+  p.explain-shape,
+  p.explain-rotate {
     position: absolute;
     opacity: 0;
   }
@@ -19,7 +44,7 @@
     top: 2em;
     left: 50%;
     margin-left: -8em;
-    @include perspective(10em);
+    @include perspective(12em);
     @include transform(rotateY(0deg));
   }
 
@@ -28,12 +53,12 @@
     width: 10em;
     height: 5em;
     background: transparent;
-    border: .5em solid #fff;
+    border: .5em solid #ddd;
     @include box-shadow(
-      0 0 .02em .07em #000,
-inset 0 0 .02em .05em #000
+      0 0 0 .1em #000,
+inset 0 0 0 .07em #000
     );
-    -webkit-filter: drop-shadow(.1em .1em .04em #370);
+    -webkit-filter: drop-shadow(.16em .1em .04em #373);
     @include transform(rotateY(-60deg));
 
     position: relative;
@@ -45,21 +70,28 @@ inset 0 0 .02em .05em #000
       @extend .it;
       width: 100%;
       height: 1em;
-      background: #fff;
+      background: #ddd;
       position: absolute;
       top: 50%;
       margin-top: -.5em;
-      border-top: 1px solid #333;
-      border-bottom: 1px solid #333;
+      border-top: .1em solid #333;
+      border-bottom: .1em solid #333;
+    }
+    .h-cover {
+      @extend .h;
+      border: 0;
+      height: .93em;
+      top: 51%;
     }
     .v {
       @extend .it;
       width: 1em;
       height: 100%;
-      background: #fff;
+      background: #ddd;
       position: absolute;
       left: 50%;
       margin-left: -.5em;
+      border-left: .1em solid #333;
     }
 
     // Highlight the opposite borders to make rotation obvious
@@ -68,13 +100,16 @@ inset 0 0 .02em .05em #000
     }
   }
 
+  // rotate the container holding the window, making the window
+  // appear to swing back and forth
   .container.rotate {
     @include animation('ames-rotate' 4s linear infinite);
   }
 
-  // move the "camera" above to further reveal illusion
+  // Show the borders of the container holding the window,
+  // which reveals the illusion. It still doesn't ruin it!
   .container.reveal {
-    background: rgba(#000, .1);
+    background: rgba(#000, .3);
     border-left: .2em solid #f00;
     border-right: .2em solid #00f;
   }

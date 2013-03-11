@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 71;
+  var counter = 0;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -118,9 +118,11 @@
 
       // Ames window
       "scrollTo('#s-ames'); ",
+      "$('#s-ames .explain-shape').toggleClass('show'); "+
       "$('#s-ames .ames').toggleClass('show'); ",
+      "$('#s-ames .explain-shape').toggleClass('show'); "+
+      "$('#s-ames .explain-rotate').toggleClass('show'); "+
       "$('#s-ames .container').toggleClass('rotate'); ",
-      "$('#s-ames .explain').toggleClass('show'); ",
       "$('#s-ames .container').toggleClass('reveal'); ",
 
       // Learn
@@ -240,9 +242,11 @@
 
       // Ames window
       "scrollTo('#s-illusions'); ",
+      "$('#s-ames .explain-shape').toggleClass('show'); "+
       "$('#s-ames .ames').toggleClass('show'); ",
+      "$('#s-ames .explain-shape').toggleClass('show'); "+
+      "$('#s-ames .explain-rotate').toggleClass('show'); "+
       "$('#s-ames .container').toggleClass('rotate'); ",
-      "$('#s-ames .explain').toggleClass('show'); ",
       "$('#s-ames .container').toggleClass('reveal'); ",
 
       // Learn
