@@ -24,37 +24,6 @@
     opacity: 0;
   }
 
-  ul.drafts {
-    &.smaller {
-      font-size: .5em;
-    }
-    &.even-smaller {
-      font-size: .3em;
-    }
-    &.columns {
-      font-size: .45em;
-      width: 150%;
-      @include column-count(3);
-      @include column-width(33%);
-
-      li {
-        margin: 0 0 .4em;
-        list-style-type: none;
-        @include transition(all .2s ease-in-out);
-        @include transform(translateX(0) translateZ(0));
-      }
-    }
-    &.highlight {
-      li:not(.used) {
-        opacity: .15;
-      }
-      li.used {
-        font-weight: 700;
-        @include transform(translateX(-6em) translateY(-7.5em) translateZ(10em));
-      }
-    }
-  }
-
   // Little pop-up to point out CSS 2.1
   section.everything {
     @extend .arrow-box;
@@ -95,4 +64,40 @@
   .everything .slash {
     left: -.37em;
   }
+
+  section.unfinished {
+    width: 95%;
+  }
+
+  // Display drafts in various formats
+  ul.drafts {
+    &.smaller {
+      font-size: .5em;
+    }
+    &.even-smaller {
+      font-size: .3em;
+    }
+    &.columns {
+      font-size: .45em;
+      @include column-count(3);
+      @include column-width(33%);
+
+      li {
+        margin: 0 0 .4em;
+        list-style-type: none;
+        @include transition(all .2s ease-in-out);
+        @include transform(translateX(0) translateZ(0));
+      }
+    }
+    &.highlight {
+      li:not(.used) {
+        opacity: .15;
+      }
+      li.used {
+        font-weight: 700;
+        @include transform(translateX(-6em) translateY(-7.5em) translateZ(10em));
+      }
+    }
+  }
+
 }
