@@ -975,7 +975,7 @@ span {
   width: 300px;
   height: 300px;
   margin-left: -150px;
-  background: url('/img/4k-logo-square-500px.png?1363067343') no-repeat left top;
+  background: url('/fun-games-css/img/4k-logo-square-500px.png?1363067343') no-repeat left top;
   background-size: contain;
   position: absolute;
   bottom: 1.2em;
@@ -1123,7 +1123,7 @@ span {
   top: 0;
   left: 0;
   z-index: 600;
-  background: black url('/img/crysis-3-ny-city-ruins.jpg?1363064761') no-repeat left top;
+  background: black url('/fun-games-css/img/crysis-3-ny-city-ruins.jpg?1363064761') no-repeat left top;
   background-size: cover;
 }
 #s-intro.video-games .overlay {
@@ -1783,7 +1783,7 @@ span {
 }
 
 #s-perspective {
-  background: white url('/img/space-bg.jpg?1362348532') no-repeat left -960px;
+  background: white url('/fun-games-css/img/space-bg.jpg?1362348532') no-repeat left -960px;
   -webkit-perspective: 48em;
   -moz-perspective: 48em;
   -ms-perspective: 48em;
@@ -1850,7 +1850,7 @@ span {
   -ms-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
-  background: black url('/img/space-bg.jpg?1362348532') no-repeat left top;
+  background: black url('/fun-games-css/img/space-bg.jpg?1362348532') no-repeat left top;
 }
 #s-perspective.space p.intro {
   color: #69f;
@@ -2907,7 +2907,7 @@ span {
   float: left;
   margin: 0;
   padding: 0;
-  background-image: url('/img/html5-topper-cropped.png?1363037824');
+  background-image: url('/fun-games-css/img/html5-topper-cropped.png?1363037824');
   position: relative;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
