@@ -115,6 +115,14 @@
       "$('#s-slinky .slinky').toggleClass('full stretched'); ",
       "$('#s-slinky .slinky').toggleClass('oscillate'); ",
 
+      // Tile
+      "scrollTo('#s-tile'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(even)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(odd)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(2), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(10), :nth-child(12) ').toggleClass('lift'); ",
+      "$('#floor .panel').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift'); ",
+
       // Perspective
       "scrollTo('#s-perspective'); ",
       "$('#s-perspective').toggleClass('tilt'); ",
@@ -284,8 +292,16 @@
       "$('#s-slinky .slinky').toggleClass('full stretched'); ",
       "$('#s-slinky .slinky').toggleClass('oscillate'); ",
 
-      // Perspective
+      // Tile
       "scrollTo('#s-slinky'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(even)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(odd)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(2), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(10), :nth-child(12) ').toggleClass('lift'); ",
+      "$('#floor .panel').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift'); ",
+
+      // Perspective
+      "scrollTo('#s-tile'); ",
       "$('#s-perspective').toggleClass('tilt'); ",
       "$('#s-perspective').toggleClass('space'); ",
       "$('#s-perspective .board').toggleClass('move'); "+

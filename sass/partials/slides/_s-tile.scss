@@ -1,0 +1,193 @@
+/*
+ * Stone tile
+ */
+
+#s-tile {
+  background: #000 image-url('tile-bg.jpg') no-repeat -10px top;
+  color: #000;
+  overflow: hidden;
+  @include perspective(470px);
+  @include perspective-origin(77% 25%);
+  @include transform-style(preserve-3d);
+  @include backface-visibility(visible);
+
+  a,
+  p,
+  #other ul li a {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  h1 a {
+    color: #000; text-shadow: 1px 1px 1px rgba(255,255,255,0.5);
+  }
+
+  // Example of Modernizr and parent selector in Sass.
+  // Only apply styles if the browser support transforms.
+  .csstransforms3d & {
+
+    div#fallback {display: none; }
+
+    // Use the floor element to match the photograph's perspective
+    #floor {
+      width: 1860px;
+      height: 436px;
+      background: #222;
+
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      @include transform(rotateX(66.0deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 78px, -218px));
+      @include transform-style(preserve-3d);
+    }
+    // The base forms the visual plane that the tiles rest upon.
+    // It would look weird if the photograph was underneath.
+    // You could put another image here for a more photoreal effect.
+    #base {
+      width: inherit;
+      height: inherit;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 15;
+
+      @include transform(translate3d(0, -30px, -10px));
+      @include transform-style(preserve-3d);
+    }
+  }
+
+  // These are the individual tiles, which are thin rectangular prisms
+  .panel {
+    float: left;
+    width: 457px;
+    height: 141px;
+    margin: 2px 4px;
+    background: #333;
+
+    @include transform-style(preserve-3d);
+    @include transform-origin(bottom, right);
+    @include transform(translate3d(0,0,7px));
+  }
+  .panel,
+  .panel .shadow {
+    @include transition(.3s all ease-in-out);
+  }
+
+  // These are the sides of the tiles
+  .panel .left {
+    width: 124px;
+    height: 6px;
+    background: #444;
+    position: absolute;
+    left: 0;
+    box-shadow: 0 0 2px #444;
+
+    @include transform-origin(bottom, left);
+    @include transform(rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0));
+  }
+  .panel .right {
+    width: 124px;
+    height: 6px;
+    background: #444;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0 2px #444;
+
+    @include transform-origin(bottom, right);
+    @include transform(rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0));
+  }
+  .panel .front {
+    width: inherit;
+    height: 6px;
+    background: #666;
+    position: absolute;
+    bottom: 0;
+    box-shadow: 0 0 4px #666;
+
+    @include transform-origin(bottom, center);
+    @include transform(rotateX(90deg) translate3d(0, 0, 0));
+  }
+  .panel .back {
+    width: inherit;
+    height: 6px;
+    background: #666;
+    position: absolute;
+    top: 0;
+    box-shadow: 0 0 4px #666;
+
+    @include transform-origin(top, center);
+    @include transform(rotateX(90deg) translate3d(0, -6px, 0));
+  }
+  .panel .top {
+    width: inherit;
+    height: inherit;
+    background: image-url('tile-4.jpg');
+
+    @include transform(translate3d(0, 0, 1px));
+  }
+  .panel .shadow {
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: rgba(#000,0);
+
+    @include transform(translate3d(0, -122px, -5px));
+    @include box-shadow(0 0 5px 5px rgba(#000,0));
+  }
+
+  // Give some tiles a different background to make it look more real
+  .panel:nth-child(3n+1) .top {
+    background-position: 70% 80%;
+  }
+  .panel:nth-child(5n) .top {
+    background: image-url('tile-2.jpg') 50% 50%;
+  }
+
+  //
+  // These rules make the tiles move on mouseover.
+  // I set the nth-child() rules to make it visually symmetrical.
+  //
+  .panel:hover,
+  .panel.lift {
+    @include transform(translate3d(0,0,25px) rotateY(3deg));
+  }
+  .panel:hover .shadow,
+  .panel.lift .shadow {
+    background: rgba(0,0,0,0.4);
+    @include transform(translate3d(0, -122px,-25px) rotateY(-3deg));
+    @include box-shadow(0 0 25px 10px rgba(#000,0.4));
+  }
+  .panel:nth-child(4n+1),
+  .panel:nth-child(4n+2) {
+    @include transform-origin(bottom, left);
+  }
+  .panel:nth-child(4n+2):hover,
+  .panel:nth-child(4n+1):hover,
+  .panel.lift:nth-child(4n+2),
+  .panel.lift:nth-child(4n+1) {
+    @include transform(translate3d(0,0,25px) rotateY(-3deg));
+  }
+  .panel:nth-child(4n+2):hover .shadow,
+  .panel:nth-child(4n+1):hover .shadow,
+  .panel.lift:nth-child(4n+2) .shadow,
+  .panel.lift:nth-child(4n+1) .shadow {
+    @include transform(translate3d(0, -122px,-25px) rotateY(3deg));
+  }
+
+  /* debugging styles */
+  body.wireframe & div#floor {
+    background: #f00;
+  }
+
+  /* -- Go Download Chrome - http://www.google.com/chrome -- */
+  html.no-csstransforms3d div#floor {
+    display: none;
+  }
+  html.no-csstransforms3d div#fallback {
+    display: block;
+    width: 800px;
+    padding: 2em;
+    background: rgba(#fff,0.5);
+    text-shadow: 1px 1px 1px rgba(#fff,0.4);
+  }
+}

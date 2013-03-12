@@ -1786,6 +1786,279 @@ span {
   }
 }
 
+/*
+ * Stone tile
+ */
+#s-tile {
+  background: black url('/img/tile-bg.jpg?1362348532') no-repeat -10px top;
+  color: #000;
+  overflow: hidden;
+  -webkit-perspective: 470px;
+  -moz-perspective: 470px;
+  -ms-perspective: 470px;
+  -o-perspective: 470px;
+  perspective: 470px;
+  -webkit-perspective-origin: 77% 25%;
+  -moz-perspective-origin: 77% 25%;
+  -ms-perspective-origin: 77% 25%;
+  -o-perspective-origin: 77% 25%;
+  perspective-origin: 77% 25%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  -o-backface-visibility: visible;
+  backface-visibility: visible;
+  /* debugging styles */
+  /* -- Go Download Chrome - http://www.google.com/chrome -- */
+}
+#s-tile a,
+#s-tile p,
+#s-tile #other ul li a {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+#s-tile h1 a {
+  color: #000;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.5);
+}
+.csstransforms3d #s-tile div#fallback {
+  display: none;
+}
+.csstransforms3d #s-tile #floor {
+  width: 1860px;
+  height: 436px;
+  background: #222;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotateX(66deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 78px, -218px);
+  -moz-transform: rotateX(66deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 78px, -218px);
+  -ms-transform: rotateX(66deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 78px, -218px);
+  -o-transform: rotateX(66deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 78px, -218px);
+  transform: rotateX(66deg) rotateY(0.6deg) rotateZ(0deg) translate3d(-419px, 78px, -218px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.csstransforms3d #s-tile #base {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 15;
+  -webkit-transform: translate3d(0, -30px, -10px);
+  -moz-transform: translate3d(0, -30px, -10px);
+  -ms-transform: translate3d(0, -30px, -10px);
+  -o-transform: translate3d(0, -30px, -10px);
+  transform: translate3d(0, -30px, -10px);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#s-tile .panel {
+  float: left;
+  width: 457px;
+  height: 141px;
+  margin: 2px 4px;
+  background: #333;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: translate3d(0, 0, 7px);
+  -moz-transform: translate3d(0, 0, 7px);
+  -ms-transform: translate3d(0, 0, 7px);
+  -o-transform: translate3d(0, 0, 7px);
+  transform: translate3d(0, 0, 7px);
+}
+#s-tile .panel,
+#s-tile .panel .shadow {
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+  transition: 0.3s all ease-in-out;
+}
+#s-tile .panel .left {
+  width: 124px;
+  height: 6px;
+  background: #444;
+  position: absolute;
+  left: 0;
+  box-shadow: 0 0 2px #444;
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+  -webkit-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+  -moz-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+  -ms-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+  -o-transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+  transform: rotateX(90deg) rotateY(90deg) translate3d(-6px, 0, 0);
+}
+#s-tile .panel .right {
+  width: 124px;
+  height: 6px;
+  background: #444;
+  position: absolute;
+  right: 0;
+  box-shadow: 0 0 2px #444;
+  -webkit-transform-origin: bottom right;
+  -moz-transform-origin: bottom right;
+  -ms-transform-origin: bottom right;
+  -o-transform-origin: bottom right;
+  transform-origin: bottom right;
+  -webkit-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  -moz-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  -ms-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  -o-transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+  transform: rotateX(90deg) rotateY(90deg) translate3d(118px, 0, 0);
+}
+#s-tile .panel .front {
+  width: inherit;
+  height: 6px;
+  background: #666;
+  position: absolute;
+  bottom: 0;
+  box-shadow: 0 0 4px #666;
+  -webkit-transform-origin: bottom center;
+  -moz-transform-origin: bottom center;
+  -ms-transform-origin: bottom center;
+  -o-transform-origin: bottom center;
+  transform-origin: bottom center;
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 0);
+  -moz-transform: rotateX(90deg) translate3d(0, 0, 0);
+  -ms-transform: rotateX(90deg) translate3d(0, 0, 0);
+  -o-transform: rotateX(90deg) translate3d(0, 0, 0);
+  transform: rotateX(90deg) translate3d(0, 0, 0);
+}
+#s-tile .panel .back {
+  width: inherit;
+  height: 6px;
+  background: #666;
+  position: absolute;
+  top: 0;
+  box-shadow: 0 0 4px #666;
+  -webkit-transform-origin: top center;
+  -moz-transform-origin: top center;
+  -ms-transform-origin: top center;
+  -o-transform-origin: top center;
+  transform-origin: top center;
+  -webkit-transform: rotateX(90deg) translate3d(0, -6px, 0);
+  -moz-transform: rotateX(90deg) translate3d(0, -6px, 0);
+  -ms-transform: rotateX(90deg) translate3d(0, -6px, 0);
+  -o-transform: rotateX(90deg) translate3d(0, -6px, 0);
+  transform: rotateX(90deg) translate3d(0, -6px, 0);
+}
+#s-tile .panel .top {
+  width: inherit;
+  height: inherit;
+  background: url('/img/tile-4.jpg?1362348532');
+  -webkit-transform: translate3d(0, 0, 1px);
+  -moz-transform: translate3d(0, 0, 1px);
+  -ms-transform: translate3d(0, 0, 1px);
+  -o-transform: translate3d(0, 0, 1px);
+  transform: translate3d(0, 0, 1px);
+}
+#s-tile .panel .shadow {
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  background: rgba(0, 0, 0, 0);
+  -webkit-transform: translate3d(0, -122px, -5px);
+  -moz-transform: translate3d(0, -122px, -5px);
+  -ms-transform: translate3d(0, -122px, -5px);
+  -o-transform: translate3d(0, -122px, -5px);
+  transform: translate3d(0, -122px, -5px);
+  -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0);
+  -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0);
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0);
+}
+#s-tile .panel:nth-child(3n+1) .top {
+  background-position: 70% 80%;
+}
+#s-tile .panel:nth-child(5n) .top {
+  background: url('/img/tile-2.jpg?1362348532') 50% 50%;
+}
+#s-tile .panel:hover,
+#s-tile .panel.lift {
+  -webkit-transform: translate3d(0, 0, 25px) rotateY(3deg);
+  -moz-transform: translate3d(0, 0, 25px) rotateY(3deg);
+  -ms-transform: translate3d(0, 0, 25px) rotateY(3deg);
+  -o-transform: translate3d(0, 0, 25px) rotateY(3deg);
+  transform: translate3d(0, 0, 25px) rotateY(3deg);
+}
+#s-tile .panel:hover .shadow,
+#s-tile .panel.lift .shadow {
+  background: rgba(0, 0, 0, 0.4);
+  -webkit-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  -moz-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  -ms-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  -o-transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  transform: translate3d(0, -122px, -25px) rotateY(-3deg);
+  -webkit-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.4);
+}
+#s-tile .panel:nth-child(4n+1),
+#s-tile .panel:nth-child(4n+2) {
+  -webkit-transform-origin: bottom left;
+  -moz-transform-origin: bottom left;
+  -ms-transform-origin: bottom left;
+  -o-transform-origin: bottom left;
+  transform-origin: bottom left;
+}
+#s-tile .panel:nth-child(4n+2):hover,
+#s-tile .panel:nth-child(4n+1):hover,
+#s-tile .panel.lift:nth-child(4n+2),
+#s-tile .panel.lift:nth-child(4n+1) {
+  -webkit-transform: translate3d(0, 0, 25px) rotateY(-3deg);
+  -moz-transform: translate3d(0, 0, 25px) rotateY(-3deg);
+  -ms-transform: translate3d(0, 0, 25px) rotateY(-3deg);
+  -o-transform: translate3d(0, 0, 25px) rotateY(-3deg);
+  transform: translate3d(0, 0, 25px) rotateY(-3deg);
+}
+#s-tile .panel:nth-child(4n+2):hover .shadow,
+#s-tile .panel:nth-child(4n+1):hover .shadow,
+#s-tile .panel.lift:nth-child(4n+2) .shadow,
+#s-tile .panel.lift:nth-child(4n+1) .shadow {
+  -webkit-transform: translate3d(0, -122px, -25px) rotateY(3deg);
+  -moz-transform: translate3d(0, -122px, -25px) rotateY(3deg);
+  -ms-transform: translate3d(0, -122px, -25px) rotateY(3deg);
+  -o-transform: translate3d(0, -122px, -25px) rotateY(3deg);
+  transform: translate3d(0, -122px, -25px) rotateY(3deg);
+}
+body.wireframe #s-tile div#floor {
+  background: #f00;
+}
+#s-tile html.no-csstransforms3d div#floor {
+  display: none;
+}
+#s-tile html.no-csstransforms3d div#fallback {
+  display: block;
+  width: 800px;
+  padding: 2em;
+  background: rgba(255, 255, 255, 0.5);
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.4);
+}
+
 #s-perspective {
   background: white url('/img/space-bg.jpg?1362348532') no-repeat left -960px;
   -webkit-perspective: 48em;
