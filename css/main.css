@@ -965,6 +965,32 @@ span {
   }
 }
 
+#s-background h2 .twitter {
+  opacity: 0;
+  position: relative;
+  left: 5em;
+}
+#s-background .fk {
+  opacity: 0;
+  width: 300px;
+  height: 300px;
+  margin-left: -150px;
+  background: url('/img/4k-logo-square-500px.png?1363067343') no-repeat left top;
+  background-size: contain;
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+}
+#s-background .fk.push {
+  left: 80%;
+}
+#s-background p {
+  opacity: 1;
+}
+#s-background p.fade {
+  opacity: .6;
+}
+
 #s-intro {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;

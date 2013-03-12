@@ -20,6 +20,15 @@
       "$('#s-title .css').toggleClass('active'); ",
       "$('#s-title .three').toggleClass('active'); ",
 
+      // My background
+      "scrollTo('#s-background'); ",
+      "$('#s-background .twitter').toggleClass('show'); ",
+      "$('#s-background p.now').toggleClass('hide'); "+
+      "$('#s-background .fk').toggleClass('show'); ",
+      "$('#s-background p.now').toggleClass('fade'); "+
+      "$('#s-background .fk').toggleClass('push'); "+
+      "$('#s-background p.then').toggleClass('hide'); ",
+
       // Intro
       "scrollTo('#s-intro'); ",
       "$('#s-intro .word').toggleClass('show'); ",
@@ -172,8 +181,17 @@
       "$('#s-title .css').toggleClass('active'); ",
       "$('#s-title .three').toggleClass('active'); ",
 
-      // Intro
+      // My background
       "scrollTo('#s-title'); ",
+      "$('#s-background .twitter').toggleClass('show'); ",
+      "$('#s-background p.now').toggleClass('hide'); "+
+      "$('#s-background .fk').toggleClass('show'); ",
+      "$('#s-background p.now').toggleClass('fade'); "+
+      "$('#s-background .fk').toggleClass('push'); "+
+      "$('#s-background p.then').toggleClass('hide'); ",
+
+      // Intro
+      "scrollTo('#s-background'); ",
       "$('#s-intro .word').toggleClass('show'); ",
       "$('#s-intro .word').toggleClass('big'); ",
       "$('#s-intro .word').toggleClass('bigger'); ",
