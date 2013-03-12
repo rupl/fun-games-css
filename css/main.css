@@ -580,6 +580,10 @@ main article:nth-of-type(1) {
 main article:last-child {
   margin-bottom: 0.5em;
 }
+main article.break {
+  background: #003;
+  color: #fff;
+}
 
 .no-touch nav {
   display: none;

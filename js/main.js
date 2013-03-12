@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 85;
+  var counter = 0;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -87,6 +87,9 @@
       "$('#s-funstuff .red').toggleClass('show'); ",
       "$('#s-funstuff .contact').toggleClass('show'); "+
       "$('#s-funstuff .devrels').toggleClass('show'); ",
+
+      // Transforms
+      "scrollTo('#s-transforms'); ",
 
       // Folding paper
       "scrollTo('#s-paper'); ",
@@ -254,8 +257,11 @@
       "$('#s-funstuff .contact').toggleClass('show'); "+
       "$('#s-funstuff .devrels').toggleClass('show'); ",
 
-      // Paper
+      // Transforms
       "scrollTo('#s-funstuff'); ",
+
+      // Paper
+      "scrollTo('#s-transforms'); ",
       "$('#s-paper .folds').toggleClass('folded'); ",
       "$('#s-paper .paper').toggleClass('folded'); ",
       "$('#s-paper .like').toggleClass('folded'); ",
