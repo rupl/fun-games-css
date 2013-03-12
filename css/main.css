@@ -630,13 +630,13 @@ main article:last-child {
   display: block;
   margin-bottom: .4em;
 }
-.csstransforms3d .compat .csstransforms3d, .csstransforms .compat .csstransforms, .csstransitions .compat .csstransitions, .cssanimations .compat .cssanimations, .cssfilters .compat .cssfilters, .cssmask .compat .cssmask {
+.csstransforms3d .compat .csstransforms3d, .csstransforms .compat .csstransforms, .csstransitions .compat .csstransitions, .cssanimations .compat .cssanimations, .cssfilters .compat .cssfilters {
   background: #9d9;
   border: 1px solid #80aa80;
   padding: 2px;
   margin: 2px;
 }
-.no-csstransforms3d .compat .csstransforms3d, .no-csstransforms .compat .csstransforms, .no-csstransitions .compat .csstransitions, .no-cssanimations .compat .cssanimations, .no-cssfilters .compat .cssfilters, .no-cssmask .compat .cssmask {
+.no-csstransforms3d .compat .csstransforms3d, .no-csstransforms .compat .csstransforms, .no-csstransitions .compat .csstransitions, .no-cssanimations .compat .cssanimations, .no-cssfilters .compat .cssfilters {
   background: #d99;
   border: 1px solid #aa8080;
   padding: 2px;

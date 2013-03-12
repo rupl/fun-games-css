@@ -98,8 +98,7 @@ main {
   .csstransforms & .csstransforms,
   .csstransitions & .csstransitions,
   .cssanimations & .cssanimations,
-  .cssfilters & .cssfilters,
-  .cssmask & .cssmask {
+  .cssfilters & .cssfilters {
     background: #9d9;
     border: 1px solid darken(desaturate(#9d9, 30%), 15%);
     padding: 2px;
@@ -110,8 +109,7 @@ main {
   .no-csstransforms & .csstransforms,
   .no-csstransitions & .csstransitions,
   .no-cssanimations & .cssanimations,
-  .no-cssfilters & .cssfilters,
-  .no-cssmask & .cssmask {
+  .no-cssfilters & .cssfilters {
     background: #d99;
     border: 1px solid darken(desaturate(#d99, 30%), 15%);
     padding: 2px;
