@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 85;
+  var counter = 0;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -21,17 +21,17 @@
       "$('#s-title .three').toggleClass('active'); ",
 
       // My background
-      "scrollTo('#s-background'); ",
-      "$('#s-background .intro').toggleClass('fade'); "+
-      "$('#s-background .twitter').toggleClass('show'); ",
-      "$('#s-background p.now').toggleClass('hide'); "+
-      "$('#s-background .fk').toggleClass('show'); ",
-      "$('#s-background p.now').toggleClass('fade'); "+
-      "$('#s-background .fk').toggleClass('push'); "+
-      "$('#s-background p.then').toggleClass('hide'); ",
+      // "scrollTo('#s-background'); ",
+      // "$('#s-background .intro').toggleClass('fade'); "+
+      // "$('#s-background .twitter').toggleClass('show'); ",
+      // "$('#s-background p.now').toggleClass('hide'); "+
+      // "$('#s-background .fk').toggleClass('show'); ",
+      // "$('#s-background p.now').toggleClass('fade'); "+
+      // "$('#s-background .fk').toggleClass('push'); "+
+      // "$('#s-background p.then').toggleClass('hide'); ",
 
       // Intro
-      "scrollTo('#s-intro'); ",
+      "scrollTo('#s-intro'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Intro']); ",
       "$('#s-intro .word').toggleClass('show'); ",
       "$('#s-intro .word').toggleClass('big'); ",
       "$('#s-intro .word').toggleClass('bigger'); ",
@@ -64,7 +64,7 @@
       "$('#s-intro').toggleClass('video-games'); ",
 
       // What is CSS?
-      "scrollTo('#s-css'); ",
+      "scrollTo('#s-css'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'CSS']); ",
       "$('#s-css .list').toggleClass('show'); ",
       "$('#s-css .list').toggleClass('show'); "+
       "$('#s-css .specs').toggleClass('show'); "+
@@ -89,7 +89,7 @@
       "$('#s-funstuff .devrels').toggleClass('show'); ",
 
       // Folding paper
-      "scrollTo('#s-paper'); ",
+      "scrollTo('#s-paper'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Paper']); ",
       "$('#s-paper .folds').toggleClass('folded'); ",
       "$('#s-paper .paper').toggleClass('folded'); ",
       "$('#s-paper .like').toggleClass('folded'); ",
@@ -103,7 +103,7 @@
       "$('#s-paper .back').toggleClass('flat'); ",
 
       // Slinky
-      "scrollTo('#s-slinky'); ",
+      "scrollTo('#s-slinky'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Slinky']); ",
       "$('#s-slinky .slinky').toggleClass('hide'); ",
       "$('#s-slinky .slinky').toggleClass('half'); ",
       "$('#s-slinky p.slinky-desc').toggleClass('hide'); "+
@@ -113,7 +113,7 @@
       "$('#s-slinky .slinky').toggleClass('oscillate'); ",
 
       // Perspective
-      "scrollTo('#s-perspective'); ",
+      "scrollTo('#s-perspective'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Perspective']); ",
       "$('#s-perspective').toggleClass('tilt'); ",
       "$('#s-perspective').toggleClass('space'); ",
       "$('#s-perspective .board').toggleClass('move'); "+
@@ -124,7 +124,7 @@
       "$('#s-perspective .compat').append(' <span class=\"cssanimations\">Animations</span>'); ",
 
       // Animation
-      "scrollTo('#s-animation'); "+
+      "scrollTo('#s-animation'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Animation']); "+
       "$('#s-animation').toggleClass('wiggle'); ",
       "$('#s-animation').toggleClass('wiggle eyeball'); ",
       "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
@@ -134,7 +134,7 @@
       "scrollTo('#s-illusions'); ",
 
       // Ames window
-      "scrollTo('#s-ames'); ",
+      "scrollTo('#s-ames'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Ames']); ",
       "$('#s-ames .explain-shape').toggleClass('show'); "+
       "$('#s-ames .ames').toggleClass('show'); ",
       "$('#s-ames .explain-shape').toggleClass('show'); "+
@@ -143,7 +143,7 @@
       "$('#s-ames .container').toggleClass('reveal'); ",
 
       // Moiré patterns
-      "scrollTo('#s-moire'); ",
+      "scrollTo('#s-moire'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Moire']); ",
       "$('#s-moire .rect').toggleClass('rotate-alt'); ",
       "$('#s-moire .rect').toggleClass('rotate-color'); ",
       "$('#s-moire .rect').toggleClass('swap-zindex'); ",
@@ -152,7 +152,7 @@
       "$('#s-moire .circle').toggleClass('pan'); ",
 
       // Alignment
-      "scrollTo('#s-alignment'); ",
+      "scrollTo('#s-alignment'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Alignment']); ",
       "$('#s-alignment .segments').toggleClass('show'); ",
       "$('#s-alignment .segments').toggleClass('rotate'); ",
       "$('#s-alignment .segments').toggleClass('lift'); ",
@@ -167,11 +167,7 @@
       "scrollTo('#s-demos'); ",
 
       // the beginning
-      "scrollTo('#s-end'); ",
-      "$('#s-end .rate').toggleClass('highlight'); ",
-      "$('#s-end .rate').toggleClass('highlight'); "+
-      "$('#s-end .slides').toggleClass('highlight'); ",
-      "$('#s-end .slides').toggleClass('highlight'); "
+      "scrollTo('#s-end'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Finished']); "
 
     ],
     'reverse': [
@@ -188,16 +184,16 @@
 
       // My background
       "scrollTo('#s-title'); ",
-      "$('#s-background .intro').toggleClass('fade'); "+
-      "$('#s-background .twitter').toggleClass('show'); ",
-      "$('#s-background p.now').toggleClass('hide'); "+
-      "$('#s-background .fk').toggleClass('show'); ",
-      "$('#s-background p.now').toggleClass('fade'); "+
-      "$('#s-background .fk').toggleClass('push'); "+
-      "$('#s-background p.then').toggleClass('hide'); ",
+      // "$('#s-background .intro').toggleClass('fade'); "+
+      // "$('#s-background .twitter').toggleClass('show'); ",
+      // "$('#s-background p.now').toggleClass('hide'); "+
+      // "$('#s-background .fk').toggleClass('show'); ",
+      // "$('#s-background p.now').toggleClass('fade'); "+
+      // "$('#s-background .fk').toggleClass('push'); "+
+      // "$('#s-background p.then').toggleClass('hide'); ",
 
       // Intro
-      "scrollTo('#s-background'); ",
+      // "scrollTo('#s-background'); ",
       "$('#s-intro .word').toggleClass('show'); ",
       "$('#s-intro .word').toggleClass('big'); ",
       "$('#s-intro .word').toggleClass('bigger'); ",
