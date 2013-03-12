@@ -1129,6 +1129,11 @@ span {
 #s-intro.video-games .overlay {
   opacity: 1;
 }
+#s-intro p.meanwhile {
+  color: #fff;
+  margin: 2em 1em;
+  text-shadow: 2px 2px 15px #000;
+}
 
 @-moz-keyframes css3-rotate {
   100% {

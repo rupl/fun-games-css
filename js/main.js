@@ -51,7 +51,7 @@
       "$('#s-intro .word').toggleClass('pos-x'); ",
       "$('#s-intro .word').toggleClass('pos-x'); ",
       "$('#s-intro p.intro').text('This is about where IE6 gave up.'); ",
-      "$('#s-intro p.intro').text('CSS specs are now created in small modules, known collectively as...'); "+
+      "$('#s-intro p.intro').text('CSS specs are now created in small modules. The marketese word is...'); "+
       "$('#s-intro .word').text('CSS3'); ",
       "$('#s-intro .word').toggleClass('borderradius'); ",
       "$('#s-intro .word').toggleClass('boxshadow'); ",
