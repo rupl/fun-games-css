@@ -1,4 +1,4 @@
-# Fun and Games with CSS3
+# Fun and Games with CSS
 
 Interactive slides that explore creative uses
 of CSS modules.
