@@ -9,6 +9,8 @@
   // Defaults needed for transforms
   @include transform-style(preserve-3d);
   @include perspective(20em);
+  // needed for .overlay
+  position: relative;
 
   // Defaults for our progressively enhanced word
   .word {
@@ -107,6 +109,24 @@
          -moz-filter: invert(1) blur(.06em);
               filter: invert(1) blur(.06em);
     }
+  }
+
+  // overlay the video game screenshot over everything
+  .overlay {
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 600;
+
+    // Source: http://wallpaperswide.com/crysis_3_new_york_city_ruins-wallpapers.html
+    background: #000 image-url('crysis-3-ny-city-ruins.jpg') no-repeat left top;
+    background-size: cover;
+  }
+  &.video-games .overlay {
+    opacity: 1;
   }
 }
 

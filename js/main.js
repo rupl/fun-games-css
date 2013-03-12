@@ -51,6 +51,7 @@
       "$('#s-intro .word').toggleClass('rotate'); ",
       "$('#s-intro .word').toggleClass('invert'); ",
       "$('#s-intro .word').toggleClass('blur'); ",
+      "$('#s-intro').toggleClass('video-games'); ",
 
       // What is CSS?
       "scrollTo('#s-css'); ",
@@ -202,6 +203,7 @@
       "$('#s-intro .word').toggleClass('rotate'); ",
       "$('#s-intro .word').toggleClass('invert'); ",
       "$('#s-intro .word').toggleClass('blur'); ",
+      "$('#s-intro').toggleClass('video-games'); ",
 
       // What is CSS?
       "scrollTo('#s-intro'); ",
