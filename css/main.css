@@ -978,7 +978,7 @@ span {
   background: url('/img/4k-logo-square-500px.png?1363067343') no-repeat left top;
   background-size: contain;
   position: absolute;
-  bottom: 2em;
+  bottom: 1.2em;
   left: 50%;
 }
 #s-background .fk.push {

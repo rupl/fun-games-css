@@ -22,6 +22,7 @@
 
       // My background
       "scrollTo('#s-background'); ",
+      "$('#s-background .intro').toggleClass('fade'); "+
       "$('#s-background .twitter').toggleClass('show'); ",
       "$('#s-background p.now').toggleClass('hide'); "+
       "$('#s-background .fk').toggleClass('show'); ",
@@ -183,6 +184,7 @@
 
       // My background
       "scrollTo('#s-title'); ",
+      "$('#s-background .intro').toggleClass('fade'); "+
       "$('#s-background .twitter').toggleClass('show'); ",
       "$('#s-background p.now').toggleClass('hide'); "+
       "$('#s-background .fk').toggleClass('show'); ",
