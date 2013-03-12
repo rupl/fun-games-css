@@ -2897,52 +2897,78 @@ span {
   -o-transform: rotateX(100deg) skewX(35deg);
   transform: rotateX(100deg) skewX(35deg);
 }
+#s-alignment .segments .segment:after {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 520px;
+  background: #ccc;
+  position: relative;
+  left: 100px;
+  -webkit-transform-origin: 0% 50%;
+  -moz-transform-origin: 0% 50%;
+  -ms-transform-origin: 0% 50%;
+  -o-transform-origin: 0% 50%;
+  transform-origin: 0% 50%;
+  -webkit-transform: rotateY(98deg);
+  -moz-transform: rotateY(98deg);
+  -ms-transform: rotateY(98deg);
+  -o-transform: rotateY(98deg);
+  transform: rotateY(98deg);
+}
 #s-alignment .segments .segment:nth-child(1) {
   background-position: 0% 0%;
-  -webkit-transform: translate3d(2.135em, -0.525em, 10em) scale(0.655);
-  -moz-transform: translate3d(2.135em, -0.525em, 10em) scale(0.655);
-  -ms-transform: translate3d(2.135em, -0.525em, 10em) scale(0.655);
-  -o-transform: translate3d(2.135em, -0.525em, 10em) scale(0.655);
-  transform: translate3d(2.135em, -0.525em, 10em) scale(0.655);
+  -webkit-transform: translateX(2.17em) translateY(-0.525em) translateZ(10em) rotateY(1deg) scale(0.655);
+  -moz-transform: translateX(2.17em) translateY(-0.525em) translateZ(10em) rotateY(1deg) scale(0.655);
+  -ms-transform: translateX(2.17em) translateY(-0.525em) translateZ(10em) rotateY(1deg) scale(0.655);
+  -o-transform: translateX(2.17em) translateY(-0.525em) translateZ(10em) rotateY(1deg) scale(0.655);
+  transform: translateX(2.17em) translateY(-0.525em) translateZ(10em) rotateY(1deg) scale(0.655);
 }
 #s-alignment .segments .segment:nth-child(2) {
   background-position: -100px 0%;
-  -webkit-transform: translate3d(0.52em, -0.27em, 5em) scale(0.828);
-  -moz-transform: translate3d(0.52em, -0.27em, 5em) scale(0.828);
-  -ms-transform: translate3d(0.52em, -0.27em, 5em) scale(0.828);
-  -o-transform: translate3d(0.52em, -0.27em, 5em) scale(0.828);
-  transform: translate3d(0.52em, -0.27em, 5em) scale(0.828);
+  -webkit-transform: translateX(0.527em) translateY(-0.27em) translateZ(5em) rotateX(0.5deg) scale(0.828);
+  -moz-transform: translateX(0.527em) translateY(-0.27em) translateZ(5em) rotateX(0.5deg) scale(0.828);
+  -ms-transform: translateX(0.527em) translateY(-0.27em) translateZ(5em) rotateX(0.5deg) scale(0.828);
+  -o-transform: translateX(0.527em) translateY(-0.27em) translateZ(5em) rotateX(0.5deg) scale(0.828);
+  transform: translateX(0.527em) translateY(-0.27em) translateZ(5em) rotateX(0.5deg) scale(0.828);
 }
 #s-alignment .segments .segment:nth-child(3) {
   background-position: -200px 0%;
-  -webkit-transform: translate3d(0em, 0, 0em) scale(1.005);
-  -moz-transform: translate3d(0em, 0, 0em) scale(1.005);
-  -ms-transform: translate3d(0em, 0, 0em) scale(1.005);
-  -o-transform: translate3d(0em, 0, 0em) scale(1.005);
-  transform: translate3d(0em, 0, 0em) scale(1.005);
+  -webkit-transform: translateY(0em) scale(1.005);
+  -moz-transform: translateY(0em) scale(1.005);
+  -ms-transform: translateY(0em) scale(1.005);
+  -o-transform: translateY(0em) scale(1.005);
+  transform: translateY(0em) scale(1.005);
 }
 #s-alignment .segments .segment:nth-child(4) {
   background-position: -300px 0%;
-  -webkit-transform: translate3d(0.57em, 0.252em, -5em) scale(1.178);
-  -moz-transform: translate3d(0.57em, 0.252em, -5em) scale(1.178);
-  -ms-transform: translate3d(0.57em, 0.252em, -5em) scale(1.178);
-  -o-transform: translate3d(0.57em, 0.252em, -5em) scale(1.178);
-  transform: translate3d(0.57em, 0.252em, -5em) scale(1.178);
+  -webkit-transform: translateX(0.57em) translateY(0.252em) translateZ(-5em) rotateY(1deg) scale(1.178);
+  -moz-transform: translateX(0.57em) translateY(0.252em) translateZ(-5em) rotateY(1deg) scale(1.178);
+  -ms-transform: translateX(0.57em) translateY(0.252em) translateZ(-5em) rotateY(1deg) scale(1.178);
+  -o-transform: translateX(0.57em) translateY(0.252em) translateZ(-5em) rotateY(1deg) scale(1.178);
+  transform: translateX(0.57em) translateY(0.252em) translateZ(-5em) rotateY(1deg) scale(1.178);
 }
 #s-alignment .segments .segment:nth-child(5) {
   background-position: -400px 0%;
-  -webkit-transform: translate3d(2.2em, 0.53em, -10em) scale(1.351);
-  -moz-transform: translate3d(2.2em, 0.53em, -10em) scale(1.351);
-  -ms-transform: translate3d(2.2em, 0.53em, -10em) scale(1.351);
-  -o-transform: translate3d(2.2em, 0.53em, -10em) scale(1.351);
-  transform: translate3d(2.2em, 0.53em, -10em) scale(1.351);
+  -webkit-transform: translateX(2.18em) translateY(0.53em) translateZ(-10em) rotateY(-1deg) scale(1.351);
+  -moz-transform: translateX(2.18em) translateY(0.53em) translateZ(-10em) rotateY(-1deg) scale(1.351);
+  -ms-transform: translateX(2.18em) translateY(0.53em) translateZ(-10em) rotateY(-1deg) scale(1.351);
+  -o-transform: translateX(2.18em) translateY(0.53em) translateZ(-10em) rotateY(-1deg) scale(1.351);
+  transform: translateX(2.18em) translateY(0.53em) translateZ(-10em) rotateY(-1deg) scale(1.351);
 }
 #s-alignment .segments.rotate {
-  -webkit-transform: translateZ(-10em) rotateX(-20deg) rotateY(-60deg);
-  -moz-transform: translateZ(-10em) rotateX(-20deg) rotateY(-60deg);
-  -ms-transform: translateZ(-10em) rotateX(-20deg) rotateY(-60deg);
-  -o-transform: translateZ(-10em) rotateX(-20deg) rotateY(-60deg);
-  transform: translateZ(-10em) rotateX(-20deg) rotateY(-60deg);
+  -webkit-transform: translateZ(-10em) rotateX(-15deg) rotateY(-70deg);
+  -moz-transform: translateZ(-10em) rotateX(-15deg) rotateY(-70deg);
+  -ms-transform: translateZ(-10em) rotateX(-15deg) rotateY(-70deg);
+  -o-transform: translateZ(-10em) rotateX(-15deg) rotateY(-70deg);
+  transform: translateZ(-10em) rotateX(-15deg) rotateY(-70deg);
+}
+#s-alignment .segments.lift {
+  -webkit-transform: translateZ(-10em) rotateX(-65deg) rotateY(-70deg);
+  -moz-transform: translateZ(-10em) rotateX(-65deg) rotateY(-70deg);
+  -ms-transform: translateZ(-10em) rotateX(-65deg) rotateY(-70deg);
+  -o-transform: translateZ(-10em) rotateX(-65deg) rotateY(-70deg);
+  transform: translateZ(-10em) rotateX(-65deg) rotateY(-70deg);
 }
 #s-alignment .segments.reveal {
   border: 5px solid #0c0;

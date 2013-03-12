@@ -56,34 +56,53 @@
         @include transform(rotateX(100deg) skewX(35deg));
       }
 
+      // Add a side to each segment to it looks more 3D
+      $segment-depth: 20px;
+
+      &:after {
+        content: '';
+        display: block;
+        width: $segment-depth;
+        height: 520px;
+        background: #ccc;
+        position: relative;
+        left: 100px;
+        @include transform-origin(0%, 50%);
+        @include transform(rotateY(98deg));
+      }
+
       // set up each individual segment
       &:nth-child(1) {
         background-position: 0% 0%;
-        @include transform(translate3d(2.135em, -.525em, 10em) scale(.655));
+        @include transform(translateX(2.17em) translateY(-.525em) translateZ(10em) rotateY(1deg) scale(.655));
       }
       &:nth-child(2) {
         background-position: -100px 0%;
-        @include transform(translate3d(.52em, -.27em, 5em) scale(.828));
+        @include transform(translateX(.527em) translateY(-.27em) translateZ(5em) rotateX(.5deg) scale(.828));
       }
       &:nth-child(3) {
         background-position: -200px 0%;
-        @include transform(translate3d(0em, 0, 0em) scale(1.005));
+        @include transform(translateY(0em) scale(1.005));
       }
       &:nth-child(4) {
         background-position: -300px 0%;
-        @include transform(translate3d(.57em, .252em, -5em) scale(1.178));
+        @include transform(translateX(.57em) translateY(.252em) translateZ(-5em) rotateY(1deg) scale(1.178));
       }
       &:nth-child(5) {
         background-position: -400px 0%;
-        @include transform(translate3d(2.2em, .53em, -10em) scale(1.351));
+        @include transform(translateX(2.18em) translateY(.53em) translateZ(-10em) rotateY(-1deg) scale(1.351));
       }
     }
   }
 
-  // This reveals the illusion
+  // These reveals the illusion
   .segments.rotate {
     // keep translateZ because it is in the default styles above
-    @include transform(translateZ(-10em) rotateX(-20deg) rotateY(-60deg));
+    @include transform(translateZ(-10em) rotateX(-15deg) rotateY(-70deg));
+  }
+  .segments.lift {
+    // keep translateZ because it is in the default styles above
+    @include transform(translateZ(-10em) rotateX(-65deg) rotateY(-70deg));
   }
 
   // This proves I'm not pullin' your leg ;)
@@ -93,18 +112,5 @@
     // offset to avoid reflow (since we're using box-sizing: border-box;)
     margin-left: -255px;
     margin-top: -5px;
-
-    // add fake floor to aid comprehension
-    // .floor {
-    //   position: absolute;
-    //   z-index: -100;
-    //   width: 500px;
-    //   height: 1020px;
-    //   background: #ddd;
-    //   @include box-shadow(0 0 1em 1em #ddd);
-    //   @include transform-origin(50%, 100%);
-    //   @include transform(translate3d(-500px, -500px, 500px) rotateX(90deg));
-    // }
-
   }
 }

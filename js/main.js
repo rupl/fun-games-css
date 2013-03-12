@@ -144,7 +144,9 @@
       "scrollTo('#s-alignment'); ",
       "$('#s-alignment .segments').toggleClass('show'); ",
       "$('#s-alignment .segments').toggleClass('rotate'); ",
-      "$('#s-alignment .segments').toggleClass('reveal'); ",
+      "$('#s-alignment .segments').toggleClass('lift'); ",
+      "$('#s-alignment .segments').toggleClass('reveal'); "+
+      "$('#s-alignment .segments').toggleClass('lift'); "+
       "$('#s-alignment .segments').toggleClass('rotate'); ",
 
       // References
@@ -293,7 +295,9 @@
       "scrollTo('#s-moire'); ",
       "$('#s-alignment .segments').toggleClass('show'); ",
       "$('#s-alignment .segments').toggleClass('rotate'); ",
-      "$('#s-alignment .segments').toggleClass('reveal'); ",
+      "$('#s-alignment .segments').toggleClass('lift'); ",
+      "$('#s-alignment .segments').toggleClass('reveal'); "+
+      "$('#s-alignment .segments').toggleClass('lift'); "+
       "$('#s-alignment .segments').toggleClass('rotate'); ",
 
       // Reference
