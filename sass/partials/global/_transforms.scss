@@ -14,9 +14,9 @@ span {
   @include transition(all .2s ease-in-out);
 
   // Active state disables all transforms
-  &.active {
-    @include transform(rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important);
-  }
+  // &.active {
+  //   @include transform(rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important);
+  // }
 }
 
 // Standard DOM Element (DE)

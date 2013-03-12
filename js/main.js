@@ -13,6 +13,12 @@
       // Title
       "",
       "scrollTo('#s-title'); ",
+      "$('#s-title .fun').toggleClass('active'); ",
+      "$('#s-title .and').toggleClass('active'); ",
+      "$('#s-title .games').toggleClass('active'); ",
+      "$('#s-title .with').toggleClass('active'); ",
+      "$('#s-title .css').toggleClass('active'); ",
+      "$('#s-title .three').toggleClass('active'); ",
 
       // Intro
       "scrollTo('#s-intro'); ",
@@ -156,6 +162,12 @@
       // Title
       "",
       "",
+      "$('#s-title .fun').toggleClass('active'); ",
+      "$('#s-title .and').toggleClass('active'); ",
+      "$('#s-title .games').toggleClass('active'); ",
+      "$('#s-title .with').toggleClass('active'); ",
+      "$('#s-title .css').toggleClass('active'); ",
+      "$('#s-title .three').toggleClass('active'); ",
 
       // Intro
       "scrollTo('#s-title'); ",

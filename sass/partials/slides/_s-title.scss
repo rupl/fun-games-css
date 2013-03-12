@@ -2,8 +2,14 @@
  * Title slide
  */
 #s-title {
+  // These two settings allow the title to be transformed in 3D space
+  @include perspective(10em);
+  @include transform-style(preserve-3d);
 
-  // title
+  // slower transitions for titles
+  @include transition(all 1s ease-in-out);
+
+  // "Fun and Games with CSS3"
   h1 {
     text-align: center;
     font-size: 5em / $slide-font-size;
@@ -12,33 +18,79 @@
     top: 1em;
   }
 
-  // subtitle
-  h2 {
-    font-size: 3em / $slide-font-size;
-    position: absolute;
-    bottom: 32%;
-    right: 19%;
+  //
+  // Each class allows for unique styling of each word
+  //
+
+  .fun.active {
+    opacity: 1;
+    color: #f0f;
+    background: #0f0;
+    @include transform(rotateY(16deg) rotateZ(6deg) translateX(.80em));
+    @include transform-origin(150%, 50%);
+    @include box-shadow(0 0 .1em #099);
+    position: relative;
+    z-index: 500;
+  }
+  .and.active {
+    @include transform(scale(.75) translateX(.75em) translateY(.2em));
+    opacity: .7;
+  }
+  .games.active {
+    @include transform(rotateY(-370deg) translateX(0em) translateY(-.7em) translateZ(.4em));
+    color: #00f;
+    background: #ff0;
+    @include box-shadow(0 0 .1em #990);
+    position: relative;
+    z-index: 500;
+  }
+  .with.active {
+    @include transform(translateX(-2em) translateY(1em));
+    .css {
+      font-size: 1.3em;
+    }
+  }
+  .css.active {
+    color: #000;
+    @include text-shadow(
+      2px -2px 0 #fff,
+      .1em -.05em 0 rgba(#00f, .7),
+      .2em -.1em 0 rgba(#f0f, .6),
+      .3em -.15em 0 rgba(#8f4, .4),
+      .4em -.2em 0 rgba(#ff0, .2),
+
+      -2px 2px 0 #fff,
+      -.05em .1em 0 rgba(#00f, .7),
+      -.1em .2em 0 rgba(#f0f, .6),
+      -.15em .3em 0 rgba(#8f4, .4),
+      -.2em .4em 0 rgba(#ff0, .2)
+    );
+  }
+  .three.active {
+    color: #f00;
+    -webkit-filter: blur(.1em);
+    @include transform(rotateY(2deg)); // HWA
   }
 
   // This warning is for browsers that don't support everything
-  .warning {
-    opacity: 0; // hidden by default
-    width: 100%;
-    height: 100%;
-    color: #a00;
-    text-align: center;
-    background: image-url('bad-time.jpg') no-repeat 10% 70%;
-  }
+  // .warning {
+  //   opacity: 0; // hidden by default
+  //   width: 100%;
+  //   height: 100%;
+  //   color: #a00;
+  //   text-align: center;
+  //   background: image-url('bad-time.jpg') no-repeat 10% 70%;
+  // }
 
   // Show warning for browsers that fail any primary Modernizr test
-  .no-cssmask & .warning.active,
-  .no-cssfilters & .warning.active,
-  .no-cssanimations & .warning.active,
-  .no-csstransitions & .warning.active,
-  .no-csstransforms & .warning.active,
-  .no-csstransforms3d & .warning.active {
-    opacity: 1;
-  }
+  // .no-cssmask & .warning.active,
+  // .no-cssfilters & .warning.active,
+  // .no-cssanimations & .warning.active,
+  // .no-csstransitions & .warning.active,
+  // .no-csstransforms & .warning.active,
+  // .no-csstransforms3d & .warning.active {
+  //   opacity: 1;
+  // }
 
   // Instructions for navigating presentation
   .instructions {
@@ -48,26 +100,6 @@
     top: -4em;
     @include transform-origin(25%, 50%);
     @include animation('throbber' 2s ease-in-out 4);
-
-    // These two rules word the instructions for touch/no-touch users. hax
-    .no-touch & {
-      display: block;
-    }
-    .touch & {
-      display: none;
-    }
-
-    // 'active' in this case means hidden to keep the JS simple
-    &.active {
-      opacity: 0;
-      @include animation(none);
-      @include transition(opacity 1s linear);
-    }
-
-    // If Modernizr executed, hide the word "or" from everyone.
-    .js & .silent {
-      display: none;
-    }
   }
 }
 

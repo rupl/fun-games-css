@@ -686,13 +686,6 @@ span {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
-span.active {
-  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important;
-  -moz-transform: rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important;
-  -ms-transform: rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important;
-  -o-transform: rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important;
-  transform: rotateX(0) rotateY(0) rotateZ(0) translateX(0) translateY(0) translateZ(0em) !important;
-}
 
 .de {
   width: 200px;
@@ -828,6 +821,23 @@ span.active {
 /*
  * Title slide
  */
+#s-title {
+  -webkit-perspective: 10em;
+  -moz-perspective: 10em;
+  -ms-perspective: 10em;
+  -o-perspective: 10em;
+  perspective: 10em;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
 #s-title h1 {
   text-align: center;
   font-size: 2.5em;
@@ -835,22 +845,70 @@ span.active {
   position: absolute;
   top: 1em;
 }
-#s-title h2 {
-  font-size: 1.5em;
-  position: absolute;
-  bottom: 32%;
-  right: 19%;
-}
-#s-title .warning {
-  opacity: 0;
-  width: 100%;
-  height: 100%;
-  color: #a00;
-  text-align: center;
-  background: url('/img/bad-time.jpg?1362348532') no-repeat 10% 70%;
-}
-.no-cssmask #s-title .warning.active, .no-cssfilters #s-title .warning.active, .no-cssanimations #s-title .warning.active, .no-csstransitions #s-title .warning.active, .no-csstransforms #s-title .warning.active, .no-csstransforms3d #s-title .warning.active {
+#s-title .fun.active {
   opacity: 1;
+  color: #f0f;
+  background: #0f0;
+  -webkit-transform: rotateY(16deg) rotateZ(6deg) translateX(0.8em);
+  -moz-transform: rotateY(16deg) rotateZ(6deg) translateX(0.8em);
+  -ms-transform: rotateY(16deg) rotateZ(6deg) translateX(0.8em);
+  -o-transform: rotateY(16deg) rotateZ(6deg) translateX(0.8em);
+  transform: rotateY(16deg) rotateZ(6deg) translateX(0.8em);
+  -webkit-transform-origin: 150% 50%;
+  -moz-transform-origin: 150% 50%;
+  -ms-transform-origin: 150% 50%;
+  -o-transform-origin: 150% 50%;
+  transform-origin: 150% 50%;
+  -webkit-box-shadow: 0 0 0.1em #009999;
+  -moz-box-shadow: 0 0 0.1em #009999;
+  box-shadow: 0 0 0.1em #009999;
+  position: relative;
+  z-index: 500;
+}
+#s-title .and.active {
+  -webkit-transform: scale(0.75) translateX(0.75em) translateY(0.2em);
+  -moz-transform: scale(0.75) translateX(0.75em) translateY(0.2em);
+  -ms-transform: scale(0.75) translateX(0.75em) translateY(0.2em);
+  -o-transform: scale(0.75) translateX(0.75em) translateY(0.2em);
+  transform: scale(0.75) translateX(0.75em) translateY(0.2em);
+  opacity: .7;
+}
+#s-title .games.active {
+  -webkit-transform: rotateY(-370deg) translateX(0em) translateY(-0.7em) translateZ(0.4em);
+  -moz-transform: rotateY(-370deg) translateX(0em) translateY(-0.7em) translateZ(0.4em);
+  -ms-transform: rotateY(-370deg) translateX(0em) translateY(-0.7em) translateZ(0.4em);
+  -o-transform: rotateY(-370deg) translateX(0em) translateY(-0.7em) translateZ(0.4em);
+  transform: rotateY(-370deg) translateX(0em) translateY(-0.7em) translateZ(0.4em);
+  color: #00f;
+  background: #ff0;
+  -webkit-box-shadow: 0 0 0.1em #999900;
+  -moz-box-shadow: 0 0 0.1em #999900;
+  box-shadow: 0 0 0.1em #999900;
+  position: relative;
+  z-index: 500;
+}
+#s-title .with.active {
+  -webkit-transform: translateX(-2em) translateY(1em);
+  -moz-transform: translateX(-2em) translateY(1em);
+  -ms-transform: translateX(-2em) translateY(1em);
+  -o-transform: translateX(-2em) translateY(1em);
+  transform: translateX(-2em) translateY(1em);
+}
+#s-title .with.active .css {
+  font-size: 1.3em;
+}
+#s-title .css.active {
+  color: #000;
+  text-shadow: 2px -2px 0 white, 0.1em -0.05em 0 rgba(0, 0, 255, 0.7), 0.2em -0.1em 0 rgba(255, 0, 255, 0.6), 0.3em -0.15em 0 rgba(136, 255, 68, 0.4), 0.4em -0.2em 0 rgba(255, 255, 0, 0.2), -2px 2px 0 white, -0.05em 0.1em 0 rgba(0, 0, 255, 0.7), -0.1em 0.2em 0 rgba(255, 0, 255, 0.6), -0.15em 0.3em 0 rgba(136, 255, 68, 0.4), -0.2em 0.4em 0 rgba(255, 255, 0, 0.2);
+}
+#s-title .three.active {
+  color: #f00;
+  -webkit-filter: blur(0.1em);
+  -webkit-transform: rotateY(2deg);
+  -moz-transform: rotateY(2deg);
+  -ms-transform: rotateY(2deg);
+  -o-transform: rotateY(2deg);
+  transform: rotateY(2deg);
 }
 #s-title .instructions {
   opacity: 1;
@@ -866,28 +924,6 @@ span.active {
   -ms-animation: "throbber" 2s ease-in-out 4;
   -o-animation: "throbber" 2s ease-in-out 4;
   animation: "throbber" 2s ease-in-out 4;
-}
-.no-touch #s-title .instructions {
-  display: block;
-}
-.touch #s-title .instructions {
-  display: none;
-}
-#s-title .instructions.active {
-  opacity: 0;
-  -webkit-animation: none;
-  -moz-animation: none;
-  -ms-animation: none;
-  -o-animation: none;
-  animation: none;
-  -webkit-transition: opacity 1s linear;
-  -moz-transition: opacity 1s linear;
-  -ms-transition: opacity 1s linear;
-  -o-transition: opacity 1s linear;
-  transition: opacity 1s linear;
-}
-.js #s-title .instructions .silent {
-  display: none;
 }
 
 @-moz-keyframes throbber {
