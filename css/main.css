@@ -2689,11 +2689,11 @@ span {
   -ms-border-radius: 241px;
   -o-border-radius: 241px;
   border-radius: 241px;
-  background: -webkit-repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
-  background: -moz-repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
-  background: -ms-repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
-  background: -o-repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
-  background: repeating-radial-gradient(50% 50%, transparent 0px, black 5px, transparent 10px);
+  background: -webkit-repeating-radial-gradient(50% 50%, transparent 0px, black 6px, transparent 10px, transparent 12px);
+  background: -moz-repeating-radial-gradient(50% 50%, transparent 0px, black 6px, transparent 10px, transparent 12px);
+  background: -ms-repeating-radial-gradient(50% 50%, transparent 0px, black 6px, transparent 10px, transparent 12px);
+  background: -o-repeating-radial-gradient(50% 50%, transparent 0px, black 6px, transparent 10px, transparent 12px);
+  background: repeating-radial-gradient(50% 50%, transparent 0px, black 6px, transparent 10px, transparent 12px);
 }
 #s-moire .circle.pan .pattern-1 {
   -webkit-animation: "pan" 16s ease-in-out infinite;
