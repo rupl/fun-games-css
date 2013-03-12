@@ -2,12 +2,27 @@
  * Contact me
  */
 
-#die-undliche-gesichte {
+#s-end {
+  @include perspective(20em);
+  @include transform-style(preserve-3d);
 
-  .contact {
+  .contact,
+  .sxsw-stuff {
+    float: left;
+    width: 48%;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    @include transform(scale(1));
   }
 
+  .highlight {
+    @extend .it;
+    width: auto;
+    padding: 0 1em;
+    background: #fff;
+    @include transform(scale(1.8));
+    @include box-shadow(0 0 1em rgba(#000, .4));
+    @include transition(all .4s ease-in-out);
+  }
 }

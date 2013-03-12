@@ -488,7 +488,7 @@ table {
 }
 
 /* Global styles ----------------------------------------------------------- */
-.it, span, .cube .side, #s-title .instructions, #s-intro .word, #s-css .slash, #s-paper .sandbox .cube.labels .back:before, #s-ames .ames .h, #s-ames .ames .h-cover, #s-ames .ames .v, #s-alignment .segments .segment {
+.it, span, .cube .side, #s-title .instructions, #s-intro .word, #s-css .slash, #s-paper .sandbox .cube.labels .back:before, #s-ames .ames .h, #s-ames .ames .h-cover, #s-ames .ames .v, #s-alignment .segments .segment, #s-end .highlight {
   display: inline-block;
 }
 
@@ -3026,8 +3026,46 @@ span {
 /*
  * Contact me
  */
-#die-undliche-gesichte .contact {
+#s-end {
+  -webkit-perspective: 20em;
+  -moz-perspective: 20em;
+  -ms-perspective: 20em;
+  -o-perspective: 20em;
+  perspective: 20em;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#s-end .contact,
+#s-end .sxsw-stuff {
+  float: left;
+  width: 48%;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+#s-end .highlight {
+  width: auto;
+  padding: 0 1em;
+  background: #fff;
+  -webkit-transform: scale(1.8);
+  -moz-transform: scale(1.8);
+  -ms-transform: scale(1.8);
+  -o-transform: scale(1.8);
+  transform: scale(1.8);
+  -webkit-box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }

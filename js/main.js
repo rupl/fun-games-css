@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 0;
+  var counter = 85;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -167,7 +167,11 @@
       "scrollTo('#s-demos'); ",
 
       // the beginning
-      "scrollTo('#die-undliche-gesichte'); "
+      "scrollTo('#s-end'); ",
+      "$('#s-end .rate').toggleClass('highlight'); ",
+      "$('#s-end .rate').toggleClass('highlight'); "+
+      "$('#s-end .slides').toggleClass('highlight'); ",
+      "$('#s-end .slides').toggleClass('highlight'); "
 
     ],
     'reverse': [
@@ -329,7 +333,11 @@
       "scrollTo('#s-reference'); ",
 
       // the beginning
-      "scrollTo('#s-demos'); "
+      "scrollTo('#s-demos'); ",
+      "$('#s-end .rate').toggleClass('highlight'); ",
+      "$('#s-end .rate').toggleClass('highlight'); "+
+      "$('#s-end .slides').toggleClass('highlight'); ",
+      "$('#s-end .slides').toggleClass('highlight'); "
 
     ]
   };
