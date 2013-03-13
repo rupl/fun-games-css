@@ -912,8 +912,8 @@ span {
 }
 #s-title .instructions {
   opacity: 1;
-  position: relative;
-  top: -4em;
+  position: absolute;
+  bottom: 2em;
   -webkit-transform-origin: 25% 50%;
   -moz-transform-origin: 25% 50%;
   -ms-transform-origin: 25% 50%;
@@ -1197,7 +1197,7 @@ span {
   padding: 1em;
   position: absolute;
   bottom: 3em;
-  right: .6em;
+  left: 13.6em;
 }
 #s-css section.everything p {
   margin: 0;
@@ -1799,10 +1799,11 @@ span {
 #s-perspective .board {
   width: 18em;
   height: 40em;
+  margin-left: -9em;
   text-align: center;
   opacity: .25;
   position: absolute;
-  left: 20%;
+  left: 50%;
   -webkit-transform-origin: 50% 0%;
   -moz-transform-origin: 50% 0%;
   -ms-transform-origin: 50% 0%;

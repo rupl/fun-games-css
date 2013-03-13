@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 0;
+  var counter = 1;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -12,7 +12,7 @@
 
       // Title
       "",
-      "scrollTo('#s-title'); ",
+      "scrollTo('#s-title'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Title']); ",
       "$('#s-title .fun').toggleClass('active'); ",
       "$('#s-title .and').toggleClass('active'); ",
       "$('#s-title .games').toggleClass('active'); ",

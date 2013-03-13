@@ -22,10 +22,11 @@ $tilt: 75deg;
   .board {
     width: 18em;
     height: 40em;
+    margin-left: -9em;
     text-align: center;
     opacity: .25;
     position: absolute;
-    left: 20%;
+    left: 50%;
     @include transform-origin(50%, 0%);
     @include transform(rotateX(0deg));
     @include transition(all 4s ease-in-out);

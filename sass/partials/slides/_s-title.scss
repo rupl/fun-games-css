@@ -72,31 +72,12 @@
     @include transform(rotateY(2deg)); // HWA
   }
 
-  // This warning is for browsers that don't support everything
-  // .warning {
-  //   opacity: 0; // hidden by default
-  //   width: 100%;
-  //   height: 100%;
-  //   color: #a00;
-  //   text-align: center;
-  //   background: image-url('bad-time.jpg') no-repeat 10% 70%;
-  // }
-
-  // Show warning for browsers that fail any primary Modernizr test
-  // .no-cssfilters & .warning.active,
-  // .no-cssanimations & .warning.active,
-  // .no-csstransitions & .warning.active,
-  // .no-csstransforms & .warning.active,
-  // .no-csstransforms3d & .warning.active {
-  //   opacity: 1;
-  // }
-
   // Instructions for navigating presentation
   .instructions {
     @extend .it;
     opacity: 1;
-    position: relative;
-    top: -4em;
+    position: absolute;
+    bottom: 2em;
     @include transform-origin(25%, 50%);
     @include animation('throbber' 2s ease-in-out 4);
   }
