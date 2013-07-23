@@ -1233,10 +1233,10 @@ span {
   transform: rotateZ(-70deg) translateX(-0.1em) translateZ(0);
 }
 #s-css h3 .slash {
-  left: -0.65em;
+  left: -.65em;
 }
 #s-css .everything .slash {
-  left: -0.37em;
+  left: -.37em;
 }
 #s-css section.unfinished {
   width: 95%;
@@ -1594,8 +1594,8 @@ span {
 #s-slinky .slinky .segment {
   float: none;
   position: absolute;
-  top: -0.275em;
-  left: -0.275em;
+  top: -.275em;
+  left: -.275em;
   z-index: 900;
   width: 10em;
   height: 10em;
@@ -2505,63 +2505,72 @@ body.wireframe #s-tile div#floor {
   }
 }
 
+#s-animation {
+  position: relative;
+}
+#s-animation .intro {
+  position: relative;
+  z-index: 100;
+}
 #s-animation .organism {
   line-height: 1em;
-  width: 18em;
-  height: 18em;
-  margin-top: 2em;
-  margin-left: -9em;
-  position: relative;
-  left: 50%;
+  width: 110%;
+  height: 110%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 #s-animation .cell {
   position: relative;
-  width: 1em;
-  height: 1em;
-  margin: -0.1em;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
-  border-radius: 0.5em;
-  background: -webkit-gradient(radial, 0.5em 0.5em, 0, 0.5em 0.5em, 0.6, color-stop(0%, #3eb0ff), color-stop(100%, #000044));
-  background: -webkit-radial-gradient(0.5em 0.5em, #3eb0ff 0%, #000044 0.6em);
-  background: -moz-radial-gradient(0.5em 0.5em, #3eb0ff 0%, #000044 0.6em);
-  background: -o-radial-gradient(0.5em 0.5em, #3eb0ff 0%, #000044 0.6em);
-  background: -ms-radial-gradient(0.5em 0.5em, #3eb0ff 0%, #000044 0.6em);
-  background: radial-gradient(0.5em 0.5em, #3eb0ff 0%, #000044 0.6em);
+  width: 2em;
+  height: 2em;
+  opacity: 0;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  background: -webkit-gradient(radial, 1em 1em, 0, 1em 1em, 1.2, color-stop(0%, #3eb0ff), color-stop(100%, #000044));
+  background: -webkit-radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
+  background: -moz-radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
+  background: -o-radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
+  background: -ms-radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
+  background: radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
 }
 #s-animation .cell .nucleus {
   position: absolute;
-  width: .6em;
-  height: .6em;
+  width: 1em;
+  height: 1em;
   top: .2em;
   left: .2em;
-  -webkit-border-radius: 0.5em;
-  -moz-border-radius: 0.5em;
-  -ms-border-radius: 0.5em;
-  -o-border-radius: 0.5em;
-  border-radius: 0.5em;
-  background: -webkit-gradient(radial, 0.2em 0.2em, 0, 0.2em 0.2em, 0.3, color-stop(0%, rgba(170, 0, 102, 0.8)), color-stop(100%, rgba(62, 176, 255, 0.1)));
-  background: -webkit-radial-gradient(0.2em 0.2em, rgba(170, 0, 102, 0.8) 0%, rgba(62, 176, 255, 0.1) 0.3em);
-  background: -moz-radial-gradient(0.2em 0.2em, rgba(170, 0, 102, 0.8) 0%, rgba(62, 176, 255, 0.1) 0.3em);
-  background: -o-radial-gradient(0.2em 0.2em, rgba(170, 0, 102, 0.8) 0%, rgba(62, 176, 255, 0.1) 0.3em);
-  background: -ms-radial-gradient(0.2em 0.2em, rgba(170, 0, 102, 0.8) 0%, rgba(62, 176, 255, 0.1) 0.3em);
-  background: radial-gradient(0.2em 0.2em, rgba(170, 0, 102, 0.8) 0%, rgba(62, 176, 255, 0.1) 0.3em);
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  background: -webkit-gradient(radial, 0.4em 0.4em, 0, 0.4em 0.4em, 0.6, color-stop(0%, rgba(170, 153, 255, 0.8)), color-stop(100%, rgba(110, 224, 255, 0.1)));
+  background: -webkit-radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
+  background: -moz-radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
+  background: -o-radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
+  background: -ms-radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
+  background: radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
+}
+#s-animation.wiggle .intro {
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
 }
 #s-animation.wiggle .cell {
-  -webkit-animation: "cell" 0.9s ease-in-out alternate infinite;
-  -moz-animation: "cell" 0.9s ease-in-out alternate infinite;
-  -ms-animation: "cell" 0.9s ease-in-out alternate infinite;
-  -o-animation: "cell" 0.9s ease-in-out alternate infinite;
-  animation: "cell" 0.9s ease-in-out alternate infinite;
+  -webkit-animation: "cell" 4.5s ease-in-out alternate infinite;
+  -moz-animation: "cell" 4.5s ease-in-out alternate infinite;
+  -ms-animation: "cell" 4.5s ease-in-out alternate infinite;
+  -o-animation: "cell" 4.5s ease-in-out alternate infinite;
+  animation: "cell" 4.5s ease-in-out alternate infinite;
 }
 #s-animation.wiggle .nucleus {
-  -webkit-animation: "nucleus" 3.2s ease-in-out alternate infinite;
-  -moz-animation: "nucleus" 3.2s ease-in-out alternate infinite;
-  -ms-animation: "nucleus" 3.2s ease-in-out alternate infinite;
-  -o-animation: "nucleus" 3.2s ease-in-out alternate infinite;
-  animation: "nucleus" 3.2s ease-in-out alternate infinite;
+  -webkit-animation: "nucleus" 6s ease-in-out alternate infinite;
+  -moz-animation: "nucleus" 6s ease-in-out alternate infinite;
+  -ms-animation: "nucleus" 6s ease-in-out alternate infinite;
+  -o-animation: "nucleus" 6s ease-in-out alternate infinite;
+  animation: "nucleus" 6s ease-in-out alternate infinite;
 }
 #s-animation.wiggle .cell:nth-child(9n + 1) {
   -webkit-animation-delay: 0s;
@@ -2571,60 +2580,60 @@ body.wireframe #s-tile div#floor {
   animation-delay: 0s;
 }
 #s-animation.wiggle .cell:nth-child(9n + 2) {
-  -webkit-animation-delay: 0.25s;
-  -moz-animation-delay: 0.25s;
-  -ms-animation-delay: 0.25s;
-  -o-animation-delay: 0.25s;
-  animation-delay: 0.25s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 3) {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  -ms-animation-delay: 0.5s;
-  -o-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 4) {
-  -webkit-animation-delay: 0.75s;
-  -moz-animation-delay: 0.75s;
-  -ms-animation-delay: 0.75s;
-  -o-animation-delay: 0.75s;
-  animation-delay: 0.75s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 5) {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -ms-animation-delay: 1s;
   -o-animation-delay: 1s;
   animation-delay: 1s;
 }
-#s-animation.wiggle .cell:nth-child(9n + 6) {
-  -webkit-animation-delay: 1.25s;
-  -moz-animation-delay: 1.25s;
-  -ms-animation-delay: 1.25s;
-  -o-animation-delay: 1.25s;
-  animation-delay: 1.25s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 7) {
-  -webkit-animation-delay: 1.5s;
-  -moz-animation-delay: 1.5s;
-  -ms-animation-delay: 1.5s;
-  -o-animation-delay: 1.5s;
-  animation-delay: 1.5s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 8) {
-  -webkit-animation-delay: 1.75s;
-  -moz-animation-delay: 1.75s;
-  -ms-animation-delay: 1.75s;
-  -o-animation-delay: 1.75s;
-  animation-delay: 1.75s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 9) {
+#s-animation.wiggle .cell:nth-child(9n + 3) {
   -webkit-animation-delay: 2s;
   -moz-animation-delay: 2s;
   -ms-animation-delay: 2s;
   -o-animation-delay: 2s;
   animation-delay: 2s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 4) {
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -ms-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 5) {
+  -webkit-animation-delay: 4s;
+  -moz-animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -o-animation-delay: 4s;
+  animation-delay: 4s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 6) {
+  -webkit-animation-delay: 5s;
+  -moz-animation-delay: 5s;
+  -ms-animation-delay: 5s;
+  -o-animation-delay: 5s;
+  animation-delay: 5s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 7) {
+  -webkit-animation-delay: 6s;
+  -moz-animation-delay: 6s;
+  -ms-animation-delay: 6s;
+  -o-animation-delay: 6s;
+  animation-delay: 6s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 8) {
+  -webkit-animation-delay: 7s;
+  -moz-animation-delay: 7s;
+  -ms-animation-delay: 7s;
+  -o-animation-delay: 7s;
+  animation-delay: 7s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 9) {
+  -webkit-animation-delay: 8s;
+  -moz-animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  -o-animation-delay: 8s;
+  animation-delay: 8s;
 }
 #s-animation.wiggle .cell:nth-child(9n + 1) .nucleus {
   -webkit-animation-delay: 0s;
@@ -2634,60 +2643,60 @@ body.wireframe #s-tile div#floor {
   animation-delay: 0s;
 }
 #s-animation.wiggle .cell:nth-child(9n + 2) .nucleus {
-  -webkit-animation-delay: 0.16667s;
-  -moz-animation-delay: 0.16667s;
-  -ms-animation-delay: 0.16667s;
-  -o-animation-delay: 0.16667s;
-  animation-delay: 0.16667s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 3) .nucleus {
   -webkit-animation-delay: 0.33333s;
   -moz-animation-delay: 0.33333s;
   -ms-animation-delay: 0.33333s;
   -o-animation-delay: 0.33333s;
   animation-delay: 0.33333s;
 }
-#s-animation.wiggle .cell:nth-child(9n + 4) .nucleus {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  -ms-animation-delay: 0.5s;
-  -o-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 5) .nucleus {
+#s-animation.wiggle .cell:nth-child(9n + 3) .nucleus {
   -webkit-animation-delay: 0.66667s;
   -moz-animation-delay: 0.66667s;
   -ms-animation-delay: 0.66667s;
   -o-animation-delay: 0.66667s;
   animation-delay: 0.66667s;
 }
-#s-animation.wiggle .cell:nth-child(9n + 6) .nucleus {
-  -webkit-animation-delay: 0.83333s;
-  -moz-animation-delay: 0.83333s;
-  -ms-animation-delay: 0.83333s;
-  -o-animation-delay: 0.83333s;
-  animation-delay: 0.83333s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 7) .nucleus {
+#s-animation.wiggle .cell:nth-child(9n + 4) .nucleus {
   -webkit-animation-delay: 1s;
   -moz-animation-delay: 1s;
   -ms-animation-delay: 1s;
   -o-animation-delay: 1s;
   animation-delay: 1s;
 }
-#s-animation.wiggle .cell:nth-child(9n + 8) .nucleus {
-  -webkit-animation-delay: 1.16667s;
-  -moz-animation-delay: 1.16667s;
-  -ms-animation-delay: 1.16667s;
-  -o-animation-delay: 1.16667s;
-  animation-delay: 1.16667s;
-}
-#s-animation.wiggle .cell:nth-child(9n + 9) .nucleus {
+#s-animation.wiggle .cell:nth-child(9n + 5) .nucleus {
   -webkit-animation-delay: 1.33333s;
   -moz-animation-delay: 1.33333s;
   -ms-animation-delay: 1.33333s;
   -o-animation-delay: 1.33333s;
   animation-delay: 1.33333s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 6) .nucleus {
+  -webkit-animation-delay: 1.66667s;
+  -moz-animation-delay: 1.66667s;
+  -ms-animation-delay: 1.66667s;
+  -o-animation-delay: 1.66667s;
+  animation-delay: 1.66667s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 7) .nucleus {
+  -webkit-animation-delay: 2s;
+  -moz-animation-delay: 2s;
+  -ms-animation-delay: 2s;
+  -o-animation-delay: 2s;
+  animation-delay: 2s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 8) .nucleus {
+  -webkit-animation-delay: 2.33333s;
+  -moz-animation-delay: 2.33333s;
+  -ms-animation-delay: 2.33333s;
+  -o-animation-delay: 2.33333s;
+  animation-delay: 2.33333s;
+}
+#s-animation.wiggle .cell:nth-child(9n + 9) .nucleus {
+  -webkit-animation-delay: 2.66667s;
+  -moz-animation-delay: 2.66667s;
+  -ms-animation-delay: 2.66667s;
+  -o-animation-delay: 2.66667s;
+  animation-delay: 2.66667s;
 }
 #s-animation.eyeball .cell {
   background: -webkit-gradient(radial, 0.4em 0.4em, 0, 0.4em 0.4em, 0.4, color-stop(0%, #3eb0ff), color-stop(100%, #eeeeee));
@@ -2716,105 +2725,98 @@ body.wireframe #s-tile div#floor {
 
 @-moz-keyframes cell {
   100% {
-    width: 1.6em;
-    height: 1.6em;
-    margin: -0.4em;
-    top: .2em;
-    -moz-border-radius: 0.8em;
-    border-radius: 0.8em;
+    -moz-transform: scale(2);
+    transform: scale(2);
+    opacity: 0.32;
   }
 }
 
 @-webkit-keyframes cell {
   100% {
-    width: 1.6em;
-    height: 1.6em;
-    margin: -0.4em;
-    top: .2em;
-    -webkit-border-radius: 0.8em;
-    border-radius: 0.8em;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    opacity: 0.32;
   }
 }
 
 @-o-keyframes cell {
   100% {
-    width: 1.6em;
-    height: 1.6em;
-    margin: -0.4em;
-    top: .2em;
-    -o-border-radius: 0.8em;
-    border-radius: 0.8em;
+    -o-transform: scale(2);
+    transform: scale(2);
+    opacity: 0.32;
   }
 }
 
 @-ms-keyframes cell {
   100% {
-    width: 1.6em;
-    height: 1.6em;
-    margin: -0.4em;
-    top: .2em;
-    -ms-border-radius: 0.8em;
-    border-radius: 0.8em;
+    -ms-transform: scale(2);
+    transform: scale(2);
+    opacity: 0.32;
   }
 }
 
 @keyframes cell {
   100% {
-    width: 1.6em;
-    height: 1.6em;
-    margin: -0.4em;
-    top: .2em;
-    border-radius: 0.8em;
+    transform: scale(2);
+    opacity: 0.32;
   }
 }
 
 @-moz-keyframes nucleus {
   50% {
-    left: .6em;
+    -moz-transform: translateX(-0.6em);
+    transform: translateX(-0.6em);
   }
 
   100% {
-    top: .8em;
+    -moz-transform: translateX(-0.8em);
+    transform: translateX(-0.8em);
   }
 }
 
 @-webkit-keyframes nucleus {
   50% {
-    left: .6em;
+    -webkit-transform: translateX(-0.6em);
+    transform: translateX(-0.6em);
   }
 
   100% {
-    top: .8em;
+    -webkit-transform: translateX(-0.8em);
+    transform: translateX(-0.8em);
   }
 }
 
 @-o-keyframes nucleus {
   50% {
-    left: .6em;
+    -o-transform: translateX(-0.6em);
+    transform: translateX(-0.6em);
   }
 
   100% {
-    top: .8em;
+    -o-transform: translateX(-0.8em);
+    transform: translateX(-0.8em);
   }
 }
 
 @-ms-keyframes nucleus {
   50% {
-    left: .6em;
+    -ms-transform: translateX(-0.6em);
+    transform: translateX(-0.6em);
   }
 
   100% {
-    top: .8em;
+    -ms-transform: translateX(-0.8em);
+    transform: translateX(-0.8em);
   }
 }
 
 @keyframes nucleus {
   50% {
-    left: .6em;
+    transform: translateX(-0.6em);
   }
 
   100% {
-    top: .8em;
+    transform: translateX(-0.8em);
   }
 }
 
@@ -2880,7 +2882,7 @@ body.wireframe #s-tile div#floor {
   background: #ddd;
   position: absolute;
   top: 50%;
-  margin-top: -0.5em;
+  margin-top: -.5em;
   border-top: .1em solid #333;
   border-bottom: .1em solid #333;
 }
@@ -2895,7 +2897,7 @@ body.wireframe #s-tile div#floor {
   background: #ddd;
   position: absolute;
   left: 50%;
-  margin-left: -0.5em;
+  margin-left: -.5em;
   border-left: .1em solid #333;
 }
 #s-ames .container.rotate {

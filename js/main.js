@@ -137,8 +137,8 @@
       // Animation
       "scrollTo('#s-animation'); "+
       "$('#s-animation').toggleClass('wiggle'); ",
-      "$('#s-animation').toggleClass('wiggle eyeball'); ",
-      "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
+      // "$('#s-animation').toggleClass('wiggle eyeball'); ",
+      // "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
       "$('#s-animation .organism').toggleClass('hide'); "+
 
       // Optical illusions
@@ -314,8 +314,8 @@
       // Animation
       "scrollTo('#s-perspective'); "+
       "$('#s-animation').toggleClass('wiggle'); ",
-      "$('#s-animation').toggleClass('wiggle eyeball'); ",
-      "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
+      // "$('#s-animation').toggleClass('wiggle eyeball'); ",
+      // "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
       "$('#s-animation .organism').toggleClass('hide'); "+
 
       // Optical illusions
