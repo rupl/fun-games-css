@@ -1,7 +1,7 @@
 (function($){
 
   // Keep track of where we are in the story
-  var counter = 1;
+  var counter = 0;
 
   // Story contains all the actions that bring the slides to life
   // It contains the narrative in both directions: forward and reverse.
@@ -88,6 +88,9 @@
       "$('#s-funstuff .contact').toggleClass('show'); "+
       "$('#s-funstuff .devrels').toggleClass('show'); ",
 
+      // Transforms
+      "scrollTo('#s-transforms'); ",
+
       // Folding paper
       "scrollTo('#s-paper'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Paper']); ",
       "$('#s-paper .folds').toggleClass('folded'); ",
@@ -112,6 +115,14 @@
       "$('#s-slinky .slinky').toggleClass('full stretched'); ",
       "$('#s-slinky .slinky').toggleClass('oscillate'); ",
 
+      // Tile
+      "scrollTo('#s-tile'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(even)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(odd)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(2), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(10), :nth-child(12) ').toggleClass('lift'); ",
+      "$('#floor .panel').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift'); ",
+
       // Perspective
       "scrollTo('#s-perspective'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Perspective']); ",
       "$('#s-perspective').toggleClass('tilt'); ",
@@ -126,8 +137,8 @@
       // Animation
       "scrollTo('#s-animation'); _gaq.push(['_trackEvent', 'Slides', 'Progress', 'Animation']); "+
       "$('#s-animation').toggleClass('wiggle'); ",
-      "$('#s-animation').toggleClass('wiggle eyeball'); ",
-      "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
+      // "$('#s-animation').toggleClass('wiggle eyeball'); ",
+      // "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
       "$('#s-animation .organism').toggleClass('hide'); "+
 
       // Optical illusions
@@ -250,8 +261,11 @@
       "$('#s-funstuff .contact').toggleClass('show'); "+
       "$('#s-funstuff .devrels').toggleClass('show'); ",
 
-      // Paper
+      // Transforms
       "scrollTo('#s-funstuff'); ",
+
+      // Paper
+      "scrollTo('#s-transforms'); ",
       "$('#s-paper .folds').toggleClass('folded'); ",
       "$('#s-paper .paper').toggleClass('folded'); ",
       "$('#s-paper .like').toggleClass('folded'); ",
@@ -274,8 +288,16 @@
       "$('#s-slinky .slinky').toggleClass('full stretched'); ",
       "$('#s-slinky .slinky').toggleClass('oscillate'); ",
 
-      // Perspective
+      // Tile
       "scrollTo('#s-slinky'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(even)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(odd)').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift').filter(':nth-child(2), :nth-child(4), :nth-child(5), :nth-child(7), :nth-child(10), :nth-child(12) ').toggleClass('lift'); ",
+      "$('#floor .panel').toggleClass('lift'); ",
+      "$('#floor .panel').removeClass('lift'); ",
+
+      // Perspective
+      "scrollTo('#s-tile'); ",
       "$('#s-perspective').toggleClass('tilt'); ",
       "$('#s-perspective').toggleClass('space'); ",
       "$('#s-perspective .board').toggleClass('move'); "+
@@ -288,8 +310,8 @@
       // Animation
       "scrollTo('#s-perspective'); "+
       "$('#s-animation').toggleClass('wiggle'); ",
-      "$('#s-animation').toggleClass('wiggle eyeball'); ",
-      "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
+      // "$('#s-animation').toggleClass('wiggle eyeball'); ",
+      // "$('#s-animation').toggleClass('eyeball'); "+ // turn this animation off then proceed
       "$('#s-animation .organism').toggleClass('hide'); "+
 
       // Optical illusions

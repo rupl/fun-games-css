@@ -3,63 +3,73 @@
 //
 
 #s-animation {
+  position: relative;
+
+  .intro {
+    position: relative;
+    z-index: 100;
+  }
 
   .organism {
     line-height: 1em;
-    width: 18em;
-    height: 18em;
-    margin-top: 2em;
-    margin-left: -9em;
-    position: relative;
-    left: 50%;
+    width: 110%;
+    height: 110%;
+    position: absolute;
+    left: 0;
+    top: 0;
   }
   .cell {
     position: relative;
-    width: 1em;
-    height: 1em;
-    margin: -.1em;
-    @include border-radius(.5em);
-    @include background(radial-gradient(.5em .5em, #3eb0ff 0, #004 .6em));
+    width: 2em;
+    height: 2em;
+    opacity: 0;
+    @include border-radius(1em);
+    @include background(radial-gradient(1em 1em, #3eb0ff 0, #004 1.2em));
 
     .nucleus {
       position: absolute;
-      width: .6em;
-      height: .6em;
+      width: 1em;
+      height: 1em;
       top: .2em;
       left: .2em;
-      @include border-radius(.5em);
-      @include background(radial-gradient(.2em .2em, rgba(#a06, .8) 0, rgba(#3eb0ff, .1) .3em));
+      @include border-radius(1em);
+      @include background(radial-gradient(.4em .4em, rgba(#a9f, .8) 0, rgba(#6ee0ff, .1) .6em));
     }
   }
 
   // Don't animate until we get to the slide
   &.wiggle {
+    // add a glow to the text for readability
+    .intro {
+      text-shadow: 0 0 8px rgba(#fff, 0.6);
+    }
+
     .cell {
-      @include animation('cell' .9s ease-in-out alternate infinite);
+      @include animation('cell' 4.5s ease-in-out alternate infinite);
     }
     .nucleus {
-      @include animation('nucleus' 3.2s ease-in-out alternate infinite);
+      @include animation('nucleus' 6s ease-in-out alternate infinite);
     }
 
-    .cell:nth-child(9n + 1) {@include animation-delay(0s / 4); }
-    .cell:nth-child(9n + 2) {@include animation-delay(1s / 4); }
-    .cell:nth-child(9n + 3) {@include animation-delay(2s / 4); }
-    .cell:nth-child(9n + 4) {@include animation-delay(3s / 4); }
-    .cell:nth-child(9n + 5) {@include animation-delay(4s / 4); }
-    .cell:nth-child(9n + 6) {@include animation-delay(5s / 4); }
-    .cell:nth-child(9n + 7) {@include animation-delay(6s / 4); }
-    .cell:nth-child(9n + 8) {@include animation-delay(7s / 4); }
-    .cell:nth-child(9n + 9) {@include animation-delay(8s / 4); }
+    .cell:nth-child(9n + 1) {@include animation-delay(0s); }
+    .cell:nth-child(9n + 2) {@include animation-delay(1s); }
+    .cell:nth-child(9n + 3) {@include animation-delay(2s); }
+    .cell:nth-child(9n + 4) {@include animation-delay(3s); }
+    .cell:nth-child(9n + 5) {@include animation-delay(4s); }
+    .cell:nth-child(9n + 6) {@include animation-delay(5s); }
+    .cell:nth-child(9n + 7) {@include animation-delay(6s); }
+    .cell:nth-child(9n + 8) {@include animation-delay(7s); }
+    .cell:nth-child(9n + 9) {@include animation-delay(8s); }
 
-    .cell:nth-child(9n + 1) .nucleus {@include animation-delay(0s / 6); }
-    .cell:nth-child(9n + 2) .nucleus {@include animation-delay(1s / 6); }
-    .cell:nth-child(9n + 3) .nucleus {@include animation-delay(2s / 6); }
-    .cell:nth-child(9n + 4) .nucleus {@include animation-delay(3s / 6); }
-    .cell:nth-child(9n + 5) .nucleus {@include animation-delay(4s / 6); }
-    .cell:nth-child(9n + 6) .nucleus {@include animation-delay(5s / 6); }
-    .cell:nth-child(9n + 7) .nucleus {@include animation-delay(6s / 6); }
-    .cell:nth-child(9n + 8) .nucleus {@include animation-delay(7s / 6); }
-    .cell:nth-child(9n + 9) .nucleus {@include animation-delay(8s / 6); }
+    .cell:nth-child(9n + 1) .nucleus {@include animation-delay(0s / 3); }
+    .cell:nth-child(9n + 2) .nucleus {@include animation-delay(1s / 3); }
+    .cell:nth-child(9n + 3) .nucleus {@include animation-delay(2s / 3); }
+    .cell:nth-child(9n + 4) .nucleus {@include animation-delay(3s / 3); }
+    .cell:nth-child(9n + 5) .nucleus {@include animation-delay(4s / 3); }
+    .cell:nth-child(9n + 6) .nucleus {@include animation-delay(5s / 3); }
+    .cell:nth-child(9n + 7) .nucleus {@include animation-delay(6s / 3); }
+    .cell:nth-child(9n + 8) .nucleus {@include animation-delay(7s / 3); }
+    .cell:nth-child(9n + 9) .nucleus {@include animation-delay(8s / 3); }
   }
 
   // turn cells into eyeballs. why not?
@@ -84,19 +94,16 @@
 // need the 100% keyframe. Defaults from selector are used at 0%
 @include keyframes('cell') {
   100% {
-    width: 1.6em;
-    height: 1.6em;
-    margin: -.4em;
-    top: .2em;
-    @include border-radius(.8em);
+    @include transform(scale(2));
+    opacity: 0.32;
   }
 }
 
 @include keyframes('nucleus') {
   50% {
-    left: .6em;
+    @include transform(translateX(-.6em));
   }
   100% {
-    top: .8em;
+    @include transform(translateX(-.8em));
   }
 }

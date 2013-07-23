@@ -46,6 +46,11 @@ main {
   article:last-child {
     margin-bottom: 0.5em;
   }
+
+  article.break {
+    background: #003;
+    color: #fff;
+  }
 }
 
 .no-touch nav {
