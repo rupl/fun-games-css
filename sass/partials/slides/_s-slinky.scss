@@ -37,6 +37,12 @@
 
       // transition is the magic sauce for animation
       @include transition(all 0.5s ease-in-out);
+
+      // Change slinky segment color on hover
+      // Just to prove it's real to the audience
+      &:hover {
+        border-color: #00f;
+      }
     }
   }
 
