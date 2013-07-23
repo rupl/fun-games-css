@@ -1790,7 +1790,7 @@ span {
  * Stone tile
  */
 #s-tile {
-  background: black url('/img/tile-bg.jpg?1362348532') no-repeat -10px top;
+  background: black url('/fun-games-css/img/tile-bg.jpg?1362348532') no-repeat -10px top;
   color: #000;
   overflow: hidden;
   -webkit-perspective: 470px;
@@ -1970,7 +1970,7 @@ span {
 #s-tile .panel .top {
   width: inherit;
   height: inherit;
-  background: url('/img/tile-4.jpg?1362348532');
+  background: url('/fun-games-css/img/tile-4.jpg?1362348532');
   -webkit-transform: translate3d(0, 0, 1px);
   -moz-transform: translate3d(0, 0, 1px);
   -ms-transform: translate3d(0, 0, 1px);
@@ -1995,7 +1995,7 @@ span {
   background-position: 70% 80%;
 }
 #s-tile .panel:nth-child(5n) .top {
-  background: url('/img/tile-2.jpg?1362348532') 50% 50%;
+  background: url('/fun-games-css/img/tile-2.jpg?1362348532') 50% 50%;
 }
 #s-tile .panel:hover,
 #s-tile .panel.lift {
