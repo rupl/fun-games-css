@@ -9,10 +9,19 @@ Watch in full-screen for best results.
 ## Modifying or re-using
 
 CSS in this presentation is generated using Sass and Compass. Make sure you
-install the required gems before trying to make changes to the source.
+install the required gems before trying to make changes to the source. Here are some commands to get you started:
 
-    [sudo] gem install compass
-    [sudo] gem install animation --pre
+```
+# installation:
+bundle install
+
+# if there are "require" errors
+bundle update
+
+# edit things and poke around
+bundle exec compass watch
+```
+
 
 ## Presented at
 
