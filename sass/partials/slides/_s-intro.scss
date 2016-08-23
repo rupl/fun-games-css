@@ -8,7 +8,8 @@
 #s-intro {
   // Defaults needed for transforms
   @include transform-style(preserve-3d);
-  @include perspective(20em);
+  @include perspective(600px);
+
   // needed for .overlay
   position: relative;
 
@@ -77,7 +78,7 @@
       border-radius: .5em;
     }
     &.boxshadow {
-      @include box-shadow(0 .1em .3em rgba(#000, .7));
+      box-shadow: 0 .1em .3em rgba(#000, .7);
     }
     &.opacity {
       opacity: .8;
