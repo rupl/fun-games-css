@@ -1,7 +1,7 @@
-@import url("http://fonts.googleapis.com/css?family=Rambla:400,700,400italic");
 /* Libraries and Dependencies ---------------------------------------------- */
+@import url("http://fonts.googleapis.com/css?family=Rambla:400,700,400italic");
 /* Normalize --------------------------------------------------------------- */
-/* normalize.css v1.0.1 | MIT License | git.io/normalize */
+/*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -555,7 +555,6 @@ main {
 main * {
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -615,7 +614,6 @@ main article.break {
   background: -webkit-linear-gradient(#ffffff, #eeeeee);
   background: -moz-linear-gradient(#ffffff, #eeeeee);
   background: -o-linear-gradient(#ffffff, #eeeeee);
-  background: -ms-linear-gradient(#ffffff, #eeeeee);
   background: linear-gradient(#ffffff, #eeeeee);
   -webkit-box-shadow: 0 0.1em 0.35em rgba(0, 0, 0, 0.45);
   -moz-box-shadow: 0 0.1em 0.35em rgba(0, 0, 0, 0.45);
@@ -660,7 +658,6 @@ footer {
   cursor: default;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -686,7 +683,6 @@ dl dt {
 span {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -705,7 +701,6 @@ span {
   left: 0px;
   -webkit-transition: all 0.25s ease-in-out;
   -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
   -o-transition: all 0.25s ease-in-out;
   transition: all 0.25s ease-in-out;
 }
@@ -838,7 +833,6 @@ span {
   transform-style: preserve-3d;
   -webkit-transition: all 1s ease-in-out;
   -moz-transition: all 1s ease-in-out;
-  -ms-transition: all 1s ease-in-out;
   -o-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
@@ -979,7 +973,7 @@ span {
   width: 300px;
   height: 300px;
   margin-left: -150px;
-  background: url('/fun-games-css/img/4k-logo-square-500px.png?1363067343') no-repeat left top;
+  background: url('/fun-games-css/img/4k-logo-square-500px.png?1413383637') no-repeat left top;
   background-size: contain;
   position: absolute;
   bottom: 1.2em;
@@ -1015,7 +1009,6 @@ span {
   color: #000;
   -webkit-transition: none;
   -moz-transition: none;
-  -ms-transition: none;
   -o-transition: none;
   transition: none;
 }
@@ -1084,13 +1077,11 @@ span {
   background: -webkit-linear-gradient(#bbccdd, #334455);
   background: -moz-linear-gradient(#bbccdd, #334455);
   background: -o-linear-gradient(#bbccdd, #334455);
-  background: -ms-linear-gradient(#bbccdd, #334455);
   background: linear-gradient(#bbccdd, #334455);
 }
 #s-intro .word.transition {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
@@ -1127,7 +1118,7 @@ span {
   top: 0;
   left: 0;
   z-index: 600;
-  background: black url('/fun-games-css/img/crysis-3-ny-city-ruins.jpg?1363064761') no-repeat left top;
+  background: black url('/fun-games-css/img/crysis-3-ny-city-ruins.jpg?1413383637') no-repeat left top;
   background-size: cover;
 }
 #s-intro.video-games .overlay {
@@ -1252,10 +1243,12 @@ span {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   -ms-column-count: 3;
+  -o-column-count: 3;
   column-count: 3;
   -webkit-column-width: 33%;
   -moz-column-width: 33%;
   -ms-column-width: 33%;
+  -o-column-width: 33%;
   column-width: 33%;
 }
 #s-css ul.drafts.columns li {
@@ -1263,7 +1256,6 @@ span {
   list-style-type: none;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
-  -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   -webkit-transform: translateX(0) translateZ(0);
@@ -1587,7 +1579,6 @@ span {
   transform-style: preserve-3d;
   -webkit-transition: all 1.25s ease-in-out;
   -moz-transition: all 1.25s ease-in-out;
-  -ms-transition: all 1.25s ease-in-out;
   -o-transition: all 1.25s ease-in-out;
   transition: all 1.25s ease-in-out;
 }
@@ -1621,7 +1612,6 @@ span {
   transform-style: preserve-3d;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -1672,7 +1662,6 @@ span {
 #s-slinky .slinky.stretched {
   -webkit-transition: all 2s ease-in-out;
   -moz-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
 }
@@ -1793,7 +1782,7 @@ span {
  * Stone tile
  */
 #s-tile {
-  background: black url('/fun-games-css/img/tile-bg.jpg?1362348532') no-repeat -10px top;
+  background: black url('/fun-games-css/img/tile-bg.jpg?1413383637') no-repeat -10px top;
   color: #000;
   overflow: hidden;
   -webkit-perspective: 470px;
@@ -1894,7 +1883,6 @@ span {
 #s-tile .panel .shadow {
   -webkit-transition: 0.3s all ease-in-out;
   -moz-transition: 0.3s all ease-in-out;
-  -ms-transition: 0.3s all ease-in-out;
   -o-transition: 0.3s all ease-in-out;
   transition: 0.3s all ease-in-out;
 }
@@ -1973,7 +1961,7 @@ span {
 #s-tile .panel .top {
   width: inherit;
   height: inherit;
-  background: url('/fun-games-css/img/tile-4.jpg?1362348532');
+  background: url('/fun-games-css/img/tile-4.jpg?1413383637');
   -webkit-transform: translate3d(0, 0, 1px);
   -moz-transform: translate3d(0, 0, 1px);
   -ms-transform: translate3d(0, 0, 1px);
@@ -1998,7 +1986,7 @@ span {
   background-position: 70% 80%;
 }
 #s-tile .panel:nth-child(5n) .top {
-  background: url('/fun-games-css/img/tile-2.jpg?1362348532') 50% 50%;
+  background: url('/fun-games-css/img/tile-2.jpg?1413383637') 50% 50%;
 }
 #s-tile .panel:hover,
 #s-tile .panel.lift {
@@ -2063,7 +2051,7 @@ body.wireframe #s-tile div#floor {
 }
 
 #s-perspective {
-  background: white url('/fun-games-css/img/space-bg.jpg?1362348532') no-repeat left -960px;
+  background: white url('/fun-games-css/img/space-bg.jpg?1413383637') no-repeat left -960px;
   -webkit-perspective: 48em;
   -moz-perspective: 48em;
   -ms-perspective: 48em;
@@ -2096,7 +2084,6 @@ body.wireframe #s-tile div#floor {
   transform: rotateX(0deg);
   -webkit-transition: all 4s ease-in-out;
   -moz-transition: all 4s ease-in-out;
-  -ms-transition: all 4s ease-in-out;
   -o-transition: all 4s ease-in-out;
   transition: all 4s ease-in-out;
 }
@@ -2128,10 +2115,9 @@ body.wireframe #s-tile div#floor {
 #s-perspective.space {
   -webkit-transition: all 2s ease-in-out;
   -moz-transition: all 2s ease-in-out;
-  -ms-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
-  background: black url('/fun-games-css/img/space-bg.jpg?1362348532') no-repeat left top;
+  background: black url('/fun-games-css/img/space-bg.jpg?1413383637') no-repeat left top;
 }
 #s-perspective.space p.intro {
   color: #69f;
@@ -2146,7 +2132,6 @@ body.wireframe #s-tile div#floor {
 #s-perspective.space .board.move {
   -webkit-transition: all 10s ease-in-out;
   -moz-transition: all 10s ease-in-out;
-  -ms-transition: all 10s ease-in-out;
   -o-transition: all 10s ease-in-out;
   transition: all 10s ease-in-out;
   -webkit-transform: translateZ(-10em) rotateX(75deg) translateY(-240em);
@@ -2160,7 +2145,6 @@ body.wireframe #s-tile div#floor {
   opacity: 0;
   -webkit-transition: opacity 1s ease-in-out;
   -moz-transition: opacity 1s ease-in-out;
-  -ms-transition: opacity 1s ease-in-out;
   -o-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
   -webkit-animation: "move-sun" 120s linear infinite;
@@ -2191,7 +2175,6 @@ body.wireframe #s-tile div#floor {
   background-image: -webkit-radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
   background-image: -moz-radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
   background-image: -o-radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
-  background-image: -ms-radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
   background-image: radial-gradient(1em 1em, #ffff00 0%, #ff7200 1.3em);
   -webkit-box-shadow: 0 0 0.6em 0.3em rgba(255, 153, 0, 0.5), inset 0 0 0.5em #ffaa00;
   -moz-box-shadow: 0 0 0.6em 0.3em rgba(255, 153, 0, 0.5), inset 0 0 0.5em #ffaa00;
@@ -2228,7 +2211,6 @@ body.wireframe #s-tile div#floor {
   background-image: -webkit-radial-gradient(0.15em 0.1em, rgba(255, 255, 255, 0.3) 0.08em, rgba(0, 0, 170, 0) 0.2em), -webkit-radial-gradient(0.3em 0.8em, rgba(255, 255, 255, 0.2) 0.08em, rgba(0, 0, 170, 0) 0.3em), -webkit-radial-gradient(0.2em 0.6em, rgba(255, 255, 255, 0.3) 0.1em, rgba(0, 0, 170, 0) 0.3em), -webkit-radial-gradient(0.7em 0.5em, rgba(255, 255, 255, 0.5) 0.1em, rgba(0, 0, 170, 0) 0.35em), -webkit-radial-gradient(0.3em 0.2em, #116611 0.1em, rgba(0, 68, 51, 0) 0.16em), -webkit-radial-gradient(0.6em 0.3em, #116611 0.15em, rgba(0, 68, 51, 0) 0.3em), -webkit-radial-gradient(0.5em 0.5em, #3eb0ff 0%, #0000ff 0.6em);
   background-image: -moz-radial-gradient(0.15em 0.1em, rgba(255, 255, 255, 0.3) 0.08em, rgba(0, 0, 170, 0) 0.2em), -moz-radial-gradient(0.3em 0.8em, rgba(255, 255, 255, 0.2) 0.08em, rgba(0, 0, 170, 0) 0.3em), -moz-radial-gradient(0.2em 0.6em, rgba(255, 255, 255, 0.3) 0.1em, rgba(0, 0, 170, 0) 0.3em), -moz-radial-gradient(0.7em 0.5em, rgba(255, 255, 255, 0.5) 0.1em, rgba(0, 0, 170, 0) 0.35em), -moz-radial-gradient(0.3em 0.2em, #116611 0.1em, rgba(0, 68, 51, 0) 0.16em), -moz-radial-gradient(0.6em 0.3em, #116611 0.15em, rgba(0, 68, 51, 0) 0.3em), -moz-radial-gradient(0.5em 0.5em, #3eb0ff 0%, #0000ff 0.6em);
   background-image: -o-radial-gradient(0.15em 0.1em, rgba(255, 255, 255, 0.3) 0.08em, rgba(0, 0, 170, 0) 0.2em), -o-radial-gradient(0.3em 0.8em, rgba(255, 255, 255, 0.2) 0.08em, rgba(0, 0, 170, 0) 0.3em), -o-radial-gradient(0.2em 0.6em, rgba(255, 255, 255, 0.3) 0.1em, rgba(0, 0, 170, 0) 0.3em), -o-radial-gradient(0.7em 0.5em, rgba(255, 255, 255, 0.5) 0.1em, rgba(0, 0, 170, 0) 0.35em), -o-radial-gradient(0.3em 0.2em, #116611 0.1em, rgba(0, 68, 51, 0) 0.16em), -o-radial-gradient(0.6em 0.3em, #116611 0.15em, rgba(0, 68, 51, 0) 0.3em), -o-radial-gradient(0.5em 0.5em, #3eb0ff 0%, #0000ff 0.6em);
-  background-image: -ms-radial-gradient(0.15em 0.1em, rgba(255, 255, 255, 0.3) 0.08em, rgba(0, 0, 170, 0) 0.2em), -ms-radial-gradient(0.3em 0.8em, rgba(255, 255, 255, 0.2) 0.08em, rgba(0, 0, 170, 0) 0.3em), -ms-radial-gradient(0.2em 0.6em, rgba(255, 255, 255, 0.3) 0.1em, rgba(0, 0, 170, 0) 0.3em), -ms-radial-gradient(0.7em 0.5em, rgba(255, 255, 255, 0.5) 0.1em, rgba(0, 0, 170, 0) 0.35em), -ms-radial-gradient(0.3em 0.2em, #116611 0.1em, rgba(0, 68, 51, 0) 0.16em), -ms-radial-gradient(0.6em 0.3em, #116611 0.15em, rgba(0, 68, 51, 0) 0.3em), -ms-radial-gradient(0.5em 0.5em, #3eb0ff 0%, #0000ff 0.6em);
   background-image: radial-gradient(0.15em 0.1em, rgba(255, 255, 255, 0.3) 0.08em, rgba(0, 0, 170, 0) 0.2em), radial-gradient(0.3em 0.8em, rgba(255, 255, 255, 0.2) 0.08em, rgba(0, 0, 170, 0) 0.3em), radial-gradient(0.2em 0.6em, rgba(255, 255, 255, 0.3) 0.1em, rgba(0, 0, 170, 0) 0.3em), radial-gradient(0.7em 0.5em, rgba(255, 255, 255, 0.5) 0.1em, rgba(0, 0, 170, 0) 0.35em), radial-gradient(0.3em 0.2em, #116611 0.1em, rgba(0, 68, 51, 0) 0.16em), radial-gradient(0.6em 0.3em, #116611 0.15em, rgba(0, 68, 51, 0) 0.3em), radial-gradient(0.5em 0.5em, #3eb0ff 0%, #0000ff 0.6em);
   -webkit-animation: "rotate-earth" 3s linear infinite;
   -moz-animation: "rotate-earth" 3s linear infinite;
@@ -2257,7 +2239,6 @@ body.wireframe #s-tile div#floor {
   background-image: -webkit-radial-gradient(0.26em 0.3em, #cccccc 0%, #777777 10px);
   background-image: -moz-radial-gradient(0.26em 0.3em, #cccccc 0%, #777777 10px);
   background-image: -o-radial-gradient(0.26em 0.3em, #cccccc 0%, #777777 10px);
-  background-image: -ms-radial-gradient(0.26em 0.3em, #cccccc 0%, #777777 10px);
   background-image: radial-gradient(0.26em 0.3em, #cccccc 0%, #777777 10px);
   -webkit-animation: "rotate-moon" 4s linear infinite;
   -moz-animation: "rotate-moon" 4s linear infinite;
@@ -2538,7 +2519,6 @@ body.wireframe #s-tile div#floor {
   background: -webkit-radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
   background: -moz-radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
   background: -o-radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
-  background: -ms-radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
   background: radial-gradient(1em 1em, #3eb0ff 0%, #000044 1.2em);
 }
 #s-animation .cell .nucleus {
@@ -2556,7 +2536,6 @@ body.wireframe #s-tile div#floor {
   background: -webkit-radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
   background: -moz-radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
   background: -o-radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
-  background: -ms-radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
   background: radial-gradient(0.4em 0.4em, rgba(170, 153, 255, 0.8) 0%, rgba(110, 224, 255, 0.1) 0.6em);
 }
 #s-animation.wiggle .intro {
@@ -2707,7 +2686,6 @@ body.wireframe #s-tile div#floor {
   background: -webkit-radial-gradient(0.4em 0.4em, #3eb0ff 0%, #eeeeee 0.4em);
   background: -moz-radial-gradient(0.4em 0.4em, #3eb0ff 0%, #eeeeee 0.4em);
   background: -o-radial-gradient(0.4em 0.4em, #3eb0ff 0%, #eeeeee 0.4em);
-  background: -ms-radial-gradient(0.4em 0.4em, #3eb0ff 0%, #eeeeee 0.4em);
   background: radial-gradient(0.4em 0.4em, #3eb0ff 0%, #eeeeee 0.4em);
   -webkit-animation: "cell" 0.8s ease-in-out alternate infinite;
   -moz-animation: "cell" 0.8s ease-in-out alternate infinite;
@@ -2723,7 +2701,6 @@ body.wireframe #s-tile div#floor {
   background: -webkit-radial-gradient(0.2em 0.2em, #000000 0%, rgba(62, 176, 255, 0.1) 0.3em);
   background: -moz-radial-gradient(0.2em 0.2em, #000000 0%, rgba(62, 176, 255, 0.1) 0.3em);
   background: -o-radial-gradient(0.2em 0.2em, #000000 0%, rgba(62, 176, 255, 0.1) 0.3em);
-  background: -ms-radial-gradient(0.2em 0.2em, #000000 0%, rgba(62, 176, 255, 0.1) 0.3em);
   background: radial-gradient(0.2em 0.2em, #000000 0%, rgba(62, 176, 255, 0.1) 0.3em);
 }
 
@@ -3178,9 +3155,9 @@ body.wireframe #s-tile div#floor {
   transform-style: preserve-3d;
 }
 #s-alignment .segments.show {
-  -webkit-transition: -webkit-transform ease-in-out 8s;
+  -webkit-transition: -webkit-transform ease-in-out;
+  -webkit-transition-delay: 8s;
   -moz-transition: -moz-transform ease-in-out 8s;
-  -ms-transition: -ms-transform ease-in-out 8s;
   -o-transition: -o-transform ease-in-out 8s;
   transition: transform ease-in-out 8s;
 }
@@ -3190,7 +3167,7 @@ body.wireframe #s-tile div#floor {
   float: left;
   margin: 0;
   padding: 0;
-  background-image: url('/fun-games-css/img/html5-topper-cropped.png?1363037824');
+  background-image: url('/fun-games-css/img/html5-topper-cropped.png?1413383637');
   position: relative;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -3348,7 +3325,6 @@ body.wireframe #s-tile div#floor {
   box-shadow: 0 0 1em rgba(0, 0, 0, 0.4);
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
-  -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
