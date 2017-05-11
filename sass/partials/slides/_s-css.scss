@@ -71,13 +71,16 @@
 
   // Display drafts in various formats
   ul.drafts {
+    transform-origin: 0 0;
+
     &.smaller {
-      font-size: .5em;
+      transform: scale(.5);
     }
     &.even-smaller {
-      font-size: .3em;
+      transform: scale(.25);
     }
     &.columns {
+      transform: scale(1);
       font-size: .45em;
       @include column-count(3);
       @include column-width(33%);
@@ -95,7 +98,7 @@
       }
       li.used {
         font-weight: 700;
-        @include transform(translateX(-6em) translateY(-7.5em) translateZ(10em));
+        @include transform(translateX(-6em) translateY(-7.5em) translateZ(10em) scale(2));
       }
     }
   }

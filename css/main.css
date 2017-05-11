@@ -1230,13 +1230,17 @@ span {
 #s-css section.unfinished {
   width: 95%;
 }
+#s-css ul.drafts {
+  transform-origin: 0 0;
+}
 #s-css ul.drafts.smaller {
-  font-size: .5em;
+  transform: scale(0.5);
 }
 #s-css ul.drafts.even-smaller {
-  font-size: .3em;
+  transform: scale(0.25);
 }
 #s-css ul.drafts.columns {
+  transform: scale(1);
   font-size: .45em;
   -webkit-column-count: 3;
   -moz-column-count: 3;
@@ -1267,11 +1271,11 @@ span {
 }
 #s-css ul.drafts.highlight li.used {
   font-weight: 700;
-  -webkit-transform: translateX(-6em) translateY(-7.5em) translateZ(10em);
-  -moz-transform: translateX(-6em) translateY(-7.5em) translateZ(10em);
-  -ms-transform: translateX(-6em) translateY(-7.5em) translateZ(10em);
-  -o-transform: translateX(-6em) translateY(-7.5em) translateZ(10em);
-  transform: translateX(-6em) translateY(-7.5em) translateZ(10em);
+  -webkit-transform: translateX(-6em) translateY(-7.5em) translateZ(10em) scale(2);
+  -moz-transform: translateX(-6em) translateY(-7.5em) translateZ(10em) scale(2);
+  -ms-transform: translateX(-6em) translateY(-7.5em) translateZ(10em) scale(2);
+  -o-transform: translateX(-6em) translateY(-7.5em) translateZ(10em) scale(2);
+  transform: translateX(-6em) translateY(-7.5em) translateZ(10em) scale(2);
 }
 
 #s-funstuff p.red,
