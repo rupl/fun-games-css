@@ -973,7 +973,7 @@ span {
   width: 300px;
   height: 300px;
   margin-left: -150px;
-  background: url('/img/4k-logo-square-500px.png?1413383637') no-repeat left top;
+  background: url('/fun-games-css/img/4k-logo-square-500px.png?1413383637') no-repeat left top;
   background-size: contain;
   position: absolute;
   bottom: 1.2em;
@@ -1116,7 +1116,7 @@ span {
   top: 0;
   left: 0;
   z-index: 600;
-  background: black url('/img/crysis-3-ny-city-ruins.jpg?1413383637') no-repeat left top;
+  background: black url('/fun-games-css/img/crysis-3-ny-city-ruins.jpg?1413383637') no-repeat left top;
   background-size: cover;
 }
 #s-intro.video-games .overlay {
@@ -1781,7 +1781,7 @@ span {
  */
 #s-tile {
   width: 1340px;
-  background: black url('/img/tile-bg.jpg?1413383637') no-repeat -10px top;
+  background: black url('/fun-games-css/img/tile-bg.jpg?1413383637') no-repeat -10px top;
   color: #000;
   overflow: hidden;
   -webkit-perspective: 470px;
@@ -1960,7 +1960,7 @@ span {
 #s-tile .panel .top {
   width: inherit;
   height: inherit;
-  background: url('/img/tile-4.jpg?1413383637');
+  background: url('/fun-games-css/img/tile-4.jpg?1413383637');
   -webkit-transform: translate3d(0, 0, 1px);
   -moz-transform: translate3d(0, 0, 1px);
   -ms-transform: translate3d(0, 0, 1px);
@@ -1985,7 +1985,7 @@ span {
   background-position: 70% 80%;
 }
 #s-tile .panel:nth-child(5n) .top {
-  background: url('/img/tile-2.jpg?1413383637') 50% 50%;
+  background: url('/fun-games-css/img/tile-2.jpg?1413383637') 50% 50%;
 }
 #s-tile .panel:hover,
 #s-tile .panel.lift {
@@ -2050,7 +2050,7 @@ body.wireframe #s-tile div#floor {
 }
 
 #s-perspective {
-  background: white url('/img/space-bg.jpg?1413383637') no-repeat left -960px;
+  background: white url('/fun-games-css/img/space-bg.jpg?1413383637') no-repeat left -960px;
   -webkit-perspective: 48em;
   -moz-perspective: 48em;
   -ms-perspective: 48em;
@@ -2116,7 +2116,7 @@ body.wireframe #s-tile div#floor {
   -moz-transition: all 2s ease-in-out;
   -o-transition: all 2s ease-in-out;
   transition: all 2s ease-in-out;
-  background: black url('/img/space-bg.jpg?1413383637') no-repeat left top;
+  background: black url('/fun-games-css/img/space-bg.jpg?1413383637') no-repeat left top;
 }
 #s-perspective.space p.intro {
   color: #69f;
@@ -3166,7 +3166,7 @@ body.wireframe #s-tile div#floor {
   float: left;
   margin: 0;
   padding: 0;
-  background-image: url('/img/html5-topper-cropped.png?1413383637');
+  background-image: url('/fun-games-css/img/html5-topper-cropped.png?1413383637');
   position: relative;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
